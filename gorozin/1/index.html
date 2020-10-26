@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	@font-face 
+    {
+  		font-family: 'Frutiger-neue-regular'; 
+  		src: url(fonts/Frutiger-neue-regular.ttf); 
+  	}
+    html, body 
+    {
+        width: 100%; 
+        height: 100%; 
+        padding: 0; 
+        margin: 0;
+    }
+    #test-bg
+    {
+    	display: flex;
+    	justify-content: center;
+    	flex-wrap: wrap;
+    	width: 100%;
+    	height: auto;
+    	min-width: 375px;
+    }
+    #test-top
+    {
+    	display: flex;
+    	text-align: center;
+    	width: 40%;
+    	height: auto;
+    	padding: 30px;
+    	box-sizing: border-box;
+    	border-radius: 10px;
+    	box-shadow: 0 0 10px #647c98;
+    	font-family: Frutiger-neue-regular;
+    	font-size: 16pt;
+    	background: rgba(225, 232, 255, 0.3);
+    	color: rgb(80, 80, 80);
+    	margin-top: 15px;
+    }
+    #test-body
+    {
+    	display: flex;
+    	justify-content: center;
+    	width: 70%;
+      	margin-top: 50px;
+      	flex-wrap: wrap;
+    }
+    #test-body-head
+    {
+    	display: none;
+      	font-family: Frutiger-neue-regular;
+      	font-size: 16pt;
+      	width: auto;
+      	border-bottom: 1px solid rgb(160, 160, 160);
+      	padding: 5px 30px;
+      	box-sizing: border-box;
+      	height: auto;
+    }
+    #test-body-results
+    {
+    	display: none;
+    	width: 100%;
+      	font-family: Frutiger-neue-regular;
+     	font-size: 20pt;
+      	padding: 15px 30px;
+
+      	box-sizing: border-box;
+      	height: auto;
+      	color: rgb(100, 124, 152);
+    }
+    #test-body-results-desc
+    {
+    	display: none;
+    	flex-wrap: wrap;
+    	width: 100%;
+    	font-family: Frutiger-neue-regular;
+     	font-size: 14pt;
+      	padding: 5px 40px;
+      	box-sizing: border-box;
+      	height: auto;
+      	color: rgb(100, 124, 152);
+    }
+    .test-body-head
+   	{
+
+   		position: relative;
+   		left: -100px;
+   		width: 100%;
+   		font-family: Frutiger-neue-regular;
+    	font-size: 16pt;
+    	color: rgb(100, 124, 152);
+    	margin-top: 50px;
+    	text-transform: uppercase;
+    	opacity: 0;
+    	transition: all 0.3s ease-out;
+    	
+   	}
+   	.test-body-line-all
+   	{
+   		position: relative;
+   		left: -100px;
+   		opacity: 0;
+   		transition: all 0.3s ease-out;
+   		box-sizing: border-box;
+   		padding-top: 5px;
+   		padding-bottom: 15px;
+   		background: none;
+   	}
+   	.test-body-line-all:hover
+   	{
+   		padding-left: 5px; 
+   	}
+   	.test-body-line
+   	{
+   		font-family: Frutiger-neue-regular;
+    	font-size: 12pt;
+    	margin-left: 20px;
+    	margin-top: 10px;
+    	color: rgb(100, 124, 152);
+
+    	
+   	}
+   	input.test
+   	{
+   		transform: scale(1.2);
+   		margin-right: 10px;
+   		background: rgb(100, 124, 152);
+   	}
+   	input.test:hover
+   	{
+   		cursor: pointer;
+   	}
+   	#test-body-submit
+   	{
+   		display: inline-flex;
+   		justify-content: center;
+   		align-items: center;
+   		width: 320px;
+   		height: 60px;
+   		margin-top: 40px;
+   		border-radius: 5px;
+   		font-family: Frutiger-neue-regular;
+    	font-size: 16pt;
+    	color: rgb(255, 255, 255);
+    	background: rgb(22, 155, 213);
+   	}
+   	#test-body-delete
+   	{
+   		display: inline-flex;
+   		justify-content: center;
+   		align-items: center;
+   		width: 220px;
+   		height: 60px;
+   		margin-top: 40px;
+   		margin-left: 10px;
+   		border-radius: 5px;
+   		font-family: Frutiger-neue-regular;
+    	font-size: 16pt;
+    	color: rgb(0, 0, 0);
+    	border: 1px solid rgb(80, 80, 80);
+   	}
+   	#test-body-submit:hover, #test-body-delete:hover
+   	{
+   		opacity: 0.6;
+   		cursor: pointer;
+   	}
+   	#test-body-error
+   	{
+   		display: none;
+   		margin-top: 15px;
+   		color: red;
+   		font-family: Frutiger-neue-regular;
+    	font-size: 10pt;
+   	}
+   	@media (max-width: 900px)
+    {
+      #test-top, #test-body
+      {
+        width: 96%;
+      }
+    }
+
+    </style>
+</head>
+<body>
+<div id="test-bg">
+	<div id="test-top">
+		Этот простой тест позволит определить, есть ли у Вас риски развития варикозной болезни и что делать, если угроза здоровью действительно высока. Выберите один вариант ответа на каждый из вопросов, а затем суммируйте полученные баллы, чтобы узнать результат и получить рекомендацию.
+	</div>
+	<div id="test-body">
+		<div id="test-body-head">Результат</div>
+		<div id="test-body-results">Ваш балл: </div>
+		<div id="test-body-results-desc">
+		</div>
+		<form id="test-form">
+			<div class="test-body-head">1. Мой пол</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q1" value="1"> Мужской</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q1" value="2"> Женский</div>
+			</div>
+			<div class="test-body-head">2. Мой возраст</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q2" value="1"> Я моложе 45 лет </div>
+				<div class="test-body-line"><input type="radio" class="test" name="q2" value="2"> Я старше 45 лет </div>
+			</div>
+			<div class="test-body-head">3. Я вижу на своих ногах сосудистые звездочки и мелкие извитые вены</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q3" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q3" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">4. У меня есть крупные изменённые вены</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q4" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q4" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">5. По материнской и/или отцовской линии кто-то в моей семье страдал варикозной болезнью</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q5" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q5" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">6. У меня бывают отеки, которые возникают вечером и полностью проходят после ночного отдыха</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q6" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q6" value="2"> Периодически</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q6" value="3"> Никогда</div>
+			</div>
+			<div class="test-body-head">7. У меня появляется тяжесть, дискомфорт и боли в ногах, если я долго сижу или стою</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q7" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q7" value="2"> Периодически</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q7" value="3"> Никогда</div>
+			</div>
+			<div class="test-body-head">8. У меня на коже голеней появились «темные пятна» и уплотнения</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q8" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q8" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">9. У меня по ночам бывают судороги в икроножных мышцах</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q9" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q9" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">10. У меня была беременность (одна или более)</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q10" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q10" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">11. Я принимаю гормональные препараты (контрацептивы) или получаю заместительную гормональную терапию</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q11" value="1"> Да</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q11" value="2"> Нет</div>
+			</div>
+			<div class="test-body-head">12. Большую часть времени на работе или в повседневной жизни я</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q12" value="1"> Сижу</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q12" value="2"> Стою</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q12" value="3"> Много двигаюсь</div>
+			</div>
+			<div class="test-body-head">13. Я занимаюсь спортом/физкультурой</div>
+			<div class="test-body-line-all">
+				<div class="test-body-line"><input type="radio" class="test" name="q13" value="1"> Один раз в неделю</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q13" value="2"> Нет, никогда</div>
+				<div class="test-body-line"><input type="radio" class="test" name="q13" value="2"> Это мой образ жизни</div>
+			</div>
+
+			<div id="test-body-submit">Получить результат</div>
+			<div id="test-body-delete">Сбросить</div>
+			<div id="test-body-error">Вам необходимо ответить на все вопросы, чтобы получить качественную консультацию.</div>
+		</form>
+		<br><br><br><br><br><br><br><br>
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+
+
+$(document).ready(function()
+{
+	function line_appear(i)
+	{
+		$(".test-body-head").eq(i).css("left", 0);
+		$(".test-body-line-all").eq(i).css("left", 0);
+		$(".test-body-head").eq(i).css("opacity", 1);
+		$(".test-body-line-all").eq(i).css("opacity", 1);
+	}
+	for (i=0; i<$(".test-body-head").length; i++)
+	{
+		setTimeout(line_appear, 200+i*50, i);
+	}
+
+	$("#test-body-delete").click(function()
+	{
+		$(".test").prop('checked', false);
+	});
+
+	$("#test-body-submit").click(function()
+	{
+		$("#test-body-error").css("display", "none");
+		let flag=0;
+		for (i=0; i<$(".test-body-line-all").length; i++)
+		{
+			let flag_iter=0;
+			for (j=0; j<$(".test-body-line-all").eq(i).children().length; j++)
+			{
+				if ($(".test-body-line-all").eq(i).children().eq(j).children().is(':checked'))
+				{
+					flag_iter=1;
+				}
+			}
+			if (flag_iter==0)
+			{
+				$(".test-body-line-all").eq(i).css("background", "rgba(255, 194, 206, 0.5)");
+				flag=1;
+			}
+		}
+		if (flag==1)
+		{
+			$("#test-body-error").css("display", "flex");
+		}
+		else
+		{
+			var points = new Array([2, 1, 0], [0, 1, 0], [1, 0, 0], [2, 0, 0], [2, 0, 0], [2, 1, 0], [2, 1, 0], [2, 0, 0], [2, 1, 0], [1, 0, 0], [2, 0, 0], [1, 1, 0], [1, 2, 0]); 
+			$("#test-form").css("display", "none");
+			let sum=0;
+			for (i=0; i<$(".test-body-line-all").length; i++)
+			{
+				let b=Number($('input[name="q'+(i+1)+'"]:checked').val());
+				sum+=points[i][b-1];
+			}
+			$("#test-body-results").html("Ваш балл: "+sum);
+			$("#test-body-results").css("display", "flex");
+			$("#test-body-head").css("display", "flex");
+			if (sum<=5)
+			{
+				$("#test-body-results-desc").html("<b>0-5 баллов:</b> Все хорошо! Вам не о чем беспокоиться — проблем с венами у Вас нет. Однако в некоторых ситуациях следует использовать компрессионный трикотаж (гольфы, чулки или колготы 1 класса компрессии): например, при перелетах или длительном пребывании в положении сидя. ");
+			}
+			else if (sum<=10)
+			{
+				$("#test-body-results-desc").html("<b>6-10 баллов:</b> Возможно, у Вас есть незначительно выраженные проблемы с венами. Для уточнения диагноза рекомендуем обратиться к врачу-флебологу, который выполнит дополнительное обследование (УЗДГ вен нижних конечностей) и подскажет, что необходимо предпринять. ");
+			}
+			else 
+			{
+				$("#test-body-results-desc").html("<b>11 баллов и более:</b> Вам необходимо безотлагательно обратиться к врачу-флебологу, который выполнит УЗДГ вен нижних конечностей и определит тактику лечения.<br><br><b>Рекомендация:</b><br> Поставить точный диагноз и подобрать оптимальный метод лечения поможет Светлана Валериевна Чеканина — оперирующий врач-хирург, член Ассоциации флебологов России, флеболог со стажем работы более 28 лет. Доктор ведет прием в Международном медицинском центре «СОГАЗ» (<a href='https://www.sogaz-clinic.ru/doctors/414/' target='_blank'>https://www.sogaz-clinic.ru/doctors/414/</a>).");
+			}
+
+			$("#test-body-results-desc").css("display", "flex");
+		}
+	});
+
+	$("input.test").change(function()
+	{
+		$(this).parent().parent().css("background", "none");
+	});
+});
+</script>
+
+</body>
+</html>
