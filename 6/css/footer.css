@@ -1,0 +1,48 @@
+#footer
+{
+display: flex;
+width: 100%;
+border-top: 1px solid rgb(185, 185, 185);
+padding-left: 16%;
+padding-right: 16%;
+box-sizing: border-box;
+height: 300px;
+}
+#footer-l
+{
+display: flex;
+flex-basis: 70%;
+height: 100%;
+align-items: center;
+}
+#footer-r
+{
+flex-basis: 30%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+.footer-r-icons
+{
+width: 20px;
+height: 20px;
+margin-left: 20px;
+}
+.footer-r-icons:hover
+{
+cursor: pointer;
+opacity: 0.7;
+}
+.footer-l-nav
+{
+font-family: 'Open Sans', sans-serif;
+font-size: 12pt;
+color: rgb(0, 0, 0);
+text-decoration: none;
+margin-right: 30px;
+}
+.footer-l-nav:hover
+{
+opacity: 0.7;
+}

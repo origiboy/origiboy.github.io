@@ -1,0 +1,268 @@
+html, body 
+{
+width: 100%; 
+height: 100%; 
+padding: 0; 
+margin: 0;
+}
+
+#main
+{
+width: 100%;
+padding-left: 16%;
+padding-right: 16%;
+box-sizing: border-box;
+
+}
+#main-nav
+{
+width: 100%;
+font-family: 'Open Sans', sans-serif;
+font-size: 12pt;
+color: rgb(185, 185, 185);
+margin-top: 40px;
+}
+.main-nav-link
+{
+color: rgb(185, 185, 185);
+text-decoration: none;
+}
+#main-top
+{
+font-family: 'Roboto Slab', serif;
+font-size: 28pt;
+margin-top: 70px;
+}
+#main-img
+{
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center;
+}
+.main-img-1
+{
+background: url("../images/tour_1.png") no-repeat;
+}
+.main-img-2
+{
+background: url("../images/tour_2.png") no-repeat;
+}
+.main-img-3
+{
+background: url("../images/tour_3.png") no-repeat;
+}
+.main-img-4
+{
+background: url("../images/tour_4.png") no-repeat;
+}
+.main-img-5
+{
+background: url("../images/tour_5.png") no-repeat;
+}
+.main-img-6
+{
+background: url("../images/tour_6.png") no-repeat;
+}
+.main-img-7
+{
+background: url("../images/tour_7.png") no-repeat;
+}
+.main-img-8
+{
+background: url("../images/tour_8.png") no-repeat;
+}
+.swiper-container 
+{
+width: 55%;
+height: 300px;
+margin-left: 0;
+margin-top: 30px;
+}
+.swiper-slide 
+{
+text-align: center;
+font-size: 18px;
+background: #fff;
+background-size: cover; 
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+#main-controls
+{
+display: flex;
+align-items: center;
+width: auto;
+margin-top: 20px;
+}
+.main-controls-1, .main-controls-3
+{
+height: 16px;
+
+}
+.main-controls-3
+{
+margin-left: 10px;
+}
+.main-controls-2
+{
+width: auto;
+position: static;
+margin-left: 10px;
+font-family: 'Open Sans', sans-serif;
+font-size: 11pt;
+}
+#main-desc
+{
+display: flex;
+width: 100%;
+margin-top: 50px;
+}
+#main-desc-l
+{
+flex-basis: 60%;
+font-family: 'Open Sans', sans-serif;
+font-size: 13pt;
+padding-right: 200px;
+box-sizing: border-box;
+}
+#main-desc-l-tags
+{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+margin-top: 40px;
+}
+.main-desc-l-tag
+{
+width: auto;
+padding: 9px 18px;
+font-family: 'Open Sans', sans-serif;
+font-size: 12pt;
+margin-right: 25px;
+border: 1px solid rgb(160, 160, 160);
+border-radius: 2px;
+transition: all 0.2s ease;
+}
+.main-desc-l-tag:hover
+{
+border-radius: 5px;
+cursor: pointer;
+opacity: 0.7;
+}
+#main-desc-r
+{
+flex-basis: 40%;
+font-family: 'Open Sans', sans-serif;
+font-size: 13pt;
+}
+.main-desc-r-line
+{
+width: 100%;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+#main-desc-r-icon-d
+{
+width: 20px;
+margin-left: 20px;
+}
+#main-desc-r-icon-d:hover
+{
+cursor: pointer;
+}
+#main-desc-r-price
+{
+font-family: 'Open Sans', sans-serif;
+font-size: 16pt;
+font-weight: 900;
+margin-top: 40px;
+}
+#main-desc-r-order-line
+{
+display: flex;
+align-items: center;
+width: 100%;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+#main-desc-r-order
+{
+width: auto;
+height: auto;
+padding: 12px 27px;
+background: #2C9CDB;
+font-family: 'Open Sans', sans-serif;
+font-size: 14pt;
+color: rgb(255, 255, 255);
+transition: all 0.2s ease;
+}
+#main-desc-r-order:hover
+{
+border-radius: 5px;
+cursor: pointer;
+opacity: 0.7;
+}
+#main-desc-r-heart
+{
+width: 26px;
+height: 26px;
+margin-left: 30px;
+}
+#main-desc-r-chat
+{
+width: 26px;
+height: 26px;
+margin-left: 30px;
+}
+#main-desc-r-heart:hover, #main-desc-r-chat:hover
+{
+cursor: pointer;
+opacity: 0.7;
+}
+#main-desc-r-heart:hover, #main-desc-r-chat:hover
+{
+cursor: pointer;
+}
+#main-desc-r-order-extra
+{
+display: inline-block;
+width: 100%;
+font-family: 'Open Sans', sans-serif;
+font-size: 12pt;
+color: rgb(160, 160, 160);
+text-decoration: underline;
+margin-top: 20px;
+}
+#main-bottom
+{
+display: flex;
+width: 100%;
+height: 300px;
+justify-content: flex-end;
+align-items: flex-end;
+padding-bottom: 40px;
+box-sizing: border-box;
+}
+.main-bottom-icon
+{
+width: 26px;
+height: 26px;
+margin-left: 15px;
+}
+.main-bottom-icon:hover
+{
+cursor: pointer;
+opacity: 0.7;
+}
