@@ -40,6 +40,19 @@ justify-content: center;
 -webkit-align-items: center;
 align-items: center;
 }
+#main-nav
+{
+width: 100%;
+font-family: 'Open Sans', sans-serif;
+font-size: 12pt;
+color: rgb(185, 185, 185);
+margin-top: 40px;
+}
+.main-nav-link
+{
+color: rgb(185, 185, 185);
+text-decoration: none;
+}
 #main-img
 {
 width: 100%;

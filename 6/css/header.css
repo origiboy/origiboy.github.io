@@ -53,17 +53,45 @@ left: calc(50% - 110px);
 }
 #header-right
 {
-flex-basis: 100%;
+flex-grow: 1;
 display: flex;
 justify-content: flex-end;
+align-items: center;
 height: 100%;
+padding-right: 30px;
+box-sizing: border-box;
+}
+#header-flag
+{
+	height: 20px;
+	width: 30px;
+	background: url("../images/icon_flag.png") no-repeat;
+background-size: cover;
+background-position: center;
 }
 #header-heart
 {
+	display: inline-block;
 width: 20px;
-}
-#header-pepople
-{
-width: 20px;
+height: 20px;
+background: url("../images/icon_heart_black.png") no-repeat;
+background-size: cover;
+background-position: center;
+margin-left: 16px;
 
+}
+#header-user
+{
+	display: inline-block;
+width: 20px;
+height: 20px;
+background: url("../images/icon_user.png") no-repeat;
+background-size: cover;
+background-position: center;
+margin-left: 16px;
+}
+#header-flag:hover, #header-heart:hover, #header-user:hover
+{
+	cursor: pointer;
+	opacity: 0.7;
 }
