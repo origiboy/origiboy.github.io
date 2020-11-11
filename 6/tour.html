@@ -102,7 +102,11 @@
 
 	<!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 4,
+      spaceBetween: 20,
+      freeMode: true,
+      loop: true,
       pagination: {
         el: '.main-controls-2',
         type: 'fraction',
