@@ -221,7 +221,7 @@ width: 100%;
 margin-top: 50px;
 }
 
-@media (max-width: 960px)
+@media (max-width: 100px)
 {
 #mobile-nav-open
 {
