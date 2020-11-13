@@ -5,15 +5,16 @@ height: 100%;
 padding: 0; 
 margin: 0;
 font-size: 12pt;
+background: #353C3F;
 }
 #mobile-nav-open
 {
 	display: none;
 	position: absolute;
-	top: 30px;
-	right: 30px;
-	width: 50px;
-	height: 50px;
+	top: 20px;
+	right: 20px;
+	width: 35px;
+	height: 35px;
 	background: url("../images/menu-o.png") no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -54,21 +55,24 @@ font-size: 12pt;
 {
 display: flex;
 width: 100%;
-height: 2700px;
+height: auto;
 }
 #top-logo-bg
 {
+z-index: 50;
 display: flex;
 justify-content: center;
 position: absolute;
-top: 200px;
+top: 190px;
 width: 100%;
+padding-right: 20px;
+box-sizing: border-box;
 height: auto;
 }
 #top-logo
 {
-
 width: 41.67%;
+height: auto;
 }
 #top-nav
 {
@@ -104,7 +108,7 @@ top: 1120px;
 width: 76%;
 height: auto;
 margin-left: 12%;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-size: 160%;
 text-align: center;
 color: rgb(255, 255, 255);
@@ -126,11 +130,12 @@ height: 60px;
 margin-top: 25px;
 text-transform: uppercase;
 background: #FD7843;
+background: linear-gradient(to top, #BD4F20, #E9BCAB);
 border-radius: 12px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-size: 90%;
 color: rgb(255, 255, 255);
 border: 2px solid rgb(255, 255, 255);
@@ -163,7 +168,7 @@ background: #FECB4B;
 border-radius: 4px;
 color: #333232;
 text-decoration: none;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-weight: 900;
 }
 .main-2-bonus:hover
@@ -174,6 +179,7 @@ cursor: pointer;
 .main-line
 {
 width: 100%;
+height: 1px;
 }
 .main-2-b-2
 {
@@ -183,11 +189,12 @@ height: 60px;
 margin-top: 50px;
 text-transform: uppercase;
 background: #FD7843;
+background: linear-gradient(to top, #BD4F20, #E9BCAB);
 border-radius: 12px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-size: 90%;
 color: rgb(255, 255, 255);
 border: 2px solid rgb(255, 255, 255);
@@ -205,7 +212,7 @@ justify-content: center;
 flex-wrap: wrap;
 width: 100%;
 height: auto;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
 font-size: 70%;
 padding: 10px 11%;
 padding-bottom: 0;
@@ -217,12 +224,21 @@ line-height: 1.5;
 }
 .main-3-img
 {
+display: block;
 width: 100%;
-margin-top: 50px;
+margin-top: 30px;
+}
+span
+{
+	font-family: 'Oswald', sans-serif;
 }
 
 @media (max-width: 1000px)
 {
+html, body 
+{
+	background: #33393D;
+}
 #mobile-nav-open
 {
 	display: inline-block;
@@ -238,6 +254,7 @@ width: 96%;
 margin-left: 3%;
 
 }
+
 #main-3-bg
 {
 
