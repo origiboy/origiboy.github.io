@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	if ($(window).width()<=960)
+	if ($( document ).width()<=960)
 	{
 		k=3.5;
 	}
@@ -41,7 +41,7 @@ $("#mobile-nav-open").click(function()
 });
 $(window).resize(function()
 {
-	if ($(window).width()<=960)
+	if ($( document ).width()<=960)
 	{
 		k=3.5;
 	}
