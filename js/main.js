@@ -9,7 +9,7 @@ $(document).ready(function()
 		k=1;
 	}
 $("#top-bg").height($("#top-bg").width()/1920*2700);
-$("#top-logo-bg").css("top", 200/1920*$(window).width()*k);
+$("#top-logo-bg").css("top", 200/1920*$(window).width());
 $("#top-nav").css("top", 70/1920*$(window).width());
 $("#main").css("top", 1120/1920*$(window).width());
 $("html").css("font-size", 16/1920*$(window).width()*k+"px");
@@ -43,7 +43,7 @@ $(window).resize(function()
 {
 	if ($(window).width()<=960)
 	{
-		k=2.5;
+		k=3.5;
 	}
 	else
 	{
