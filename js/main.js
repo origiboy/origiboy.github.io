@@ -34,7 +34,7 @@ $("#mobile-nav-open").click(function()
 	}
 	else
 	{
-		$("#mobile-nav").css("right", "100vw");
+		$("#mobile-nav").css("right", "200vw");
 		$("#mobile-nav-open").css("background-image", "url(images/menu-o.png)");
 		open_flag=0;
 	}
