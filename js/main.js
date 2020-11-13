@@ -2,7 +2,7 @@ $(document).ready(function()
 {
 	if ($(window).width()<=960)
 	{
-		k=2.5;
+		k=3.5;
 	}
 	else
 	{
