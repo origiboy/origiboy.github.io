@@ -2,7 +2,7 @@ $(document).ready(function()
 {
 	if ($(window).width()<=960)
 	{
-		k=2;
+		k=2.5;
 	}
 	else
 	{
@@ -43,7 +43,7 @@ $(window).resize(function()
 {
 	if ($(window).width()<=960)
 	{
-		k=2;
+		k=2.5;
 	}
 	else
 	{
