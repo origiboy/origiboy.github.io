@@ -261,4 +261,16 @@ margin-left: 3%;
 padding: 10px 10px;
 
 }
+#top-logo-bg
+{
+z-index: 50;
+display: flex;
+justify-content: center;
+position: absolute;
+top: 20px;
+width: 100%;
+padding-right: 20px;
+box-sizing: border-box;
+height: auto;
+}
 }

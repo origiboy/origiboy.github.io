@@ -7,10 +7,9 @@ $(document).ready(function()
 	else
 	{
 		k=1;
+		$("#top-logo-bg").css("top", 200/1920*$(window).width());
 	}
 //$("#top-bg").height($("#top-bg").width()/1920*2700);
-$("#top-logo-bg-1").css("top", 200/1920*$(window).width());
-$("#top-logo-bg-2").css("top", 200/1920*$(window).width());
 
 $("#top-nav").css("top", 70/1920*$(window).width());
 $("#main").css("top", 1120/1920*$(window).width());
@@ -46,13 +45,14 @@ $(window).resize(function()
 	if ($( document ).width()<=960)
 	{
 		k=4.3;
+
 	}
 	else
 	{
 		k=1;
+		$("#top-logo-bg").css("top", 200/1920*$(window).width());
 	}
 //$("#top-bg").height($("#top-bg").width()/1920*2700);
-$("#top-logo-bg").css("top", 200/1920*$(window).width());
 $("#top-nav").css("top", 70/1920*$(window).width());
 $("#main").css("top", 1120/1920*$(window).width());
 $("html").css("font-size", 16/1920*$(window).width()*k+"px");
