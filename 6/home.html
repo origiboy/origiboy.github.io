@@ -15,6 +15,7 @@
     </style>
 </head>
 <body>
+	<script type="text/javascript" src="js/home.js"></script>
 <div id="header">
   <div id="header-burger">
       <div class="header-burger-1"></div>
@@ -35,92 +36,780 @@
 <div id="main">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><div id="main-img" class="main-img-1"></div><div class="main-slider-top">Пирамиды Гизы</div><div class="main-slider-light">Египет</div></div>
-      <div class="swiper-slide"><div id="main-img" class="main-img-2"></div><div class="main-slider-top">Великая китайская стена</div><div class="main-slider-light">Китай</div></div>
-      <div class="swiper-slide"><div id="main-img" class="main-img-3"></div><div class="main-slider-top">Тадж-Махал</div><div class="main-slider-light">Индия</div></div>
-      <div class="swiper-slide"><div id="main-img" class="main-img-4"></div><div class="main-slider-top">Эйфелева башня</div><div class="main-slider-light">Франция</div></div>
-      <div class="swiper-slide"><div id="main-img" class="main-img-5"></div><div class="main-slider-top">Колизей</div><div class="main-slider-light">Италия</div></div>
+      <div class="swiper-slide"><div id="main-img" class="main-img-1"></div><div class="main-slider-top">Пирамиды Гизы</div></div>
+      <div class="swiper-slide"><div id="main-img" class="main-img-2"></div><div class="main-slider-top">Великая китайская стена</div></div>
+      <div class="swiper-slide"><div id="main-img" class="main-img-3"></div><div class="main-slider-top">Тадж-Махал</div></div>
+      <div class="swiper-slide"><div id="main-img" class="main-img-4"></div><div class="main-slider-top">Эйфелева башня</div></div>
+      <div class="swiper-slide"><div id="main-img" class="main-img-5"></div><div class="main-slider-top">Колизей</div></div>
       
     </div>
   </div>
   <div id="main-controls"><img src="images/arrow_l.png" class="main-controls-1"><img src="images/arrow_r.png" class="main-controls-3"></div>
-
+  <div id="main-search-back-all">
   <div id="main-search-back">
-    <div id="main-search"><div id="main-search-tags"><div class="main-search-tag">Европа<img class="main-search-tag-cross" src="images/icon_cross.png"></div><div class="main-search-tag">Австрия<img class="main-search-tag-cross" src="images/icon_cross.png"></div><div class="main-search-tag">Экстрим<img class="main-search-tag-cross" src="images/icon_cross.png"></div></div><input id="main-search-field"></div>
-    <div id="main-search-button">
-      <img src="images/icon_search.png" style="width: 50%;">
-    </div>
+    <div id="main-search"><div id="main-search-tags"></div></div>
+    <div id="main-search-button-text">Поиск по тегам</div>
   </div>
 
+  <div id="main-search-back">
+  	<div id="main-search">
+    <input type="text" name="" id="main-search-field" placeholder="Страна, место или локация">
+    <div id="main-search-button">
+    
+      <img src="images/icon_search.png" style="width: 50%;">
+    </div>
+</div>
+  </div>
+</div>
   <div id="main-top">Куда отправимся?</div>
 
   <div id="main-block-top"><div class="main-block-top">Топ</div><div class="main-block-top" style="font-weight: 900;">Европа</div><div class="main-block-top">Восток</div><div class="main-block-top">Азия</div><div class="main-block-top">Африка</div><div class="main-block-top">Америка</div><div class="main-block-top">Океания</div></div>
-  <div class="main-block">
-    
-  </div>
-  <div class="main-block">
+  <!-- Блок с топ странами -->
+   <div class="main-block" style="display: none;">
     <div class="main-block-line">
-      <div class="main-block-line-l">Австрия</div>
+      <div class="main-block-line-l">Топ_1</div>
       <div class="main-block-line-r">
-        <a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a><a href="#" class="main-block-line-r-word">Национальный парк Нойзидлерзе-Зевенкиль</a><a href="#" class="main-block-line-r-word">Горный массив Дахштайн</a><a href="#" class="main-block-line-r-word">Дворец Хофбурн</a><a href="#" class="main-block-line-r-word">Замок Хербештайн</a><a href="#" class="main-block-line-r-word">Дом Моцарта</a><a href="#" class="main-block-line-r-word">Императорский склеп</a><a href="#" class="main-block-line-r-word">Собор святого Стефана</a><img src="images/icon_add.png" class="main-block-line-r-more">
-        <br><br><br><br>
-        <div class="main-block-line-r-extra"><a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a></div>
-      </div>
-    </div>
-    <div class="main-block-line">
-      <div class="main-block-line-l">Австрия</div>
-      <div class="main-block-line-r">
-        <a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a><a href="#" class="main-block-line-r-word">Национальный парк Нойзидлерзе-Зевенкиль</a><a href="#" class="main-block-line-r-word">Горный массив Дахштайн</a><a href="#" class="main-block-line-r-word">Дворец Хофбурн</a><a href="#" class="main-block-line-r-word">Замок Хербештайн</a><a href="#" class="main-block-line-r-word">Дом Моцарта</a><a href="#" class="main-block-line-r-word">Императорский склеп</a><a href="#" class="main-block-line-r-word">Собор святого Стефана</a><img src="images/icon_add.png" class="main-block-line-r-more">
-        <br><br><br><br>
-        <div class="main-block-line-r-extra"><a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a></div>
-      </div>
-    </div>
-    <div class="main-block-line">
-      <div class="main-block-line-l">Австрия</div>
-      <div class="main-block-line-r">
-        <a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a><a href="#" class="main-block-line-r-word">Национальный парк Нойзидлерзе-Зевенкиль</a><a href="#" class="main-block-line-r-word">Горный массив Дахштайн</a><a href="#" class="main-block-line-r-word">Дворец Хофбурн</a><a href="#" class="main-block-line-r-word">Замок Хербештайн</a><a href="#" class="main-block-line-r-word">Дом Моцарта</a><a href="#" class="main-block-line-r-word">Императорский склеп</a><a href="#" class="main-block-line-r-word">Собор святого Стефана</a><img src="images/icon_add.png" class="main-block-line-r-more">
-        <br><br><br><br>
-        <div class="main-block-line-r-extra"><a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a></div>
-      </div>
-    </div>
-    <div class="main-block-line">
-      <div class="main-block-line-l">Австрия</div>
-      <div class="main-block-line-r">
-        <a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a><a href="#" class="main-block-line-r-word">Национальный парк Нойзидлерзе-Зевенкиль</a><a href="#" class="main-block-line-r-word">Горный массив Дахштайн</a><a href="#" class="main-block-line-r-word">Дворец Хофбурн</a><a href="#" class="main-block-line-r-word">Замок Хербештайн</a><a href="#" class="main-block-line-r-word">Дом Моцарта</a><a href="#" class="main-block-line-r-word">Императорский склеп</a><a href="#" class="main-block-line-r-word">Собор святого Стефана</a><img src="images/icon_add.png" class="main-block-line-r-more">
-        <br><br><br><br>
-        <div class="main-block-line-r-extra"><a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a></div>
-      </div>
-    </div>
-    
-
-    <div id="main-block-more-c-extra">
-      <div class="main-block-line">
-        <div class="main-block-line-l">Дополнительная страна</div>
-        <div class="main-block-line-r">
-          <a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a><a href="#" class="main-block-line-r-word">Национальный парк Нойзидлерзе-Зевенкиль</a><a href="#" class="main-block-line-r-word">Горный массив Дахштайн</a><a href="#" class="main-block-line-r-word">Дворец Хофбурн</a><a href="#" class="main-block-line-r-word">Замок Хербештайн</a><a href="#" class="main-block-line-r-word">Дом Моцарта</a><a href="#" class="main-block-line-r-word">Императорский склеп</a><a href="#" class="main-block-line-r-word">Собор святого Стефана</a><img src="images/icon_add.png" class="main-block-line-r-more">
-          <br><br><br><br>
-          <div class="main-block-line-r-extra"><a href="#" class="main-block-line-r-word">Шеннбрунский зоопарк</a></div>
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
         </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
       </div>
     </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Топ_10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Топ_11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
+    
     <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
   </div>
+<!-- блок со странами Европы -->
   <div class="main-block">
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_1</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Европа_10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Европа_11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
     
+    <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
   </div>
-  <div class="main-block">
+  
+  <!-- Блок со странами Востока-->
+   <div class="main-block" style="display: none;">
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_1</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Восток_10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Восток_11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
     
-  </div>
-  <div class="main-block">
-    
-  </div>
-  <div class="main-block">
-    
-  </div>
-  <div class="main-block">
-    
+    <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
   </div>
 
+    <!-- Блок со странами Азии-->
+   <div class="main-block" style="display: none;">
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_1</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Азия_10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Азия_11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
+    
+    <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
+  </div>
+  <!-- Блок со странами Африки-->
+   <div class="main-block" style="display: none;">
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__1</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Африки__10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Африки__11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
+    
+    <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
+  </div>
+
+  <!-- Блок со странами Америки-->
+   <div class="main-block" style="display: none;">
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_1</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Америки_10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Америки_11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
+    
+    <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
+  </div>
+
+  <!-- Блок со странами Океании-->
+   <div class="main-block" style="display: none;">
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_1</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_2</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_3</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_4</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_5</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_6</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_7</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_8</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_9</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div class="main-block-line">
+      <div class="main-block-line-l">Океания_10</div>
+      <div class="main-block-line-r">
+      	<div class="main-block-line-r-places">
+        	<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        </div>
+        <img src="images/icon_add.png" class="main-block-line-r-more">
+      </div>
+    </div>
+    <div id="main-block-more-c-extra">
+    	<div class="main-block-line">
+      		<div class="main-block-line-l">Океания_11</div>
+      		<div class="main-block-line-r">
+      			<div class="main-block-line-r-places">
+        			<a href="#" class="main-block-line-r-word">Достопримечательность_1</a><a href="#" class="main-block-line-r-word">Место_2</a><a href="#" class="main-block-line-r-word">Достопримечательность_3</a><a href="#" class="main-block-line-r-word">Достопримечательность_4</a><a href="#" class="main-block-line-r-word">Достопримечательность_5</a><a href="#" class="main-block-line-r-word">Место_6</a><a href="#" class="main-block-line-r-word">Место_7</a><a href="#" class="main-block-line-r-word">Достопримечательность_8</a><a href="#" class="main-block-line-r-word">Достопримечательность_9</a><a href="#" class="main-block-line-r-word">Достопримечательность_10</a><a href="#" class="main-block-line-r-word">Достопримечательность_11</a><a href="#" class="main-block-line-r-word">Достопримечательность_12</a><a href="#" class="main-block-line-r-word">Место_13</a><a href="#" class="main-block-line-r-word">Достопримечательность_14</a><a href="#" class="main-block-line-r-word">Место_15</a><a href="#" class="main-block-line-r-word">Достопримечательность_16</a>
+        		</div>
+        		<img src="images/icon_add.png" class="main-block-line-r-more">
+      		</div>
+    	</div>
+    </div>
+    
+    <div id="main-block-more-c">Больше стран <img src="images/icon_add.png" class="main-block-more-c-img"></div>
+  </div>
   <br><br><br>
   <div id="main-top">Чем займётесь?</div>
 
@@ -139,53 +828,213 @@
       <div class="main-block-2-l-head">Этнография</div>
       <div class="main-block-2-l-head">Разное</div>
     </div>
-    <div class="main-block-2-r">
-      <div class="main-block-2-r-block">
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-1"></div>
-          <div class="main-block-2-r-block-point-text">Сафари</div>
-        </div>
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-2"></div>
-          <div class="main-block-2-r-block-point-text">Вулканы</div>
-        </div>
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-3"></div>
-          <div class="main-block-2-r-block-point-text">Горы</div>
-        </div>
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-4"></div>
-          <div class="main-block-2-r-block-point-text">Фьюрды</div>
-        </div>
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-5"></div>
-          <div class="main-block-2-r-block-point-text">Киты</div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="main-block-2-r">
-      <div class="main-block-2-r-block">
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-1"></div>
-          <div class="main-block-2-r-block-point-text">Сафари</div>
-        </div>
-        <div class="main-block-2-r-block-point">
-          <div class="main-block-2-r-block-point-image main-img-2"></div>
-          <div class="main-block-2-r-block-point-text">Вулканы</div>
-        </div>
-      </div>
-
+    
+    <div class="main-block-2-r-all">
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-3</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-4"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-4</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-5"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-5</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Пляжи-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Пляжи-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Пляжи-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Экстрим-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">События-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">События-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">События-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Гастрономия-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Гастрономия-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Гастрономия-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Цивилизация-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Цивилизация-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Цивилизация-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Моря, реки-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Моря, реки-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Моря, реки-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Лечение-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Лечение-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Лечение-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Обучение-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Обучение-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Обучение-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">История-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">История-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">История-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">История-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">История-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">История-3</div>
+        		</div>
+    		 </div>
+    	</div>
+    	<div class="main-block-2-r">
+      		<div class="main-block-2-r-block">
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-1"></div>
+          			<div class="main-block-2-r-block-point-text">Разное-1</div>
+        		</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-2"></div>
+          			<div class="main-block-2-r-block-point-text">Разное-2</div>
+       			</div>
+        		<div class="main-block-2-r-block-point">
+          			<div class="main-block-2-r-block-point-image main-img-3"></div>
+          			<div class="main-block-2-r-block-point-text">Разное-3</div>
+        		</div>
+    		 </div>
+    	</div>
     </div>
   </div>
   <br><br><br><br><br><br>
-  <div id="ads">
     <img src="images/ad_1.png" class="ad_1">
-    <img src="images/ad_2.png" class="ad_2">
-    <img src="images/ad_3.png" class="ad_3">
-  </div>
-</div>
+</div><
 <br><br><br><br><br><br><br><br>
 
 <div id="footer">
@@ -217,69 +1066,7 @@
       },
     });
   </script>
-<script type="text/javascript">
 
-
-$(document).ready(function()
-{
-  $(".main-search-tag-cross").click(function(){
-    $(this).parent().css("display", "none");
-  });
-  
-  $(".main-block-top").click(function(){
-    $(".main-block-top").css("font-weight", "100");
-    $(this).css("font-weight", "900");
-    $(".main-block").css("display", "none");
-    $(".main-block").eq($(this).index()).css("display", "inline-block");
-  });
-  var flag_extra=0;
-  
-  $(".main-block-line-r-more").click(function(){
-  if (flag_extra==0)
-  {
-    $(this).parent().children(".main-block-line-r-extra").css("display", "inline");
-    flag_extra=1;
-    $(this).css("transform", "rotate(45deg)");
-  }
-  else
-  {
-    $(this).parent().children(".main-block-line-r-extra").css("display", "none");
-    flag_extra=0;
-    $(this).css("transform", "rotate(0deg)");
-  }
-  });
-
-  var flag_extra_c=0;
-  
-  $("#main-block-more-c").click(function(){
-  if (flag_extra_c==0)
-  {
-    $("#main-block-more-c-extra").css("display", "inline");
-    flag_extra_c=1;
-    $(this).children(".main-block-more-c-img").css("transform", "rotate(45deg)");
-  }
-  else
-  {
-   $("#main-block-more-c-extra").css("display", "none");
-    flag_extra_c=0;
-    $(this).children(".main-block-more-c-img").css("transform", "rotate(0deg)");
-  }
-  });
-
-  
-  $(".main-block-2-l-head").click(function(){
-    $(".main-block-2-l-head").css("color", "rgb(0, 0, 0)");
-    $(".main-block-2-l-head").css("background", "rgb(255, 255, 255)");
-    $(this).css("color", "rgb(255, 255, 255)");
-    $(this).css("background", "rgb(0, 0, 0)");
-    $(".main-block-2-r-block").css("display", "none");
-    $(".main-block-2-r-block").eq($(this).index()).css("display", "inline-block");
-  });
-
-
-  
-});
-</script>
 
 </body>
 </html>

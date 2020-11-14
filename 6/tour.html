@@ -74,7 +74,8 @@
 			<div id="main-desc-r-order-line">
 				<div id="main-desc-r-order">Забронировать</div><img src="images/icon_chat.png" id="main-desc-r-chat"><img src="images/icon_heart.png" id="main-desc-r-heart">
 			</div>
-			<a href="#" id="main-desc-r-order-extra">В стоимость входит<br>Дополнительные расходы</a>
+			<a href="#" id="main-desc-r-order-extra"><span class="main-desc-r-order-extra-1">В стоимость входит</span><br>Дополнительные расходы</a>
+			<div id="main-desc-r-order-popup"><b>В стоимость входит:</b><br>-услуги гида<br>-вода в бутылках<br><br><b>В стоимость не входит</b><br>-расходы на еду<br>-билеты в музей</div>
 		</div>
 	</div>
 	<div id="main-bottom">
@@ -122,6 +123,14 @@
 
 $(document).ready(function()
 {
+$( ".main-desc-r-order-extra-1" ).mouseover(function() {
+  $( "#main-desc-r-order-popup" ).css("top", $( ".main-desc-r-order-extra-1" ).offset().top+30);
+  $( "#main-desc-r-order-popup" ).css("left", $( ".main-desc-r-order-extra-1" ).offset().left);
+$( "#main-desc-r-order-popup" ).css("display", "inline-block");
+});
+$( ".main-desc-r-order-extra-1" ).mouseleave(function() {
+	$( "#main-desc-r-order-popup" ).css("display", "none");
+});
 	
 });
 </script>
