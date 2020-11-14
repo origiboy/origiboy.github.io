@@ -78,7 +78,19 @@ $(".main-block-line-r-word").click(function(){
 });
 
 
-  
+  flag_menu=0;
+  $("#header-burger").click(function(){
+    if (flag_menu==0)
+    {
+      $("#menu").css("display", "inline-block");
+      flag_menu=1;
+    }
+    else
+    {
+      $("#menu").css("display", "none");
+      flag_menu=0;
+    }
+  });
 });
 
 function tag_delete(a)
