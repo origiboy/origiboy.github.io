@@ -28,7 +28,11 @@
       <span class="header-burger-3"></span>
     </div>
     <div id="header-right">
-      <div id="header-flag"></div>
+      <img src="images/icon_flag_en.png" class="header-flag header-flag-1">
+      <img src="images/icon_flag_fr.png" class="header-flag header-flag-2">
+      <img src="images/icon_flag_es.png" class="header-flag header-flag-3">
+      <img src="images/icon_flag_cn.png" class="header-flag header-flag-4">
+      <img src="images/icon_flag_ru.png" class="header-flag header-flag-5">
       <div id="header-heart"></div>
       <div id="header-user"></div>
         
@@ -38,6 +42,7 @@
 </div>
 
 <div id="main">
+  <div id="main-nav"><a href="#" class="main-nav-link">Главная</a><span style="margin-left: 15px; margin-right: 15px;">&#8594;</span><a href="#" class="main-nav-link">Путешествия</a></div>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><div id="main-img" class="main-img-1"></div><div class="main-slider-top">Праздник молодого вина</div></div>
@@ -48,24 +53,25 @@
       
     </div>
   </div>
-  <div id="main-controls"><img src="images/arrow_l.png" class="main-controls-1"><img src="images/arrow_r.png" class="main-controls-3"></div>
-  <div id="main-nav"><a href="#" class="main-nav-link">Главная</a><span style="margin-left: 15px; margin-right: 15px;">&#8594;</span><a href="#" class="main-nav-link">Путешествия</a></div>
-  <div id="main-search-back">
-    <div id="main-search"><div id="main-search-tags"><div class="main-search-tag">Европа<img class="main-search-tag-cross" src="images/icon_cross.png"></div><div class="main-search-tag">Австрия<img class="main-search-tag-cross" src="images/icon_cross.png"></div><div class="main-search-tag">Экстрим<img class="main-search-tag-cross" src="images/icon_cross.png"></div></div><input id="main-search-field"></div>
-    <div id="main-search-button">
-      <img src="images/icon_search.png" style="width: 50%;">
+  <div id="main-search-back-all">
+    <div id="main-controls"><img src="images/arrow_l.png" class="main-controls-1"><img src="images/arrow_r.png" class="main-controls-3"></div>
+    <div id="main-search-back">
+      <input id="main-search" type="" name="" placeholder="Место, локация или тур"><div id="main-search-button-text">Показать объекты</div>
+      <br><br>
+      <div id="main-search-tags"></div>
     </div>
   </div>
+ 
 
   <div id="main-block">
     <div id="main-block-filters">
       <div class="main-block-filter">
         <div class="main-block-filter-top">
-          <span style="flex-grow: 1;">Темы</span>
-          <div class="main-block-filter-close">
+          <span style="display: flex; align-items: center; flex-grow: 1;">Темы<div class="main-block-filter-close">
             <div class="main-block-filter-close-1"></div>
             <div class="main-block-filter-close-2"></div>
-          </div>
+          </div></span>
+         
         </div>
         <div class="main-block-filter-line">
           <label><input type="checkbox" class="main-block-filter-line-input">Экстрим</label><br>
@@ -85,11 +91,11 @@
 
       <div class="main-block-filter">
         <div class="main-block-filter-top">
-          <span style="flex-grow: 1;">Тип</span>
+          <span style="display: flex; align-items: center; flex-grow: 1;">Тип
           <div class="main-block-filter-close">
             <div class="main-block-filter-close-1"></div>
             <div class="main-block-filter-close-2"></div>
-          </div>
+          </div></span>
         </div>
         <div class="main-block-filter-line">
           <label><input type="checkbox" class="main-block-filter-line-input">Туры</label><br>
@@ -102,11 +108,11 @@
 
       <div class="main-block-filter">
         <div class="main-block-filter-top">
-          <span style="flex-grow: 1;">Физичекая нагрузка</span>
+          <span style="display: flex; align-items: center; flex-grow: 1;">Физичекая нагрузка
           <div class="main-block-filter-close">
             <div class="main-block-filter-close-1"></div>
             <div class="main-block-filter-close-2"></div>
-          </div>
+          </div></span>
         </div>
         <div class="main-block-filter-line">
           <label><input type="checkbox" class="main-block-filter-line-input">Малая</label><br>
@@ -116,11 +122,12 @@
       </div>
       <div class="main-block-filter">
         <div class="main-block-filter-top">
-          <span style="flex-grow: 1;">Туристы</span>
+          <span style="display: flex; align-items: center; flex-grow: 1;">Туристы
           <div class="main-block-filter-close">
             <div class="main-block-filter-close-1"></div>
             <div class="main-block-filter-close-2"></div>
-          </div>
+          </div></span>
+          
         </div>
         <div class="main-block-filter-line">
           <label><input type="checkbox" class="main-block-filter-line-input">Взрослые</label><br>
@@ -138,7 +145,7 @@
           <div class="main-block-results-nav-1-point">Продолжительности</div>
           <div class="main-block-results-nav-1-point">Цене</div>
         </div>
-        <div id="main-block-results-nav-2"><div style="display: flex; align-items: center;">Дата&nbsp;&nbsp;<img src="images/arr_down.png" style="width: 12px; height: 12px;"></div> <div id="main-block-lang" style="display: flex; align-items: center;">&nbsp;&nbsp;&nbsp;&nbsp;Язык&nbsp;&nbsp;<img src="images/arr_down.png" style="width: 12px; height: 12px;"></div></div>
+        <div id="main-block-results-nav-2"><div style="display: flex; align-items: center;">Дата&nbsp;&nbsp;<img src="images/arr_down.png" style="width: 12px; height: 12px;"></div> <div id="main-block-lang" style="display: flex; align-items: center;">&nbsp;&nbsp;&nbsp;&nbsp;Язык&nbsp;&nbsp;<b style="font-size: 20px">+</b></div></div>
       </div>
 
       <div class="main-block-point">
@@ -348,13 +355,11 @@
   </div>
 </div>
 <div id="popup-lang">
-  <label><input type="checkbox" class="main-block-filter-line-input">Английский</label><br>
-  <label><input type="checkbox" class="main-block-filter-line-input">Французский</label><br>
-  <label><input type="checkbox" class="main-block-filter-line-input">Испанский</label><br>
-  <label><input type="checkbox" class="main-block-filter-line-input">Китайский</label><br>
-  <label><input type="checkbox" class="main-block-filter-line-input">Русский</label><br>
-  <label><input type="checkbox" class="main-block-filter-line-input">Язык</label><br>
-  <label><input type="checkbox" class="main-block-filter-line-input">Язык</label><br>
+  <label class="main-block-filter-line-label"><input type="checkbox" class="main-block-filter-line-input">Английский</label><br>
+  <label class="main-block-filter-line-label"><input type="checkbox" class="main-block-filter-line-input">Французский</label><br>
+  <label class="main-block-filter-line-label"><input type="checkbox" class="main-block-filter-line-input">Испанский</label><br>
+  <label class="main-block-filter-line-label"><input type="checkbox" class="main-block-filter-line-input">Китайский</label><br>
+  <label class="main-block-filter-line-label"><input type="checkbox" class="main-block-filter-line-input" checked="checked">Русский</label><br>
 </div>
 <div id="main-bottom-icon-menu">
 Рекомендовать
@@ -394,87 +399,7 @@
       },
     });
   </script>
-<script type="text/javascript">
-
-
-$(document).ready(function()
-{
-  $(".main-search-tag-cross").click(function(){
-    $(this).parent().css("display", "none");
-  });
-
-  $(".main-block-filter-close").click(function(){
-    if ($(this).children(".main-block-filter-close-2").css("display")=="none")
-    {
-      $(this).children(".main-block-filter-close-2").css("display", "inline-block");
-      $(".main-block-filter-line").eq($(this).parent().parent().index()).css("display", "none");
-      
-    }
-    else
-    {
-      $(this).children(".main-block-filter-close-2").css("display", "none");
-      $(".main-block-filter-line").eq($(this).parent().parent().index()).css("display", "inline-block");
-    }
-  });
-  var flag_lang=0;
-  
-  $("#main-block-lang").click(function(){
-  if (flag_lang==0)
-  {
-    flag_lang=1;
-    $(this).children().css("transform", "rotate(180deg)");
-    $( "#popup-lang" ).css("top", $( "#main-block-lang" ).offset().top+$( "#main-block-lang" ).height()+10);
-  $( "#popup-lang" ).css("left", $( "#main-block-lang" ).offset().left);
-$( "#popup-lang" ).css("display", "inline-block");
-  }
-  else
-  {
-    flag_lang=0;
-    $(this).children().css("transform", "rotate(0deg)");
-    $( "#popup-lang" ).css("display", "none");
-  }
-  });
-  flag_menu=0;
-  $("#header-burger").click(function(){
-    if (flag_menu==0)
-    {
-      $("#menu").css("display", "inline-block");
-      flag_menu=1;
-    }
-    else
-    {
-      $("#menu").css("display", "none");
-      flag_menu=0;
-    }
-  });
-
-  flag_more=0;
-  $(".main-bottom-icon").eq(1).click(function(){
-    if (flag_more==0)
-    {
-      $( "#main-bottom-icon-menu" ).css("top",$(".main-bottom-icon").eq(1).offset().top-$("#main-bottom-icon-menu").height()-20);
-  $( "#main-bottom-icon-menu" ).css("left", $(".main-bottom-icon").eq(1).offset().left);
-$( "#main-bottom-icon-menu" ).css("display", "inline-block");
-      flag_more=1;
-    }
-    else
-    {
-      $("#main-bottom-icon-menu").css("display", "none");
-      flag_more=0;
-    }
-  });
-
-$( ".main-bottom-icon" ).click(function() {
-  $( "#main-desc-r-order-popup" ).css("top", $( ".main-desc-r-order-extra-1" ).offset().top+30);
-  $( "#main-desc-r-order-popup" ).css("left", $( ".main-desc-r-order-extra-1" ).offset().left);
-$( "#main-desc-r-order-popup" ).css("display", "inline-block");
-
-});
-
-  
-  
-});
-</script>
+<script type="text/javascript" src="js/search.js"></script>
 
 </body>
 </html>

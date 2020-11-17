@@ -28,7 +28,11 @@
   		<span class="header-burger-3"></span>
   	</div>
   	<div id="header-right">
-      <div id="header-flag"></div>
+      <img src="images/icon_flag_en.png" class="header-flag header-flag-1">
+      <img src="images/icon_flag_fr.png" class="header-flag header-flag-2">
+      <img src="images/icon_flag_es.png" class="header-flag header-flag-3">
+      <img src="images/icon_flag_cn.png" class="header-flag header-flag-4">
+      <img src="images/icon_flag_ru.png" class="header-flag header-flag-5">
       <div id="header-heart"></div>
       <div id="header-user"></div>
         
@@ -81,7 +85,12 @@
 				<div id="main-desc-r-order">Забронировать</div><img src="images/icon_chat.png" id="main-desc-r-chat"><img src="images/icon_heart.png" id="main-desc-r-heart">
 			</div>
 			<a href="#" id="main-desc-r-order-extra"><span class="main-desc-r-order-extra-1">В стоимость входит</span></a>
-			<div id="main-desc-r-order-popup"><b>В стоимость входит:</b><br>-услуги гида<br>-вода в бутылках<br><br><b>В стоимость не входит</b><br>-расходы на еду<br>-билеты в музей</div>
+			<div id="main-desc-r-order-popup">
+				<b style="display: flex; align-items: center;">В стоимость входит <span class="main-desc-r-order-popup-open">+</span></b>
+				<span class="main-desc-r-order-popup-l" style="display: none;">-услуги гида<br>-вода в бутылках<br><br></span>
+				<b style="display: flex; align-items: center;">В стоимость не входит <span class="main-desc-r-order-popup-open">+</span></b>
+				<span class="main-desc-r-order-popup-l" style="display: none;">-расходы на еду<br>-билеты в музей</span>
+			</div>
 		</div>
 	</div>
 	<div id="main-bottom">
@@ -90,7 +99,13 @@
 		<img src="images/icon_block.png" class="main-bottom-icon">
 	</div>
 </div>
-
+<div id="main-bottom-icon-menu">
+Рекомендовать
+Неточность
+Жалоба
+Вопрос
+Другое
+</div>
 <div id="footer">
 	<div id="footer-l">
 		<a href="#" class="footer-l-nav">Туристам</a>
@@ -124,34 +139,8 @@
       },
     });
 	</script>
-<script type="text/javascript">
 
-
-$(document).ready(function()
-{
-$( ".main-desc-r-order-extra-1" ).mouseover(function() {
-  $( "#main-desc-r-order-popup" ).css("top", $( ".main-desc-r-order-extra-1" ).offset().top+30);
-  $( "#main-desc-r-order-popup" ).css("left", $( ".main-desc-r-order-extra-1" ).offset().left);
-$( "#main-desc-r-order-popup" ).css("display", "inline-block");
-});
-$( ".main-desc-r-order-extra-1" ).mouseleave(function() {
-	$( "#main-desc-r-order-popup" ).css("display", "none");
-});
-	flag_menu=0;
-  $("#header-burger").click(function(){
-    if (flag_menu==0)
-    {
-      $("#menu").css("display", "inline-block");
-      flag_menu=1;
-    }
-    else
-    {
-      $("#menu").css("display", "none");
-      flag_menu=0;
-    }
-  });
-});
-</script>
+<script type="text/javascript" src="js/tour.js"></script>
 
 </body>
 </html>

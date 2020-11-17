@@ -93,13 +93,15 @@ height: 100%;
 padding-right: 30px;
 box-sizing: border-box;
 }
-#header-flag
+.header-flag
 {
+	display: none;
 	height: 20px;
-	width: 30px;
-	background: url("../images/icon_flag.png") no-repeat;
-background-size: cover;
-background-position: center;
+	margin-left: 5px;
+}
+.header-flag-5
+{
+	display: inline-block;
 }
 #header-heart
 {
