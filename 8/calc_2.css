@@ -86,3 +86,27 @@ html, body
     height: auto;
     margin-top: 20px;
 }
+@media (max-width: 960px)
+{
+    #block_1_calc
+    {
+        width: 100%;
+    }
+    #block_1_calc
+    {
+        font-size: 16px;
+    }
+    .block_1_calc_num
+    {
+        width: 50px;
+        height: 30px;
+        font-size: 20px;
+    }
+    #block_1_calc_submit
+    {
+        width: 180px;
+        height: 44px;
+        border-radius: 22px;
+        font-size: 20px;
+    }
+}
