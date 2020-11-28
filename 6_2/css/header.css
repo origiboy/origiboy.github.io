@@ -1,3 +1,7 @@
+body
+{
+    min-width: 1200px;
+}
 #menu
 {
 	display: none;
@@ -440,4 +444,39 @@ form#register button:hover
     border-radius: 10px;
     cursor: pointer;
     opacity: 0.7;
+}
+
+.main-results-filter-lang-point
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    
+    height: 20px;
+    width: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 0px;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9pt;
+    
+    border-radius: 5px;
+}
+.main-results-filter-lang-point:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.lang-point-add
+{
+    margin-top: 10px;
+}
+
+/* Служебные стили */
+
+input:focus, select:focus
+{
+    outline: none;
 }

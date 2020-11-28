@@ -135,6 +135,7 @@ font-family: 'Open Sans', sans-serif;
 font-size: 13pt;
 padding-right: 200px;
 box-sizing: border-box;
+
 }
 #main-desc-l-tags
 {
@@ -323,12 +324,23 @@ margin-top: 20px;
 .main-block-contact-1
 {
     margin-top: 0px;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
 }
-.main-block-contact-2
+.main-result-column-2-date
+{
+    font-family: 'Open Sans', sans-serif;
+	font-size: 13pt;
+    border: 0;
+    position: relative;
+    left: -2px;
+}
+.main-block-contact-1
 {
     margin-top: 0px;
 }
-.main-block-contact-1:hover, .main-block-contact-2:hover
+.main-block-contact-1:hover
 {
     cursor: pointer;
 opacity: 0.7;

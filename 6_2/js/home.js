@@ -1,4 +1,4 @@
-var tags_count=0;
+var tags_count = 0;
 $(document).ready(function()
 {
 var str=$(".main-block-line-r-word").css("font-size");
@@ -83,43 +83,6 @@ tag_adding(2, $(this));
 });
 
 
-
-flag_menu=0;
-$("#header-burger").click(function(){
-if (flag_menu==0)
-{
-$("#menu").css("display", "inline-block");
-flag_menu=1;
-}
-else
-{
-$("#menu").css("display", "none");
-flag_menu=0;
-}
-});
-
-flag_more=0;
-$(".main-bottom-icon").eq(1).click(function(){
-if (flag_more==0)
-{
-$( "#main-bottom-icon-menu" ).css("top",$(".main-bottom-icon").eq(1).offset().top-$("#main-bottom-icon-menu").height()-20);
-$( "#main-bottom-icon-menu" ).css("left", $(".main-bottom-icon").eq(1).offset().left);
-$( "#main-bottom-icon-menu" ).css("display", "inline-block");
-flag_more=1;
-}
-else
-{
-$("#main-bottom-icon-menu").css("display", "none");
-flag_more=0;
-}
-});
-
-$( ".main-bottom-icon" ).click(function() {
-$( "#main-desc-r-order-popup" ).css("top", $( ".main-desc-r-order-extra-1" ).offset().top+30);
-$( "#main-desc-r-order-popup" ).css("left", $( ".main-desc-r-order-extra-1" ).offset().left);
-$( "#main-desc-r-order-popup" ).css("display", "inline-block");
-
-});
 });
 
 function tag_delete(a)
@@ -134,18 +97,16 @@ function isOverflowed(el) {
 function tag_adding(type, elem)
 {
     if (type==1) {
-        $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)"><span>'+elem.html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
-        tags_count++;
-        if(isOverflowed(document.getElementById("main-search-tags")) == true) {
-            $(".main-search-tag").last().remove();
-            tags_count--;
+        
+        if(tags_count < 14) {
+            $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)"><span>'+elem.html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
+            tags_count++;
         }
     } else {
-        $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)"><span>'+elem.children('.main-block-2-r-block-point-text').html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
+        
+        if(tags_count < 14) {
+            $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)"><span>'+elem.children('.main-block-2-r-block-point-text').html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
         tags_count++;
-        if(isOverflowed(document.getElementById("main-search-tags")) == true) {
-            $(".main-search-tag").last().remove();
-            tags_count--;
         }
     }
 }

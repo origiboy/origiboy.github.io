@@ -15,12 +15,6 @@
     </style>
 </head>
 <body>
-<div id="menu">
-  <a href="#" class="menu-line">Места</a>
-  <a href="#" class="menu-line">События</a>
-  <a href="#" class="menu-line">Туры и экскурсии</a>
-  <a href="#" class="menu-line">Организаторы</a>
-</div>
 <div id="header" v-html="header"></div>
 <div id="user-popup">
     <div id="user-popup-close-bg"><img src="images/icon_cross.png" class="user-popup-close"></div>
@@ -54,11 +48,18 @@
 		<div id="main-desc-l">
 			Почему гастротур в Тоскану?<br>
 			Потому что Таскана - это трюфель, кьянти и флорентийский стейк. Это не просто гастрономический и винный тур по Таскане. Мы познакомим вас с самыми колоритными продолжателями старинных традиций, виноделами и шефповарами, маркизами и домохозяйками, мясниками и охотниками на трюфель. Мы едем к людям.
-			<br><br><br>
-			Страна: <b>Италия</b><br><br>
-			Города: <b>Рим, Раполано Терме, Сиена, Ареццо, Нипоццанно</b><br><br>
-			Места: <b>Винодельческое поместье маркизов фрескобальди, долина Вальд'Орча</b><br><br>
-            <span style="display: flex; align-items: center;">Язык проведения: <div class="main-block-lang-points"><div class="main-block-lang-points-1">RU</div><img src="images/icon_flag_ru.png" class="main-block-lang-points-2"></div></span>
+			<br><br>
+            <span style="line-height: 2">
+                <b>Страна:</b> Италия<br>
+                <b>Города:</b> Рим, Раполано Терме, Сиена, Ареццо, Нипоццанно<br>
+                <b>Места:</b> Винодельческое поместье маркизов фрескобальди, долина Вальд'Орча<br>
+                <b>Туристы:</b> Взрослые, с детьми<br>
+                <b>Нагрузка:</b> Низкая<br>
+                <span style="display: flex; align-items: center;">
+                    <b>Язык: </b>
+                    <div class="main-results-filter-lang-point lang-point-added" data-lang="RU">RU</div>
+                </span>
+            </span>
             <br><br>
 			
 			<div id="main-desc-l-tags">
@@ -68,17 +69,24 @@
 			</div>
 		</div>
 		<div id="main-desc-r">
-			<div class="main-desc-r-line">Продолжительность: <b style="margin-left: 5px;">6 дней</b> <img src="images/icon_download.png" id="main-desc-r-icon-d"></div>
-			<div class="main-desc-r-line">Дата: <b style="margin-left: 5px;">01.01.2020 - 01.01.2020 <img src="images/arr_down.png"></b></div>
-			
-            
-			<div class="main-desc-r-line">Нагрузка: <b style="margin-left: 5px;">низкая</b></div>
+			<div class="main-desc-r-line">Продолжительность: <b style="margin-left: 5px;">6 дней</b> <a href="" download><img src="images/icon_download.png" id="main-desc-r-icon-d"></a></div>
+			<div class="main-desc-r-line">
+                <select name="" class="main-result-column-2-date">
+                    <option>20.20.2020 - 23.20.2020 (4 дня)</option>
+                    <option>20.20.2020 - 21.20.2020 (2 дня)</option>
+                    <option>20.20.2020 - 24.20.2020 (5 дней)</option>
+                    <option>20.20.2020 - 25.20.2020 (6 дней)</option>
+                </select>
+            </div>
 
 			<div id="main-desc-r-price">151 985 руб.</div>
             
 			<div id="main-desc-r-order-line">
-                <div style="display: flex; justify-content: flex-start; width: 100%;"><img src="images/icon_contact_1.png" class="main-block-contact-1"><img src="images/icon_contact_2.png" class="main-block-contact-2"></div>
-				<div id="main-desc-r-order">Забронировать</div><img src="images/icon_chat.png" id="main-desc-r-chat">
+                <div style="display: flex; justify-content: flex-start; width: 100%;">
+                    <a href="#"><img src="images/icon_lko_2.svg" class="main-block-contact-1"></a>
+                    <a href="#"><img src="images/icon_lko_1.svg" class="main-block-contact-1"></a>
+                </div>
+				<div id="main-desc-r-order">Забронировать</div>
 			</div>
 			<a href="#" id="main-desc-r-order-extra"><span class="main-desc-r-order-extra-1">В стоимость входит</span></a>
             <a href="#" id="main-desc-r-order-extra"><span class="main-desc-r-order-extra-2">В стоимость не входит</span></a>

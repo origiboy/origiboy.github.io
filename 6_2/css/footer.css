@@ -87,3 +87,8 @@ img
 {
     image-rendering: crisp-edges;
 }
+.href-none
+{
+    text-decoration: none;
+    color: inherit;
+}

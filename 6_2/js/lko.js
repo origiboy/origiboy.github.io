@@ -41,29 +41,5 @@ $(document).ready(function()
     $("#main-7-button").click(function() {
         $('#tour-edit').css("display", "flex");
     });
-    var flag_menu=0;
-    $("#header-burger").click(function(){
-if (flag_menu==0)
-{
-$("#menu").css("display", "inline-block");
     
-$(".header-burger-1").css("transform", "rotate(45deg)");
-            $(".header-burger-1").css("top", "8px");
-            $(".header-burger-2").css("display", "none");
-            $(".header-burger-3").css("transform", "rotate(-45deg)");
-            $(".header-burger-3").css("top", "8px");
-    
-flag_menu=1;
-}
-else
-{
-$("#menu").css("display", "none");
-            $(".header-burger-1").css("transform", "rotate(0deg)");
-            $(".header-burger-1").css("top", "0px");
-            $(".header-burger-2").css("display", "inline");
-            $(".header-burger-3").css("transform", "rotate(0deg)");
-            $(".header-burger-3").css("top", "20px");
-flag_menu=0;
-}
-});
 });

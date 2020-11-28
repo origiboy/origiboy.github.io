@@ -7,7 +7,7 @@ var header = new Vue({
       <span class="header-burger-3"></span>
     </div>
     <div id="header-right">
-      <img src="images/icon_flag_ru.png" class="header-flag header-flag-5">
+      <div class="main-results-filter-lang-point lang-point-added" data-lang="RU">RU</div>
       <div id="header-heart"></div>
       <div id="header-user"></div>
         <div id="header-user-ath">
@@ -15,7 +15,13 @@ var header = new Vue({
         </div>
         
       </div>
-    <img id="header-logo" src="images/logo.png">`
+    <img id="header-logo" src="images/logo.png">
+<div id="menu" class="popup-scroll">
+  <a href="#" class="menu-line">Места</a>
+  <a href="#" class="menu-line">События</a>
+  <a href="#" class="menu-line">Туры и экскурсии</a>
+  <a href="#" class="menu-line">Организаторы</a>
+</div>`
    }
 });
 var footer = new Vue({
@@ -36,11 +42,11 @@ var footer = new Vue({
     
     </div>
     <div id="main-bottom-icon-menu">
-    Рекомендовать<br>
-    Неточность<br>
-    Жалоба<br>
-    Вопрос<br>
-    Другое<br>
+    <a href="#" class="href-none">Рекомендовать</a><br>
+    <a href="#" class="href-none">Неточность</a><br>
+    <a href="#" class="href-none">Жалоба</a><br>
+    <a href="#" class="href-none">Вопрос</a><br>
+    <a href="#" class="href-none">Другое</a><br>
     </div>`
    }
 });
