@@ -176,12 +176,12 @@ font-size: 13pt;
 width: 100%;
 display: flex;
 align-items: center;
+justify-content: flex-start;
 margin-bottom: 20px;
 }
 #main-desc-r-icon-d
 {
 width: 20px;
-margin-left: 20px;
 }
 #main-desc-r-icon-d:hover
 {
