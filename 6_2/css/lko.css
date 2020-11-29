@@ -66,21 +66,37 @@ text-decoration: none;
     cursor: pointer;
     opacity: 0.7;
 }
+#main-2-4-6
+{
+    display: flex;
+}
+.main-2-4-6-column-1
+{
+    flex-basis: 50%;
+}
+.main-2-4-6-column-2
+{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
 #main-2
 {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin-top: 25px;
 }
 .main-2-point
 {
-    width: auto;
+    width: 100%;
     height: 26px;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
     font-size: 16px;
+    margin-top: 15px;
     font-family: 'Open Sans', sans-serif;
-    margin-right: 68px;
 }
 #main-3
 {
@@ -93,12 +109,12 @@ text-decoration: none;
 {
     display: flex;
     align-items: center;
-    width: 100%;
-    margin-top: 12px;
+    width: auto;
+    margin-top: 20px;
 }
 .main-4-icon
 {
-    margin-right: 18px;
+    margin-left: 18px;
 }
 #main-5
 {
@@ -143,12 +159,16 @@ text-decoration: none;
 }
 .main-7-line-main
 {
-    flex-basis: 23%;
+    flex-basis: 22%;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box;
+}
+.main-7-line-main-right
+{
+    justify-content: flex-end;
 }
 .main-7-line-extra
 {
@@ -262,6 +282,18 @@ text-decoration: none;
     padding: 40px;
     box-sizing: border-box;
 }
+#profile-edit-columns
+{
+    display: flex;
+    margin-top: 30px;
+}
+.profile-edit-column
+{
+    display: inline-block;
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .profile-edit-main-close
 {
     position: absolute;
@@ -285,12 +317,12 @@ font-size: 20px;
 #profile-edit-line-1
 {
     display: flex;
-
+    flex-wrap: wrap;
 }
 #profile-edit-1
 {
     display: inline-block;
-    margin-top: 35px;
+    margin-bottom: 10px;
 }
 #profile-edit-1-1
 {
@@ -299,11 +331,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 140%;
-/* or 22px */
-
-
-/* Gray 4 */
-
 color: #BDBDBD;
 }
 #profile-edit-1-2
@@ -328,9 +355,8 @@ color: #111111;
 
 #profile-edit-2
 {
-    display: inline-block;
-    margin-left: 35px;
-    margin-top: 35px;
+    display: block;
+    margin-bottom: 10px;
 }
 #profile-edit-2-1
 {
@@ -369,10 +395,9 @@ color: #111111;
 {
     display: inline-block; /* Строчно-блочный элемент */
     position: relative; /* Относительное позиционирование */
-    height: 62px;
+    width: 190px;
     vertical-align: bottom;
     align-self: flex-end;
-    margin-left: 35px;
 }
 #profile-edit-3:hover
 {
@@ -402,24 +427,25 @@ color: #111111;
 #profile-edit-line-2-1
 {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
     color: #BDBDBD;
 }
 #profile-edit-line-2-2
 {
     margin-top: 12px;
+    margin-bottom: 10px;
     width: 100%;
     height: 266px;
     border: 1px solid #BDBDBD;
-box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
     padding: 19px 32px;
     box-sizing: border-box;
 }
@@ -432,35 +458,34 @@ input
 {
     align-self: flex-end;
     font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-/* or 137% */
-
-text-decoration-line: underline;
-
-/* черный */
-
-color: #111111;
-    margin-left: 33px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #111111;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
 }
 #profile-edit-line-4
 {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 #profile-edit-line-4-2
 {
-    width: 409px;
+    width: 100%;
 height: 193px;
     border: 1px solid #BDBDBD;
 box-sizing: border-box;
     padding: 19px;
     font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
 /* or 22px */
 
 
@@ -535,8 +560,8 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     width: 220px;
-height: 71px;
-margin-top: 30px;
+    height: 71px;
+    margin-top: 30px;
 
 /* Blue 2 */
 
@@ -552,6 +577,11 @@ line-height: 140%;
 /* белый */
 
 color: #FFFFFF;
+}
+#profile-edit-line-7:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
 }
 .profile-edit-line-4-js
 {
@@ -620,6 +650,19 @@ font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
 }
+#tour-edit-3
+{
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+    width: 100px;
+    vertical-align: bottom;
+    align-self: flex-end;
+}
+#tour-edit-3:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
 #tour-edit-grid-r
 {
     flex-basis: 50%;
@@ -678,6 +721,17 @@ line-height: 140%;
 /* черный */
 
 color: #111111;
+}
+#tour-edit-grid-s-1-add
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.tour-edit-grid-s-1-add
+{
+    width: 20px;
 }
 #profile-edit-line-8
 {
