@@ -38,7 +38,7 @@ $(document).ready(function()
     $(".main-7-line-extra-edit").click(function() {
         $('#tour-edit').css("display", "flex");
     });
-    $("#main-7-buttont").click(function() {
+    $("#main-7-button").click(function() {
         $('#tour-edit').css("display", "flex");
     });
     $("#tour-edit-3").click(function(){
