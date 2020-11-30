@@ -9,12 +9,7 @@ $(document).ready(function()
     });
     $("#profile-edit").height($(document).height());
     $("#tour-edit").height($(document).height());
-    $('.profile-edit-line-4-2-line').click(function() {
-        if ($(this).children('input').is(':checked'))
-            $('.profile-edit-line-4-js').eq($(this).index(".profile-edit-line-4-2-line")).css("display", "inline-block") 
-        else
-                $('.profile-edit-line-4-js').eq($(this).index(".profile-edit-line-4-2-line")).css("display", "none");
-    });
+
     
    
     $('#main-1-r-edit').click(function() {
