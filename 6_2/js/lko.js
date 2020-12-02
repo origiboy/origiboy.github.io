@@ -1,3 +1,4 @@
+var count = 1;
 $(document).ready(function()
 {
     $("#header-user").css("display", "none");
@@ -41,7 +42,21 @@ $(document).ready(function()
     });
     
     $(".tour-edit-grid-s-1-add").click(function(){
-        $("#tour-edit-grid-s-1-more-dates").append('<input class="tour-edit-grid-s-1" type="date"><br>');
+        count++;
+        $("#tour-edit-grid-s-1-more-dates").append(`<div class="tour-edit-grid-r-d-line">
+                <div class="tour-edit-grid-r-d-line-1">` + count + `</div>
+                <input class="tour-edit-grid-r-d-line-2" type="date">
+                <input class="tour-edit-grid-r-d-line-3" type="time">
+                <input class="tour-edit-grid-r-d-line-4" type="date">
+                <input class="tour-edit-grid-r-d-line-5" type="time">
+                <input class="tour-edit-grid-r-d-line-6">
+                <select class="tour-edit-grid-r-d-line-7">
+                    <option>&#8381;</option>
+                    <option>&#36;</option>
+                    <option>&euro;</option>
+                </select>
+
+            </div>`);
     });
     
     

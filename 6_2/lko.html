@@ -43,7 +43,9 @@
     </div>
     <div id="main-2-4-6">
         <div class="main-2-4-6-column-1">
-            <div id="main-6">Сертификаты и лицензии<img src="images/lko_ser_1.png" class="main-6-img"><img src="images/lko_ser_2.png" class="main-6-img"></div>
+            <div id="main-6">Сертификаты и лицензии
+                <div id="main-6-sert"><img src="images/lko_img_certificate.png" class="main-6-img"><img src="images/lko_img_certificate.png" class="main-6-img"></div>
+            </div>
         </div>
         <div class="main-2-4-6-column-2">
             <div id="main-2">
@@ -69,9 +71,11 @@
     
     <div id="main-7">
         <div class="main-7-line">
-            <div class="main-7-line-main" style="flex-basis: 18%;">Тур</div>
-            <div class="main-7-line-main" style="flex-basis: 30%;">Тоскана</div>
-            <div class="main-7-line-main main-7-line-main-right">02.02.2020-10.02.2020</div>
+            <div class="main-7-line-main">1</div>
+            <div class="main-7-line-main" style="flex-grow: 1">Тур "Тоскана"</div>
+            <select class="main-7-line-main main-7-line-main-right">
+                <option>02.02.2020-10.02.2020</option>
+            </select>
             <div class="main-7-line-main main-7-line-main-right">151 905 руб.</div>
             <div class="main-7-line-extra">
                 <img src="images/icon_lko_edit.svg" class="main-7-line-extra-edit">
@@ -79,9 +83,12 @@
             </div>
         </div>
         <div class="main-7-line main-7-line-grey">
-            <div class="main-7-line-main" style="flex-basis: 18%;">Тур</div>
-            <div class="main-7-line-main" style="flex-basis: 30%;">Сицилия</div>
-            <div class="main-7-line-main main-7-line-main-right">02.02.2020-10.02.2020</div>
+            <div class="main-7-line-main">2</div>
+            <div class="main-7-line-main" style="flex-grow: 1">Тур "Сицилия"</div>
+            <select class="main-7-line-main main-7-line-main-right">
+                <option>02.02.2020-10.02.2020</option>
+                <option>15.02.2020-18.02.2020</option>
+            </select>
             <div class="main-7-line-main main-7-line-main-right">123 560 руб.</div>
             <div class="main-7-line-extra">
                 <img src="images/icon_lko_edit.svg" class="main-7-line-extra-edit">
@@ -89,20 +96,12 @@
             </div>
         </div>
         <div class="main-7-line">
-            <div class="main-7-line-main" style="flex-basis: 18%;">Экскурсия</div>
-            <div class="main-7-line-main" style="flex-basis: 30%;">Удовольствия по-тоскански</div>
-            <div class="main-7-line-main main-7-line-main-right">02.02.2020-10.02.2020</div>
+            <div class="main-7-line-main">3</div>
+            <div class="main-7-line-main" style="flex-grow: 1">Экскурсия "Удовольствия по-тоскански"</div>
+            <select class="main-7-line-main main-7-line-main-right">
+                <option>15.02.2020-18.02.2020</option>
+            </select>
             <div class="main-7-line-main main-7-line-main-right">18 400 руб.</div>
-            <div class="main-7-line-extra">
-                <img src="images/icon_lko_edit.svg" class="main-7-line-extra-edit">
-                <img src="images/icon_lko_delete.svg" class="main-7-line-extra-delete">
-            </div>
-        </div>
-        <div class="main-7-line main-7-line-grey">
-            <div class="main-7-line-main" style="flex-basis: 18%;">Тур</div>
-            <div class="main-7-line-main" style="flex-basis: 30%;">Сицилия</div>
-            <div class="main-7-line-main main-7-line-main-right">02.02.2020-10.02.2020</div>
-            <div class="main-7-line-main main-7-line-main-right">123 560 руб.</div>
             <div class="main-7-line-extra">
                 <img src="images/icon_lko_edit.svg" class="main-7-line-extra-edit">
                 <img src="images/icon_lko_delete.svg" class="main-7-line-extra-delete">
@@ -160,7 +159,7 @@
        <div id="profile-edit-head">Редактировать</div>
        <img src="images/icon_lko_popup_close.svg" class="profile-edit-main-close">
        <div id="profile-edit-columns">
-       <div class="profile-edit-column">
+       <div class="profile-edit-column" style="flex-basis: 30%;">
             <img src="images/icon_upload.svg" id="profile-edit-3" data-title="Загрузите логотип или фото">
             <form enctype="multipart/form-data" method="post" style="display: none;">
                 <p><input type="file" name="f" class="profile-edit-3-upload">
@@ -195,20 +194,13 @@
                 </div>
 
             </div> 
+            <div id="profile-edit-line-7">Сохранить</div>
         </div>
-        <div class="profile-edit-column">
-            <div id="profile-edit-line-1">
+        <div class="profile-edit-column" style="flex-basis: 70%;">
+            <div id="profile-edit-line-1" style="padding: 0; justify-content: flex-start;">
                 <div id="profile-edit-1">
                     <div id="profile-edit-1-1">Название / Имя организатора</div>
                     <input id="profile-edit-1-2" value="Gastrotravel.club">
-                </div>
-                <div id="profile-edit-2">
-                    <div id="profile-edit-2-1">Тип деятельности</div>
-                    <select id="profile-edit-2-2">
-                        <option selected>Туроператор</option>
-                        <option></option>
-                        <option></option>
-                    </select>
                 </div>
 
             </div>
@@ -238,10 +230,9 @@
             
 
             
-            <span style="width: 100%"></span>
-            <div id="profile-edit-line-7">Сохранить</div>
-        </div>
             
+        </div>
+ 
         </div>
         </div>  
 </div>
@@ -258,11 +249,34 @@
             </form> 
             <input class="tour-edit-grid-s-1" placeholder="Название">
             <textarea class="tour-edit-grid-s-2" placeholder="Описание"></textarea>
-            <input class="tour-edit-grid-s-1" placeholder="Страна">
-            <input class="tour-edit-grid-s-1" placeholder="Город">
+            <div id="profile-edit-line-2-1">Страны</div>
+            <select class="tour-edit-grid-s-1" placeholder="Страна" multiple size="1">
+                <option>Страна 1</option>
+                <option>Страна 2</option>
+                <option>Страна 3</option>
+                
+            </select>
+            <div id="profile-edit-line-2-1">Города</div>
+            <select class="tour-edit-grid-s-1" placeholder="Город" multiple size="1">
+                <option>Город 1</option>
+                <option>Город 2</option>
+                <option>Город 3</option>
+            </select>
             <input class="tour-edit-grid-s-1" placeholder="Места">
-            <input class="tour-edit-grid-s-1" placeholder="Туристы">
-            <input class="tour-edit-grid-s-1" placeholder="Нагрузка">
+            <select class="tour-edit-grid-s-1" placeholder="Туристы">
+                <option value="" disabled selected style='display:none;'>Туристы</option>
+                <option>Взрослые</option>
+                <option>Пенсионеры</option>
+                <option>С детьми</option>
+                <option>С ограничениями</option>
+                <option>Индивидуальные</option>
+            </select>
+            <select class="tour-edit-grid-s-1" placeholder="Нагрузка">
+                <option value="" disabled selected style='display:none;'>Нагрузка</option>
+                <option>Малая</option>
+                <option>Средняя</option>
+                <option>Высокая</option>
+            </select>
             <select class="tour-edit-grid-s-1" placeholder="Язык">
                 <option value="" disabled selected style='display:none;'>Язык</option>
                 <option>RU</option>
@@ -271,15 +285,46 @@
                 <option>FR</option>
                 <option>CN</option>
             </select>
+            <div id="profile-edit-line-2-1">В стоимость входит</div>
+            <select class="tour-edit-grid-s-1" multiple size="1">
+                <option>Вода в бутылках</option>
+            </select>
+            <div id="profile-edit-line-2-1">В стоимость не входит</div>
+            <select class="tour-edit-grid-s-1" multiple size="1">
+                <option>Билеты за музей</option>
+            </select>
+            <div class="tour-edit-grid-s-3"><img src="images/icon_download.svg" style="margin-right: 10px;">Загрузить программу тура</div>
             <div id="profile-edit-line-8">Сохранить</div>
         </div>
         <div id="tour-edit-grid-r">
-            <input class="tour-edit-grid-s-1" placeholder="Продолжительность">
-            <input class="tour-edit-grid-s-1" type="date">
-            <span id="tour-edit-grid-s-1-more-dates"></span>
+            
+            <div class="tour-edit-grid-r-d-line">
+                <div class="tour-edit-grid-r-d-line-1">№</div>
+                <div class="tour-edit-grid-r-d-line-2">Начало</div>
+                <div class="tour-edit-grid-r-d-line-3">Время</div>
+                <div class="tour-edit-grid-r-d-line-4">Окончание</div>
+                <div class="tour-edit-grid-r-d-line-5">Время</div>
+                <div class="tour-edit-grid-r-d-line-6">Цена</div>
+                <div class="tour-edit-grid-r-d-line-7">Валюта</div>
+            </div>
+            <div class="tour-edit-grid-r-d-line">
+                <div class="tour-edit-grid-r-d-line-1">1</div>
+                <input class="tour-edit-grid-r-d-line-2" type="date">
+                <input class="tour-edit-grid-r-d-line-3" type="time">
+                <input class="tour-edit-grid-r-d-line-4" type="date">
+                <input class="tour-edit-grid-r-d-line-5" type="time">
+                <input class="tour-edit-grid-r-d-line-6">
+                <select class="tour-edit-grid-r-d-line-7">
+                    <option>&#8381;</option>
+                    <option>&#36;</option>
+                    <option>&euro;</option>
+                </select>
+
+            </div>
+            <span id="tour-edit-grid-s-1-more-dates">
+                
+            </span>
             <div id="tour-edit-grid-s-1-add"><img src="images/icon_add.png" class="tour-edit-grid-s-1-add"></div>
-            <input class="tour-edit-grid-s-1" placeholder="Цена">
-            <div class="tour-edit-grid-s-3"><img src="images/icon_download.svg" style="margin-right: 10px;">Загрузить программу тура</div>
         </div>
     </div>
     </div>        

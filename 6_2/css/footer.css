@@ -85,10 +85,10 @@ background: rgb(255, 255, 255);
 }
 img
 {
-    image-rendering: crisp-edges;
+image-rendering: crisp-edges;
 }
 .href-none
 {
-    text-decoration: none;
-    color: inherit;
+text-decoration: none;
+color: inherit;
 }

@@ -37,8 +37,8 @@ var footer = new Vue({
     <img src="images/icon_vk.png" class="footer-r-icons">
     <img src="images/icon_instagram.png" class="footer-r-icons">
     <div id="main-bottom">
-    <img src="images/icon_share.png" class="main-bottom-icon">
-    <img src="images/icon_menu.png" class="main-bottom-icon">
+    <img src="images/icon_share.svg" class="main-bottom-icon">
+    <img src="images/icon_menu.svg" class="main-bottom-icon">
     
     </div>
     <div id="main-bottom-icon-menu">
@@ -55,7 +55,7 @@ var reg = new Vue({
      data: {
       reg: `<div class="form__wrapper">
     
-   <form id="register" action="#">
+   <form id="register" action="#" method="POST">
 <div id="reg-close-bg"><img src="images/icon_cross.png" class="reg-close"></div>
       <h1 style="display: flex; justify-content: center; with: 100%;">Регистрация</h1>
       <div class="fields">

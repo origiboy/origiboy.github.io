@@ -96,16 +96,18 @@ function isOverflowed(el) {
 }
 function tag_adding(type, elem)
 {
+    data_place=elem.attr("data-tabletype");
+    data_key=elem.attr("data-primarykey");
     if (type==1) {
         
         if(tags_count < 14) {
-            $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)"><span>'+elem.html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
+            $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)" data-tabletype="' +data_place+ '" data-primarykey="' +data_key+ '"><span>'+elem.html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
             tags_count++;
         }
     } else {
         
         if(tags_count < 14) {
-            $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)"><span>'+elem.children('.main-block-2-r-block-point-text').html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
+            $("#main-search-tags").append('<div class="main-search-tag" onclick="tag_delete(this)" data-tabletype="' +data_place+ '" data-primarykey="' +data_key+ '"><span>'+elem.children('.main-block-2-r-block-point-text').html()+'</span><img class="main-search-tag-cross" src="images/icon_cross.png"></div>');
         tags_count++;
         }
     }

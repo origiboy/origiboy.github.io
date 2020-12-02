@@ -44,7 +44,7 @@ $(document).ready(function()
             $(".main-results-filter-lang-open").css("transform", "rotate(45deg)");
             $( "#popup-lang" ).css("top", $( ".main-results-filter-lang-open" ).offset().top+$( ".main-results-filter-lang-open" ).height()+20);
             $( "#popup-lang" ).css("left", $( ".main-results-filter-lang-open" ).offset().left+$( ".main-results-filter-lang-open" ).width()-$( "#popup-lang" ).width()-10);
-            $( "#popup-lang" ).css("display", "inline-block");
+            $( "#popup-lang" ).css("display", "flex");
         } else {
             flag_lang=0;
             $(".main-results-filter-lang-open").css("transform", "rotate(0deg)");
