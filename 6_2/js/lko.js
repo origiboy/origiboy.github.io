@@ -1,6 +1,8 @@
 var count = 1;
 $(document).ready(function()
 {
+    $('.input-multiple').multipleSelect();
+    
     $("#header-user").css("display", "none");
     $("#profile-edit-3").click(function(){
         $(".profile-edit-3-upload").click();
@@ -15,6 +17,7 @@ $(document).ready(function()
    
     $('#main-1-r-edit').click(function() {
         $('#profile-edit').css("display", "flex");
+        $("#profile-edit").height($(document).height());
     });
     $('.main-7-line').mouseover(function() {
         $(this).css("border", "1px solid #2D9CDB");
@@ -33,9 +36,11 @@ $(document).ready(function()
     });
     $(".main-7-line-extra-edit").click(function() {
         $('#tour-edit').css("display", "flex");
+        $("#tour-edit").height($(document).height());
     });
     $("#main-7-button").click(function() {
         $('#tour-edit').css("display", "flex");
+        $("#tour-edit").height($(document).height());
     });
     $("#tour-edit-3").click(function(){
         $(".tour-edit-3-upload").click();
@@ -60,4 +65,8 @@ $(document).ready(function()
     });
     
     
+});
+$(window).resize(function(){
+    $("#tour-edit").height($(document).height());
+    $("#profile-edit").height($(document).height());
 });

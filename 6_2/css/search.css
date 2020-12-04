@@ -179,7 +179,7 @@ outline: none;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-width: 600px;
+width: 100%;
 height: auto;
 margin-left: 50px;
 }

@@ -1,11 +1,7 @@
 var header = new Vue({
         el: '#header',
      data: {
-      header: `<div id="header-burger">
-      <div class="header-burger-1"></div>
-      <span class="header-burger-2"></span>
-      <span class="header-burger-3"></span>
-    </div>
+      header: `
     <div id="header-right">
       <div class="main-results-filter-lang-point lang-point-added" data-lang="RU">RU</div>
       <div id="header-heart"></div>
@@ -16,12 +12,18 @@ var header = new Vue({
         
       </div>
     <img id="header-logo" src="images/logo.png">
-<div id="menu" class="popup-scroll">
+<div id="menu-bg">
+<div id="header-burger">
+      <div class="header-burger-1"></div>
+      <span class="header-burger-2"></span>
+      <span class="header-burger-3"></span>
+    </div>
+<div id="menu">
   <a href="#" class="menu-line">Места</a>
   <a href="#" class="menu-line">События</a>
   <a href="#" class="menu-line">Туры и экскурсии</a>
   <a href="#" class="menu-line">Организаторы</a>
-</div>`
+</div></div>`
    }
 });
 var footer = new Vue({

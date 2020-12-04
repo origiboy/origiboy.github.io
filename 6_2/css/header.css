@@ -5,10 +5,8 @@ min-width: 1200px;
 #menu
 {
 display: none;
-z-index: 99;
-position: absolute;
-top: 80px;
-left: 16%;
+position: relative;
+top: 10px;
 padding: 10px;
 box-sizing: border-box;
 width: 300px;
@@ -45,6 +43,12 @@ border-bottom: 1px solid rgb(185, 185, 185);
 padding-left: 16%;
 padding-right: 16%;
 box-sizing: border-box;
+}
+#menu-bg
+{
+    position: absolute;
+    top: 39px;
+    left: 16%;
 }
 #header-burger
 {

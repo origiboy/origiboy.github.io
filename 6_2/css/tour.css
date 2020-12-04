@@ -142,7 +142,7 @@ box-sizing: border-box;
 display: flex;
 flex-wrap: wrap;
 width: 100%;
-margin-top: 40px;
+margin-top: 10px;
 }
 .main-desc-l-tag
 {
@@ -178,10 +178,12 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 margin-bottom: 20px;
+    margin-top: 20px;
 }
 #main-desc-r-icon-d
 {
 width: 20px;
+    margin-right: 20px;
 }
 #main-desc-r-icon-d:hover
 {

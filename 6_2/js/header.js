@@ -94,6 +94,10 @@ jQuery(function($) {
     $(".ath-close").click(function(){
         $("#ath").css("display", "none");
     });
+    $("#menu-bg").mouseleave(function(){
+        $("#menu").css("display", "none");
+        flag_menu=0;
+    });
    
     
     
