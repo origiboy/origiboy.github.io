@@ -81,6 +81,11 @@ body
     display: flex;
     width: auto;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+>>>>>>> parent of d5ba752... first version
 }
 .header__nav
 {
@@ -212,7 +217,7 @@ body
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
-    line-height: 100%;
+    line-height: 72px;
     overflow: hidden;
 }
 .screen__second__wrapper
@@ -345,6 +350,7 @@ color: #000000;
 }
 .screen__third__date-1
 {
+    
     color: #114C82;
 }
 .screen__third__date-2
@@ -387,149 +393,4 @@ color: #000000;
     font-size: 24px;
     line-height: 24px;
     text-align: justify;
-}
-
-@media (max-width: 1200px) 
-{ 
-    .screen__third__block
-    {
-        height: 200px; 
-    }
-}
-@media (max-width: 900px) 
-{ 
-    .screen__third__block
-    {
-        height: 160px; 
-    }
-    .header__nav
-    {
-        font-size: 18px;
-        line-height: 18px;
-        width: 100%;
-        padding-left: 0;
-    }
-    .header__lang
-    {
-        display: flex;
-        font-family: Muller;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 18px;
-        color: #000000;
-        margin-top: 20px;
-        margin-left: 0;
-    }
-    .header__nav__wrapper
-    {
-        flex-wrap: wrap;
-    }
-    .header__nav__border
-    {
-        display: none;
-    }
-    .screen__1
-    {
-        font-size: 20px;
-    }
-    .screen__second__wrapper
-    {
-        flex-wrap: wrap;
-    }
-    .screen__second__left, .screen__second__right
-    {
-        flex-basis: 100%;
-        position: static;
-        padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-    font-family: Muller;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 100%;
-    text-align: justify;
-    }
-    .screen__second__right
-    {
-        margin-top: 30px;
-    }
-    .screen__3
-    {
-        flex-wrap: wrap;
-    }
-    .screen__third__block
-    {
-        position: static;
-        display: flex;
-
-        width: 100%;
-        height: 10%; 
-    }
-    .screen__fourth__wrapper
-{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    box-sizing: border-box;
-    
-}
-.screen__fourth__left
-{
-    flex-basis: 100%;
-    height: 50%;
-    
-    
-}
-.screen__fourth__right
-{
-    flex-basis: 100%;
-    height: 50%;
-    padding-left: 0;
-}
-    #name
-{
-    z-index: 90;
-    position: fixed;
-    left: 22px;
-    bottom: 31px;
-    font-family: Muller;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    color: #000000;
-}
-#date
-{
-    z-index: 90;
-    position: fixed;
-    bottom: 19px;
-    right: 44px;
-    display: flex;
-    align-items: center;
-    font-family: Muller;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 12px;
-    text-align: center;
-    color: #000000;
-}
-#date__big
-{
-    margin-left: 8px;
-    font-family: Muller;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-}
-    
 }

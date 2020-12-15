@@ -131,9 +131,12 @@ $(document).ready(function() {
         header_animation_border( $(".header__nav").eq(3));
         $('html, body').animate({ scrollTop: 3 * $(window).height() }, 600, function(){ nav_animation_inp = 0; }); 
     });
-    $(".header__lang__block").eq(0).click(function() {
+    $(".header__lang__block").click(function() {
+        if (lang == 0) {
+            alert ("Реактивное изменение языка на EN");
             $(".header__lang__block").eq(0).addClass("header__lang-click");
             $(".header__lang__block").eq(1).removeClass("header__lang-click");
+<<<<<<< HEAD
             
             app_1.content_0 = content_en[0];
             app_1.content_1 = content_en[1];
@@ -200,6 +203,15 @@ $(document).ready(function() {
     }
         
         
+=======
+            lang = 1;
+        } else {
+            alert ("Реактивное изменение языка на PT");
+            $(".header__lang__block").eq(1).addClass("header__lang-click");
+            $(".header__lang__block").eq(0).removeClass("header__lang-click");
+            lang = 0;
+        }
+>>>>>>> parent of d5ba752... first version
     });
     
     
@@ -311,6 +323,7 @@ screen_3_animation($(".screen__third__block").eq(0));
 $(window).scroll(function(){ 
     $(".background__letters").eq(0).offset({top: $(window).scrollTop()*0.5});
     
+<<<<<<< HEAD
     
     if ($(window).scrollTop() >= $(window).height() * 2 && screen_3_flag == 0) {
         screen_3_animation($(".screen__third__block").eq(0));
@@ -318,6 +331,10 @@ $(window).scroll(function(){
         screen_3_animation($(".screen__third__block").eq(2));
         screen_3_animation($(".screen__third__block").eq(3));
         screen_3_flag = 1;
+=======
+    if ($(window).scrollTop() >= $(window).height()/2 && $(window).scrollTop() < $(window).height()) {
+        screen_2_block_animation($(window).scrollTop());
+>>>>>>> parent of d5ba752... first version
     }
     
     if ($(window).scrollTop() < $(window).height() && nav_animation_inp == 0) {
@@ -340,6 +357,7 @@ $(window).scroll(function(){
 var header_nav_choosen = 0, 
     lang = 0; /* 0 - PT, 1 - EN */
 
+<<<<<<< HEAD
 var screen_3_flag = 0;
 
 let content_pt = new Array();
@@ -389,66 +407,14 @@ content_en[10] = `Joana Monteiro`;
 content_en[11] = `Joana is a graphic designer, art director. Through her work one can recognize a passion for typography. She uses and mixes different techniques to build graphic images.`;
 content_en[12] = `Miguel Soares`;
 content_en[13] = `Has degree in Equipment Design in Lisbon. He worked as an assistant professor in Visual Arts Bachelor program in Faro, in the Master program in Design and Multimedia and in the Integrated Master program in Architecture in Coimbra. He participated in many individual and group exhibitions.
-
-`;
-content_en[14] = `Rui Abreu`;
-content_en[15] = `Rui Abreu, founder of R-Typography (type foundry). Rui became interested in type during his student years. His past professional experience includes working in advertising agencies and publishing fonts, both independently and with other foundries.
-`;
-content_en[16] = `Susana Carvalho`;
-content_en[17] = `Susana is one of the founders of Atelier Carvalho Bernau, a design studio. The studio develops book and editorial design, typography, typeface design, web and interaction design, concept development and content strategy and research. Susana also teaches graphic design in the Graphic Design BA course at the Royal Academy of Arts.
-`;
+=======
+>>>>>>> parent of d5ba752... first version
 
 
-var app_1 = new Vue({
-  el: '#header',
-  data: {
-    content_0: content_pt[0],
-    content_1: content_pt[1],
-    content_2: content_pt[2],
-    content_3: content_pt[3]
-  }
-});
 
-var app_2 = new Vue({
+var app = new Vue({
   el: '#name',
   data: {
-    content_4: content_pt[4]
+    message: 'Привет, Vue!'
   }
-});
-
-var app_3 = new Vue({
-  el: '#date',
-  data: {
-    content_5: content_pt[5]
-  }
-});
-
-var app_4 = new Vue({
-  el: '.screen__1',
-  data: {
-    content_6: content_pt[6],
-    content_7: content_pt[7]
-  }
-});
-
-var app_5 = new Vue({
-  el: '.screen__second__wrapper',
-  data: {
-    content_8: content_pt[8],
-    content_9: content_pt[9]
-  }
-});
-
-var app_6 = new Vue({
-  el: '.screen__3',
-  data: {
-    content_10: content_pt[10],
-    content_11: content_pt[11],
-    content_12: content_pt[12],
-    content_13: content_pt[13],
-    content_14: content_pt[14],
-    content_15: content_pt[15],
-    content_16: content_pt[16],
-    content_17: content_pt[17]    
-  }
-});
+})
