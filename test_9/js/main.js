@@ -54,12 +54,14 @@ function screen_1_animation_extra(e) {
     let left_base = e.position().left;
     let top_base = e.position().top;
     let a_l = left_base + Math.abs(part_1 * $(window).width() * 10 / 100);
-    let a_t = top_base + Math.sqrt(Math.pow(($(window).width() * 10 / 100), 2) - Math.pow((part_1 * $(window).width() * 10 / 100), 2));
+    let a_t = top_base + top_minus * Math.sqrt(Math.pow(($(window).width() * 10 / 100), 2) - Math.pow((part_1 * $(window).width() * 10 / 100), 2));
     if (a_t < 0) {
-        alert(1);
+        
         a_t = Math.abs(a_t - top_base) + top_base ;
     }
-
+    if (a_t > $(window).height() * 0.5) {
+        a_t = -Math.abs(a_t - top_base) + top_base ;
+    }
     
     e.css("top", a_t);
     e.css("left", a_l);
