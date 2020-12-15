@@ -1,3 +1,5 @@
+var nav_animation_inp = 0;
+
 function header_animation_border(e) {
     let left = e.offset().left + 44, width = e.outerWidth();
     header_nav_choosen = e.index(".header__nav");
@@ -5,138 +7,129 @@ function header_animation_border(e) {
 }
 
 
-/* Анимация движения первой буквы */
+/* Анимация движения букв */
 
-function screen_1_animation_1() {
+function screen_1_animation(e) {
     let part_1 = (Math.random() * (1 - (-1))) + (-1);
     let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = -5/100 * $(window).width();
-    let top_base = -6/100 * $(window).height();
-    
-    let a_t = top_base + part_1 * $(window).height() * 2 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 2 / 100;
-    
-    $(".background__letter__c").css("top", a_t);
-    $(".background__letter__c").css("left", a_l);
-    setTimeout(screen_1_animation_1, 2000);   
+    if (part_2 >= 0) {
+        top_minus = -1;
+    } else {
+        top_minus = 1;
+    }
+    if (part_1 >= 0) {
+        left_minus = -1;
+    } else {
+        left_minus = 1;
+    }
+    let left_base = e.position().left;
+    let top_base = e.position().top;
+    let a_l = left_base + Math.abs(part_1 * $(window).width() * 10 / 100);
+    let a_t = top_base + Math.sqrt(Math.pow(($(window).width() * 10 / 100), 2) - Math.pow((part_1 * $(window).width() * 10 / 100), 2));
+    if ((a_t + e.height()) >= $(window).height() * 1 ) {
+        top_minus = -1;
+    }
+    a_t = (a_t - top_base) * top_minus + top_base;
+    a_l = (a_l - left_base) * left_minus + left_base;
+    e.css("top", a_t);
+    e.css("left", a_l);
+    setTimeout(screen_1_animation, 6000, e);   
 }
 
-/* Анимация движения второй буквы */
+/* Анимация движения букв extra*/
 
-function screen_1_animation_2() {
+function screen_1_animation_extra(e) {
     let part_1 = (Math.random() * (1 - (-1))) + (-1);
     let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = 12/100 * $(window).width();
-    let top_base = 15/100 * $(window).height();
+    if (part_2 >= 0) {
+        top_minus = -1;
+    } else {
+        top_minus = 1;
+    }
+    if (part_1 >= 0) {
+        left_minus = -1;
+    } else {
+        left_minus = 1;
+    }
+    let left_base = e.position().left;
+    let top_base = e.position().top;
+    let a_l = left_base + Math.abs(part_1 * $(window).width() * 10 / 100);
+    let a_t = top_base + Math.sqrt(Math.pow(($(window).width() * 10 / 100), 2) - Math.pow((part_1 * $(window).width() * 10 / 100), 2));
+    if (a_t < 0) {
+        alert(1);
+        a_t = Math.abs(a_t - top_base) + top_base ;
+    }
+
     
-    let a_t = top_base + part_1 * $(window).height() * 2 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 2 / 100;
-    
-    $(".background__letter__d").css("top", a_t);
-    $(".background__letter__d").css("left", a_l);
-    setTimeout(screen_1_animation_2, 2000);   
+    e.css("top", a_t);
+    e.css("left", a_l);
+    setTimeout(screen_1_animation_extra, 6000, e);   
 }
 
-/* Анимация движения третьей буквы */
 
-function screen_1_animation_3() {
+
+/* Анимация движения инициалов */
+
+function screen_3_animation(e) {
     let part_1 = (Math.random() * (1 - (-1))) + (-1);
     let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = 50/100 * $(window).width();
-    let top_base = -6/100 * $(window).height();
-    
-    let a_t = top_base + part_1 * $(window).height() * 2 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 2 / 100;
-    
-    $(".background__letter__m").css("top", a_t);
-    $(".background__letter__m").css("left", a_l);
-    setTimeout(screen_1_animation_3, 2000);    
+    if (part_1 <= 0) {
+        left_minus = -1;
+    } else {
+        left_minus = 1;
+    }
+    if (part_2 <= 0) {
+        top_minus = -1;
+    } else {
+        top_minus = 1;
+    }
+    let left_base = e.position().left;
+    let top_base =  e.position().top;
 
+    let a_l = left_base + part_1 * $(window).width() * 10 / 100;
+    let a_t = top_base + top_minus * Math.sqrt(Math.pow(($(window).width() * 10 / 100), 2) - Math.pow((part_1 * $(window).width() * 10 / 100), 2));
+    
+    if ((a_t + e.height()) >= $(window).height() ) {
+        a_t = Math.abs(a_t - top_base) * (-1) + top_base ;
+    } else if (a_t < 0) {
+        a_t = Math.abs(a_t - top_base) + top_base ;
+    }
+
+    if ((a_l + e.width()) >= $(window).width() ) {
+        a_l =  Math.abs(a_l - left_base) * (-1) + left_base ;
+    } else if (a_l < 0) {
+        a_l =  Math.abs(a_l - left_base) + left_base ;
+    }
+    
+    
+    e.css("top", a_t);
+    e.css("left", a_l);
+    setTimeout(screen_3_animation, 6000, e);   
 }
 
-/* Анимация появления блоков с текстом */
 
-function screen_2_block_animation(a) {
-    let scroll = (a - $(window).height()/2) / ($(window).height()/2);
-    $(".screen__second__left").css("opacity", 1 * scroll);
-    $(".screen__second__left").css("right", 150 - 150 * scroll);
-    
-    $(".screen__second__right").css("opacity", 1 * scroll);
-    $(".screen__second__right").css("left", 150 - 150 * scroll);
-}
-
-/* Анимация движения первых инициалов */
-
-function screen_3_animation_1() {
-    let part_1 = (Math.random() * (1 - (-1))) + (-1);
-    let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = 0/100 * $(window).width();
-    let top_base = 40/100 * $(window).height();
-    
-    let a_t = top_base + part_1 * $(window).height() * 1 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 1 / 100;
-    
-    $(".screen__third__block").eq(0).css("top", a_t);
-    $(".screen__third__block").eq(0).css("left", a_l);
-    setTimeout(screen_3_animation_1, 2000);   
-}
-function screen_3_animation_2() {
-    let part_1 = (Math.random() * (1 - (-1))) + (-1);
-    let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = 15/100 * $(window).width();
-    let top_base = 10/100 * $(window).height();
-    
-    let a_t = top_base + part_1 * $(window).height() * 1 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 1 / 100;
-    
-    $(".screen__third__block").eq(1).css("top", a_t);
-    $(".screen__third__block").eq(1).css("left", a_l);
-    setTimeout(screen_3_animation_2, 2000);   
-}
-function screen_3_animation_3() {
-    let part_1 = (Math.random() * (1 - (-1))) + (-1);
-    let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = 48/100 * $(window).width();
-    let top_base = 20/100 * $(window).height();
-    
-    let a_t = top_base + part_1 * $(window).height() * 1 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 1 / 100;
-    
-    $(".screen__third__block").eq(2).css("top", a_t);
-    $(".screen__third__block").eq(2).css("left", a_l);
-    setTimeout(screen_3_animation_3, 2000);   
-}
-function screen_3_animation_4() {
-    let part_1 = (Math.random() * (1 - (-1))) + (-1);
-    let part_2 = (Math.random() * (1 - (-1))) + (-1);
-    let left_base = 40/100 * $(window).width();
-    let top_base = 70/100 * $(window).height();
-    
-    let a_t = top_base + part_1 * $(window).height() * 1 / 100;
-    let a_l = left_base + part_2 * $(window).width() * 1 / 100;
-    
-    $(".screen__third__block").eq(3).css("top", a_t);
-    $(".screen__third__block").eq(3).css("left", a_l);
-    setTimeout(screen_3_animation_4, 2000);   
-}
 
 $(document).ready(function() {
 
     $(".header__nav").eq(0).click(function() {
-        $('html, body').animate({ scrollTop: 0* $(window).height() }, 600); 
-        setTimeout(header_animation_border, 600, $(".header__nav").eq(0));
+        nav_animation_inp = 1;
+        header_animation_border( $(".header__nav").eq(0));
+        $('html, body').animate({ scrollTop: 0* $(window).height() }, 600, function(){ nav_animation_inp = 0; }); 
     });
     $(".header__nav").eq(1).click(function() {
-        $('html, body').animate({ scrollTop: 1 * $(window).height() }, 600);
-        setTimeout(header_animation_border, 6, $(".header__nav").eq(1), 100);
+        nav_animation_inp = 1;
+        header_animation_border( $(".header__nav").eq(1));
+        $('html, body').animate({ scrollTop: 1 * $(window).height() }, 600, function(){ nav_animation_inp = 0; }); 
     });
     $(".header__nav").eq(2).click(function() {
-        $('html, body').animate({ scrollTop: 2 * $(window).height() }, 600);
-        setTimeout(header_animation_border, 6, $(".header__nav").eq(2), 100);
+        nav_animation_inp = 1;
+        header_animation_border( $(".header__nav").eq(2));
+        $('html, body').animate({ scrollTop: 2 * $(window).height() }, 600, function(){ nav_animation_inp = 0; }); 
     });
     $(".header__nav").eq(3).click(function() {
-        $('html, body').animate({ scrollTop: 3 * $(window).height() }, 600);
-        setTimeout(header_animation_border, 6, $(".header__nav").eq(3), 100);
+        nav_animation_inp = 1;
+        header_animation_border( $(".header__nav").eq(3));
+        $('html, body').animate({ scrollTop: 3 * $(window).height() }, 600, function(){ nav_animation_inp = 0; }); 
     });
     $(".header__lang__block").eq(0).click(function() {
             $(".header__lang__block").eq(0).addClass("header__lang-click");
@@ -162,7 +155,15 @@ $(document).ready(function() {
             app_6.content_17 = content_en[17];
         
         $(window).scrollTop(0);
-            header_animation_border($(".header__nav").eq(0));
+        if ($(window).scrollTop() < $(window).height() && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(0)), 600);
+    } else if($(window).scrollTop() < $(window).height() * 2 && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(1)), 600);
+    } else if($(window).scrollTop() < $(window).height() * 3 && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(2)), 600);
+    } else if(nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(3)), 600);
+    }
   });
     $(".header__lang__block").eq(1).click(function() {        
             $(".header__lang__block").eq(1).addClass("header__lang-click");
@@ -188,88 +189,113 @@ $(document).ready(function() {
             app_6.content_17 = content_pt[17];
         
         $(window).scrollTop(0);
-        header_animation_border($(".header__nav").eq(0));
+        if ($(window).scrollTop() < $(window).height() && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(0)), 600);
+    } else if($(window).scrollTop() < $(window).height() * 2 && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(1)), 600);
+    } else if($(window).scrollTop() < $(window).height() * 3 && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(2)), 600);
+    } else if(nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(3)), 600);
+    }
+        
+        
     });
     
-    setTimeout(header_animation_border, 50, $(".header__nav").eq(0), 300);
-    screen_1_animation_1();
-    screen_1_animation_2();
-    screen_1_animation_3();
     
-    screen_3_animation_1();
-    screen_3_animation_2();
-    screen_3_animation_3();
-    screen_3_animation_4();
+    if ($(window).scrollTop() < $(window).height() && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(0)), 600);
+    } else if($(window).scrollTop() < $(window).height() * 2 && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(1)), 600);
+    } else if($(window).scrollTop() < $(window).height() * 3 && nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(2)), 600);
+    } else if(nav_animation_inp == 0) {
+        setTimeout(() => header_animation_border($(".header__nav").eq(3)), 600);
+    }
+    setTimeout(() => $('.header__nav__border-inner').eq(0).css('display', 'inline-block'), 600);
+    
+
+    screen_1_animation($(".background__letter__c").eq(0));
+    screen_1_animation($(".background__letter__c__second").eq(0));
+    screen_1_animation($(".background__letter__d").eq(0));
+    screen_1_animation($(".background__letter__m").eq(0));
+    
+    screen_1_animation_extra($(".background__letter__c").eq(1));
+    screen_1_animation_extra($(".background__letter__c__second").eq(1));
+    screen_1_animation_extra($(".background__letter__d").eq(1));
+    screen_1_animation_extra($(".background__letter__m").eq(1));
+    
     
     /* Анимация первых инициалов */
     
-    $(".screen__third__firstblock").mouseover(function(){
-        $(this).children().height("100%");
+    $(".screen__third__firstblock").children(".screen__third__wrapper").mouseover(function(){
+        $(this).css("height", "100%");
         $(".screen__third__block").eq(1).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(2).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(3).children(".screen__third__wrapper").css("height", "30%");
-
+        $(this).children(".screen__third__date").css("font-size", "36px");
     });
-    $(".screen__third__firstblock").click(function(){
-        $(this).children().children(".screen__third__text").css("display", "flex");
+    $(".screen__third__firstblock").children(".screen__third__wrapper").click(function(){
+        $(this).children(".screen__third__text").css("display", "flex");
     });
-    $(".screen__third__firstblock").mouseleave(function(){
+    $(".screen__third__firstblock").children(".screen__third__wrapper").mouseleave(function(){
         $(".screen__third__wrapper").height("50%");
-        $(this).children().children(".screen__third__text").css("display", "none");
+        $(this).children(".screen__third__text").css("display", "none");
+        $(this).children(".screen__third__date").css("font-size", "18px");
     });
     
     /* Анимация вторых инициалов */
     
-    $(".screen__third__secondblock").mouseover(function(){
-        $(this).children().height("100%");
+    $(".screen__third__secondblock").children(".screen__third__wrapper").mouseover(function(){
+        $(this).css("height", "100%");
         $(".screen__third__block").eq(0).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(2).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(3).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(this).children(".screen__third__date").css("font-size", "36px");
     });
-    $(".screen__third__secondblock").click(function(){
-        $(this).children().children(".screen__third__text").css("display", "flex");
+    $(".screen__third__secondblock").children(".screen__third__wrapper").click(function(){
+        $(this).children(".screen__third__text").css("display", "flex");
     });
-    $(".screen__third__secondblock").mouseleave(function(){
+    $(".screen__third__secondblock").children(".screen__third__wrapper").mouseleave(function(){
         $(".screen__third__wrapper").height("50%");
-        $(this).children().children(".screen__third__text").css("display", "none");
-        $(this).children().children(".screen__third__date").css("font-size", "18px");
+        $(this).children(".screen__third__text").css("display", "none");
+        $(this).children(".screen__third__date").css("font-size", "18px");
     });
     
     /* Анимация третьих инициалов */
     
-    $(".screen__third__thirdblock").mouseover(function(){
-        $(this).children().height("100%");
+    $(".screen__third__thirdblock").children(".screen__third__wrapper").mouseover(function(){
+        $(this).css("height", "100%");
         $(".screen__third__block").eq(0).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(1).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(3).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(this).children(".screen__third__date").css("font-size", "36px");
     });
-    $(".screen__third__thirdblock").click(function(){
-        $(this).children().children(".screen__third__text").css("display", "flex");
+    $(".screen__third__thirdblock").children(".screen__third__wrapper").click(function(){
+        $(this).children(".screen__third__text").css("display", "flex");
     });
-    $(".screen__third__thirdblock").mouseleave(function(){
+    $(".screen__third__thirdblock").children(".screen__third__wrapper").mouseleave(function(){
         $(".screen__third__wrapper").height("50%");
-        $(this).children().children(".screen__third__text").css("display", "none");
-        $(this).children().children(".screen__third__date").css("font-size", "18px");
+        $(this).children(".screen__third__text").css("display", "none");
+        $(this).children(".screen__third__date").css("font-size", "18px");
     });
     
     /* Анимация четвертых инициалов */
     
-    $(".screen__third__fourthblock").mouseover(function(){
-        $(this).children().height("100%");
+    $(".screen__third__fourthblock").children(".screen__third__wrapper").mouseover(function(){
+        $(this).css("height", "100%");
         $(".screen__third__block").eq(0).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(1).children(".screen__third__wrapper").css("height", "30%");
         $(".screen__third__block").eq(2).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(this).children(".screen__third__date").css("font-size", "36px");
     });
-    $(".screen__third__fourthblock").click(function(){
-        $(this).children().children(".screen__third__text").css("display", "flex");
+    $(".screen__third__fourthblock").children(".screen__third__wrapper").click(function(){
+        $(this).children(".screen__third__text").css("display", "flex");
     });
-    $(".screen__third__fourthblock").mouseleave(function(){
+    $(".screen__third__fourthblock").children(".screen__third__wrapper").mouseleave(function(){
         $(".screen__third__wrapper").height("50%");
-        $(this).children().children(".screen__third__text").css("display", "none");
-        $(this).children().children(".screen__third__date").css("font-size", "18px");
+        $(this).children(".screen__third__text").css("display", "none");
+        $(this).children(".screen__third__date").css("font-size", "18px");
     });
 });
 
@@ -277,27 +303,30 @@ $(document).ready(function() {
 $(window).resize(function() {
     header_animation_border($(".header__nav").eq(header_nav_choosen), 0);
 });
-
+screen_3_animation($(".screen__third__block").eq(0));
+    screen_3_animation($(".screen__third__block").eq(1));
+    screen_3_animation($(".screen__third__block").eq(2));
+    screen_3_animation($(".screen__third__block").eq(3));
 
 $(window).scroll(function(){ 
     $(".background__letters").eq(0).offset({top: $(window).scrollTop()*0.5});
-    $(".background__letters").eq(1).offset({top: $(window).scrollTop()*0.5 + $(window).height()*1.5});
     
-    if ($(window).scrollTop() >= $(window).height()/2 && $(window).scrollTop() < $(window).height()) {
-        
-        if ($(window).width() >= 900)
-            {
-                screen_2_block_animation($(window).scrollTop());
-            }
+    
+    if ($(window).scrollTop() >= $(window).height() * 2 && screen_3_flag == 0) {
+        screen_3_animation($(".screen__third__block").eq(0));
+        screen_3_animation($(".screen__third__block").eq(1));
+        screen_3_animation($(".screen__third__block").eq(2));
+        screen_3_animation($(".screen__third__block").eq(3));
+        screen_3_flag = 1;
     }
     
-    if ($(window).scrollTop() < $(window).height()) {
+    if ($(window).scrollTop() < $(window).height() && nav_animation_inp == 0) {
         header_animation_border($(".header__nav").eq(0));
-    } else if($(window).scrollTop() < $(window).height() * 2) {
+    } else if($(window).scrollTop() < $(window).height() * 2 && nav_animation_inp == 0) {
         header_animation_border($(".header__nav").eq(1));
-    } else if($(window).scrollTop() < $(window).height() * 3) {
+    } else if($(window).scrollTop() < $(window).height() * 3 && nav_animation_inp == 0) {
         header_animation_border($(".header__nav").eq(2));
-    } else {
+    } else if(nav_animation_inp == 0) {
         header_animation_border($(".header__nav").eq(3));
     }
     
@@ -310,6 +339,8 @@ $(window).scroll(function(){
 
 var header_nav_choosen = 0, 
     lang = 0; /* 0 - PT, 1 - EN */
+
+var screen_3_flag = 0;
 
 let content_pt = new Array();
 let content_en = new Array();

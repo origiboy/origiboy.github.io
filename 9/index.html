@@ -6,21 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="fonts/stylesheet.css">
+        <link rel="stylesheet" href="plugins/revealator/fm.revealator.jquery.min.css">
         <style>
 
         </style>
     </head>
     <body id="main">
+       <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+            
+        <script src="plugins/revealator/fm.revealator.jquery.min.js"></script>
         <div id="background">
             <div class="background__letters">
-                <img src="icons/letters/big/C.png" class="background__letter background__letter__c">
-                <img src="icons/letters/big/D.png" class="background__letter background__letter__d">
-                <img src="icons/letters/big/M.png" class="background__letter background__letter__m">
+               <img src="icons/letters/big/c.png" class="background__letter background__letter__c">
+                <img src="icons/letters/big/c.png" class="background__letter background__letter__c__second">
+                <img src="icons/letters/big/d.png" class="background__letter background__letter__d">
+                <img src="icons/letters/big/m.png" class="background__letter background__letter__m">
             </div>
             <div class="background__letters background__letters__second">
-                <img src="icons/letters/big/C.png" class="background__letter background__letter__c">
-                <img src="icons/letters/big/D.png" class="background__letter background__letter__d">
-                <img src="icons/letters/big/M.png" class="background__letter background__letter__m">
+                <img src="icons/letters/big/c.png" class="background__letter background__letter__c">
+                <img src="icons/letters/big/c.png" class="background__letter background__letter__c__second">
+                <img src="icons/letters/big/d.png" class="background__letter background__letter__d">
+                <img src="icons/letters/big/m.png" class="background__letter background__letter__m">
             </div>
         </div>
         <header id="header">
@@ -41,8 +47,8 @@
         <div id="socials__wrapper">
             <div id="socials">
                 <a href="https://www.facebook.com/CicloConversasDesignMultimedia" target="_blank"><img src="icons/facebook.svg" class="socials__block" alt="facebook"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="icons/instagram.svg" class="socials__block" alt="instagram"></a>
-                <a href="#" target="_blank"><img src="icons/twitter.svg" class="socials__block" alt="twitter"></a>
+                <a href="https://www.instagram.com/ucoimbra" target="_blank"><img src="icons/instagram.svg" class="socials__block" alt="instagram"></a>
+                <a href="https://twitter.com/univdecoimbra" target="_blank"><img src="icons/twitter.svg" class="socials__block" alt="twitter"></a>
             </div>
         </div>
         <div id="name">{{content_4}}</div>
@@ -53,10 +59,10 @@
         </div>
         <div class="screen screen__2">
            <div class="screen__second__wrapper">
-                <div class="screen__second__left">
+                <div class="screen__second__left revealator-zoomin revealator-once revealator-below ">
                     {{content_8}}
                 </div>
-                <div class="screen__second__right">
+                <div class="screen__second__right revealator-zoomin revealator-once revealator-below">
                     {{content_9}}
                 </div>
             </div>
@@ -134,9 +140,8 @@
                 </div>
             </div>
         </div>
-        <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="js/main.js"></script>      
+        <script src="js/main.js"></script>  
         
     </body>
 </html>

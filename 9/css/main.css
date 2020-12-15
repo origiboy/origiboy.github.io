@@ -2,7 +2,10 @@ html, body
 {
     margin: 0;
     padding: 0;
-    
+}
+body
+{
+    scroll-behavior: smooth;
 }
 #background
 {
@@ -12,10 +15,12 @@ html, body
     left: 0;
     width: 100%;
     height: 400vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 .background__letters
 {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,26 +34,29 @@ html, body
 .background__letter
 {
     position: absolute;
-    height: 112vh;
-    
+    height: 100vh;
+    transition: all 6s linear;
 }
 .background__letter__c
 {
-    top: -6vh;
-    left: -5vw;
-    transition: all 2s ease;
+    top: 0vh;
+    left: -15vw;
+    
+}
+.background__letter__c__second
+{
+    top: 0vh;
+    left: 5vw;
 }
 .background__letter__d
 {
-    top: 15vh;
-    left: 12vw;
-    transition: all 2s ease;
+    top: 10vh;
+    left: 30vw;
 }
 .background__letter__m
 {
-    top: -6vh;
-    left: 50vw;
-    transition: all 2s ease;
+    top: 10vh;
+    left: 55vw;
 }
 #header
 {
@@ -72,9 +80,7 @@ html, body
 {
     display: flex;
     width: auto;
-    padding: 20px;
     box-sizing: border-box;
-    border-radius: 20px;
 }
 .header__nav
 {
@@ -113,17 +119,16 @@ html, body
     top: 66px;
     width: 100%;
     height: 2px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .header__nav__border-inner
 {
-    position: relative;
-    display: block;
+    position: absolute;
+    display: none;
     left: 0;
     width: 10px;
     height: 2px;
     background: #E36F1A;
+    transition: all 0.6s linear;
 }
 .header__lang-click
 {
@@ -140,7 +145,7 @@ html, body
     position: fixed;
     height: 100vh;
     width: 18px;
-    left: 9px;
+    left: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +226,7 @@ html, body
 .screen__second__left
 {
     position: relative;
-    right: 50%;
+    right: 0%;
     flex-basis: 50%;
     height: 100%;
     max-width: 607px;
@@ -241,7 +246,7 @@ color: #000000;
 .screen__second__right
 {
     position: relative;
-    left: 50%;
+    left: 0%;
     flex-basis: 50%;
     height: 100%;
     max-width: 677px;
@@ -263,7 +268,12 @@ color: #000000;
     justify-content: center;
     align-items: center;
     width: 55%;
-    height: 267px; 
+    height: 25vh; 
+    transition: all 6s linear;
+}
+.screen__third__block:hover
+{
+    cursor: pointer;
 }
 .screen__third__wrapper
 {
@@ -271,29 +281,33 @@ color: #000000;
     height: 50%;
     display: flex;
     align-items: flex-end;
-    transition: all 0.5s ease;
+    transition: all 0.3s linear;
 }
 .screen__third__wrapper:hover{
     cursor: pointer;
 }
 .screen__third__firstblock
 {
+    z-index: 63;
     top: 40%;
     left: 0%;  
-    
+    transition: all 6s linear;
 }
 .screen__third__secondblock
 {
+    z-index: 62;
     top: 10%;
     left: 15%;  
 }
 .screen__third__thirdblock
 {
+    z-index: 61;
     top: 20%;
     left: 48%;  
 }
 .screen__third__fourthblock
 {
+    z-index: 60;
     top: 70%;
     left: 40%;  
 }
@@ -301,14 +315,8 @@ color: #000000;
 {
     height: 100%;
 }
-.screen__third__block
-{
-    transition: all 2s ease;
-}
-.screen__third__block:hover
-{
-    cursor: pointer;
-}
+
+
 .screen__third__text
 {
     display: none;
