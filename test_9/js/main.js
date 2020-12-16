@@ -29,6 +29,16 @@ function screen_1_animation(e) {
     if ((a_t + e.height()) >= $(window).height() * 1 ) {
         top_minus = -1;
     }
+    if ((a_t + e.height()) <= $(window).height() * 0.5 ) {
+        top_minus = 1;
+    }
+    if ((a_l + e.width()) >= $(window).width() * 1.5 ) {
+        left_minus = -1;
+    }
+    if ((a_l + e.width()) <= $(window).width() * 0.5 ) {
+        left_minus = 1;
+    }
+    
     a_t = (a_t - top_base) * top_minus + top_base;
     a_l = (a_l - left_base) * left_minus + left_base;
     e.css("top", a_t);
@@ -55,14 +65,20 @@ function screen_1_animation_extra(e) {
     let top_base = e.position().top;
     let a_l = left_base + Math.abs(part_1 * $(window).width() * 10 / 100);
     let a_t = top_base + top_minus * Math.sqrt(Math.pow(($(window).width() * 10 / 100), 2) - Math.pow((part_1 * $(window).width() * 10 / 100), 2));
-    if (a_t < 0) {
-        
-        a_t = Math.abs(a_t - top_base) + top_base ;
+    if ((a_t + e.height()) >= $(window).height() * 1.5 ) {
+        top_minus = -1;
     }
-    if (a_t > $(window).height() * 0.5) {
-        a_t = -Math.abs(a_t - top_base) + top_base ;
+    if (a_t <=  0 ) {
+        top_minus = 1;
     }
-    
+    if ((a_l + e.width()) >= $(window).width() * 1.5 ) {
+        left_minus = -1;
+    }
+    if ((a_l + e.width()) <= $(window).width() * 0.5 ) {
+        left_minus = 1;
+    }
+    a_t = Math.abs((a_t - top_base)) * top_minus + top_base;
+    a_l = (a_l - left_base) * left_minus + left_base;
     e.css("top", a_t);
     e.css("left", a_l);
     setTimeout(screen_1_animation_extra, 6000, e);   
@@ -227,78 +243,121 @@ $(document).ready(function() {
     screen_1_animation_extra($(".background__letter__d").eq(1));
     screen_1_animation_extra($(".background__letter__m").eq(1));
     
+    if ($(window).scrollTop() >= $(window).height() ) {
+        $(".background__letters").eq(0).css("top", - ($(window).scrollTop() - $(window).height()));
+    } 
+    if ($(window).scrollTop() >= $(window).height() * 2 ) {
+        $(".background__letters").eq(1).css("top", $(window).height() * 3 - $(window).scrollTop() );
+    }
     
+    function screen__third___appear(e)
+    {
+        e.css("display", "inline-block");
+    }
     /* Анимация первых инициалов */
     
-    $(".screen__third__firstblock").children(".screen__third__wrapper").mouseover(function(){
-        $(this).css("height", "100%");
-        $(".screen__third__block").eq(1).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(2).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(3).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children(".screen__third__date").css("font-size", "36px");
+    $(".screen__third__firstblock").mouseover(function(){
+        $(this).children().children(".screen__third__fl").css("width", "10vw");
+        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(".screen__third__wrapper").eq(1).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(1).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(2).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(2).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(3).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(3).children(".screen__third__date").css("font-size", "9px"); 
     });
-    $(".screen__third__firstblock").children(".screen__third__wrapper").click(function(){
-        $(this).children(".screen__third__text").css("display", "flex");
+    $(".screen__third__firstblock").click(function(){
+        $(this).children().children(".screen__third__sc").css("left", "30vw");
+        $(this).children().children(".screen__third__date-1").css("left", "30vw");
+        
+        setTimeout(screen__third___appear, 300, $(this).children().children(".screen__third__text"));
     });
-    $(".screen__third__firstblock").children(".screen__third__wrapper").mouseleave(function(){
-        $(".screen__third__wrapper").height("50%");
-        $(this).children(".screen__third__text").css("display", "none");
-        $(this).children(".screen__third__date").css("font-size", "18px");
+    $(".screen__third__firstblock").mouseleave(function(){
+        $(this).children().children(".screen__third__text").css("display", "none");
+        $(this).children().children(".screen__third__sc").css("left", "0vw");
+        $(this).children().children(".screen__third__date-1").css("left", "0vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
     
     /* Анимация вторых инициалов */
     
-    $(".screen__third__secondblock").children(".screen__third__wrapper").mouseover(function(){
-        $(this).css("height", "100%");
-        $(".screen__third__block").eq(0).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(2).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(3).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children(".screen__third__date").css("font-size", "36px");
+    $(".screen__third__secondblock").mouseover(function(){
+        $(this).children().children(".screen__third__fl").css("width", "10vw");
+        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(".screen__third__wrapper").eq(0).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(0).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(2).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(2).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(3).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(3).children(".screen__third__date").css("font-size", "9px"); 
     });
-    $(".screen__third__secondblock").children(".screen__third__wrapper").click(function(){
-        $(this).children(".screen__third__text").css("display", "flex");
+    $(".screen__third__secondblock").click(function(){
+        $(this).children().children(".screen__third__sc").css("left", "30vw");
+        $(this).children().children(".screen__third__date-1").css("left", "30vw");
+        
+        setTimeout(screen__third___appear, 300, $(this).children().children(".screen__third__text"));
     });
-    $(".screen__third__secondblock").children(".screen__third__wrapper").mouseleave(function(){
-        $(".screen__third__wrapper").height("50%");
-        $(this).children(".screen__third__text").css("display", "none");
-        $(this).children(".screen__third__date").css("font-size", "18px");
+    $(".screen__third__secondblock").mouseleave(function(){
+        $(this).children().children(".screen__third__text").css("display", "none");
+        $(this).children().children(".screen__third__sc").css("left", "0vw");
+        $(this).children().children(".screen__third__date-1").css("left", "0vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
-    
+   
     /* Анимация третьих инициалов */
     
-    $(".screen__third__thirdblock").children(".screen__third__wrapper").mouseover(function(){
-        $(this).css("height", "100%");
-        $(".screen__third__block").eq(0).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(1).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(3).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children(".screen__third__date").css("font-size", "36px");
+    $(".screen__third__thirdblock").mouseover(function(){
+        $(this).children().children(".screen__third__fl").css("width", "10vw");
+        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(".screen__third__wrapper").eq(0).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(0).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(1).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(1).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(3).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(3).children(".screen__third__date").css("font-size", "9px"); 
     });
-    $(".screen__third__thirdblock").children(".screen__third__wrapper").click(function(){
-        $(this).children(".screen__third__text").css("display", "flex");
+    $(".screen__third__thirdblock").click(function(){
+        $(this).children().children(".screen__third__sc").css("left", "30vw");
+        $(this).children().children(".screen__third__date-1").css("left", "30vw");
+        
+        setTimeout(screen__third___appear, 300, $(this).children().children(".screen__third__text"));
     });
-    $(".screen__third__thirdblock").children(".screen__third__wrapper").mouseleave(function(){
-        $(".screen__third__wrapper").height("50%");
-        $(this).children(".screen__third__text").css("display", "none");
-        $(this).children(".screen__third__date").css("font-size", "18px");
+    $(".screen__third__thirdblock").mouseleave(function(){
+        $(this).children().children(".screen__third__text").css("display", "none");
+        $(this).children().children(".screen__third__sc").css("left", "0vw");
+        $(this).children().children(".screen__third__date-1").css("left", "0vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
     
     /* Анимация четвертых инициалов */
     
-    $(".screen__third__fourthblock").children(".screen__third__wrapper").mouseover(function(){
-        $(this).css("height", "100%");
-        $(".screen__third__block").eq(0).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(1).children(".screen__third__wrapper").css("height", "30%");
-        $(".screen__third__block").eq(2).children(".screen__third__wrapper").css("height", "30%");
-        $(this).children(".screen__third__date").css("font-size", "36px");
+    $(".screen__third__fourthblock").mouseover(function(){
+        $(this).children().children(".screen__third__fl").css("width", "10vw");
+        $(this).children().children(".screen__third__date").css("font-size", "36px");
+        $(".screen__third__wrapper").eq(0).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(0).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(1).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(1).children(".screen__third__date").css("font-size", "9px"); 
+        $(".screen__third__wrapper").eq(2).children(".screen__third__fl").css("width", "3vw");
+        $(".screen__third__wrapper").eq(2).children(".screen__third__date").css("font-size", "9px"); 
     });
-    $(".screen__third__fourthblock").children(".screen__third__wrapper").click(function(){
-        $(this).children(".screen__third__text").css("display", "flex");
+    $(".screen__third__fourthblock").click(function(){
+        $(this).children().children(".screen__third__sc").css("left", "30vw");
+        $(this).children().children(".screen__third__date-1").css("left", "30vw");
+        
+        setTimeout(screen__third___appear, 300, $(this).children().children(".screen__third__text"));
     });
-    $(".screen__third__fourthblock").children(".screen__third__wrapper").mouseleave(function(){
-        $(".screen__third__wrapper").height("50%");
-        $(this).children(".screen__third__text").css("display", "none");
-        $(this).children(".screen__third__date").css("font-size", "18px");
+    $(".screen__third__fourthblock").mouseleave(function(){
+        $(this).children().children(".screen__third__text").css("display", "none");
+        $(this).children().children(".screen__third__sc").css("left", "0vw");
+        $(this).children().children(".screen__third__date-1").css("left", "0vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
+   
 });
 
 
@@ -310,10 +369,7 @@ screen_3_animation($(".screen__third__block").eq(0));
     screen_3_animation($(".screen__third__block").eq(2));
     screen_3_animation($(".screen__third__block").eq(3));
 
-$(window).scroll(function(){ 
-    $(".background__letters").eq(0).offset({top: $(window).scrollTop()*0.5});
-    
-    
+$(window).scroll(function(){     
     if ($(window).scrollTop() >= $(window).height() * 2 && screen_3_flag == 0) {
         screen_3_animation($(".screen__third__block").eq(0));
         screen_3_animation($(".screen__third__block").eq(1));
@@ -331,6 +387,14 @@ $(window).scroll(function(){
     } else if(nav_animation_inp == 0) {
         header_animation_border($(".header__nav").eq(3));
     }
+    
+    if ($(window).scrollTop() >= $(window).height() ) {
+        $(".background__letters").eq(0).css("top", - ($(window).scrollTop() - $(window).height()));
+    } 
+    if ($(window).scrollTop() >= $(window).height() * 2 ) {
+        $(".background__letters").eq(1).css("top", $(window).height() * 3 - $(window).scrollTop() );
+    }
+    
     
 });
 

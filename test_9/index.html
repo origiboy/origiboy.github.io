@@ -14,7 +14,8 @@
     <body id="main">
        <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
             
-        <script src="plugins/revealator/fm.revealator.jquery.min.js"></script>
+        
+        
         <div id="background">
             <div class="background__letters">
                <img src="icons/letters/big/c.png" class="background__letter background__letter__c">
@@ -53,16 +54,27 @@
         </div>
         <div id="name">{{content_4}}</div>
         <div id="date">{{content_5}}<div id="date__big">7-28</div></div>
-        
-        <div class="screen screen__1">
+        <section style="width: 100%; overflow: hidden;">
+        <div class="screen screen__1 layer" >
             {{content_6}}<br>{{content_7}}
         </div>
-        <div class="screen screen__2">
-           <div class="screen__second__wrapper">
-                <div class="screen__second__left revealator-zoomin revealator-once revealator-below ">
+        </section>
+        <div class="screen screen__2 ">
+           <div class="screen__second__wrapper scrollme">
+                <div class="screen__second__left animateme" data-when="enter"
+        data-from="0.5"
+        data-to="0"
+        data-opacity="0"
+        data-translatex="-200"
+        >
                     {{content_8}}
                 </div>
-                <div class="screen__second__right revealator-zoomin revealator-once revealator-below">
+                <div class="screen__second__right animateme" data-when="enter"
+        data-from="0.5"
+        data-to="0"
+        data-opacity="0"
+        data-translatex="+200"
+        >
                     {{content_9}}
                 </div>
             </div>
@@ -74,21 +86,20 @@
                 <div class="screen__third__wrapper">
                     <img class="screen__third__fl" src="icons/letters/small/s_1.png">
                     <div class="screen__third__text">
-                        <span style="display: inline-block;"><b>{{content_10}}</b><br>{{content_11}}</span>
+                        <span style="display: inline-block; height: auto;"><b>{{content_10}}</b><br>{{content_11}}</span>
                     </div>
-                    <img class="screen__third__fl" src="icons/letters/small/s_2.png"> 
-                    <div class="screen__third__date-1 screen__third__date">07.<br>04</div>
-                </div>
-                
+                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_2.png"> 
+                    <div class="screen__third__date-1 screen__third__date"><span style="display: inline-block;">07.<br>04</span></div>
+                </div> 
             </div>
             <div class="screen__third__secondblock screen__third__block">
                 <div class="screen__third__wrapper">
                     <div class="screen__third__date-2 screen__third__date">14.<br>04</div>
                     <img class="screen__third__fl" src="icons/letters/small/s_3.png">
-                    <div class="screen__third__text">
+                    <div class="screen__third__text" style="left: 15vw;">
                         <span style="display: inline-block;"><b>{{content_12}}</b><br>{{content_13}}</span>
                     </div>
-                    <img class="screen__third__fl" src="icons/letters/small/s_4.png"> 
+                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_4.png"> 
                 </div>
                 
             </div>
@@ -98,19 +109,20 @@
                     <div class="screen__third__text">
                         <span style="display: inline-block;"><b>{{content_14}}</b><br>{{content_15}}</span>
                     </div>
-                    <img class="screen__third__fl" src="icons/letters/small/s_6.png"> 
+                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_6.png"> 
                     <div class="screen__third__date-1 screen__third__date">21.<br>04</div>
                 </div>
                 
             </div>
             <div class="screen__third__fourthblock screen__third__block">
                 <div class="screen__third__wrapper">
+                   <div class="screen__third__date screen__third__date-2">28.<br>04</div>
                     <img class="screen__third__fl" src="icons/letters/small/s_7.png">
-                    <div class="screen__third__text">
+                    <div class="screen__third__text" style="left: 15vw;">
                         <span style="display: inline-block;"><b>{{content_16}}</b><br>{{content_17}}</span>
                     </div>
-                    <img class="screen__third__fl" src="icons/letters/small/s_8.png"> 
-                    <div class="screen__third__date-2 screen__third__date">28.<br>04</div>
+                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_8.png"> 
+                    
                 </div>
                 
             </div>
@@ -142,6 +154,8 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="js/main.js"></script>  
-        
+        <script src="plugins/pushIn.js/js/pushIn.js"></script> 
+        <script src="plugins/scroll/jquery.scrollme.js"></script>
+        <script src="plugins/revealator/fm.revealator.jquery.min.js"></script>
     </body>
 </html>
