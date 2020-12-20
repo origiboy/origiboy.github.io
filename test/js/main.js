@@ -402,12 +402,14 @@ $(window).scroll(function(){
     } else if(nav_animation_inp == 0) {
         header_animation_border($(".header__nav").eq(3));
     }
-    
-    if ($(window).scrollTop() >= $(window).height() ) {
+    if (mobile_flag == 0)
+    {
+        if ($(window).scrollTop() >= $(window).height() ) {
         $(".background__letters").eq(0).css("top", - ($(window).scrollTop() - $(window).height()));
-    } 
-    if ($(window).scrollTop() >= $(window).height() * 2 ) {
-        $(".background__letters").eq(1).css("top", $(window).height() * 3 - $(window).scrollTop() );
+        } 
+        if ($(window).scrollTop() >= $(window).height() * 2 ) {
+            $(".background__letters").eq(1).css("top", $(window).height() * 3 - $(window).scrollTop() );
+        }
     }
     
     
@@ -634,8 +636,14 @@ var app_7 = new Vue({
   }
 });
 
+$(document).ready(function() {
 
-(function() {
+    if ($(window).width()<900) {
+        mobile_flag = 1;
+    }
+if (mobile_flag == 0)
+{
+    (function() {
 	var lastTime = 0;
 	var vendors = ['ms', 'moz', 'webkit', 'o'];
 	for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
@@ -1224,3 +1232,5 @@ var scrollme = ( function( $ )
 	// ----------------------------------------------------------------------------------------------------
 
 })( jQuery );
+}
+});

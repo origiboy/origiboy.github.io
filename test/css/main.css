@@ -139,6 +139,18 @@ body
     cursor: pointer;
     opacity: 0.7;
 }
+#header__mobile
+{
+    display: none;
+}
+.header__mnav__wrapper
+{
+    display: none;
+}
+.screen__3__mobile
+{
+    display: none;
+}
 #socials__wrapper
 {
     z-index: 80;
@@ -554,11 +566,11 @@ screen__3__mobile
     }
     .background__letters
     {
-        opacity: 0.4;
+        opacity: 0.2;
     }
     .background__letters__second
     {
-        opacity: 0.4;
+        opacity: 0;
     }
     #header
     {
@@ -754,6 +766,7 @@ screen__3__mobile
     }
     .screen__3__mobile
     {
+        display: inline-block;
         height: 100vh;
         width: 100%;
         padding: 0 20px;
@@ -787,6 +800,27 @@ screen__3__mobile
     {
         height: 18vh;
         margin-top: 2vh;
+    }
+    .background__letter__c
+    {
+        top: 0vh;
+        left: -35vw;
+
+    }
+    .background__letter__c__second
+    {
+        top: 0vh;
+        left: -15vw;
+    }
+    .background__letter__d
+    {
+        top: 10vh;
+        left: 5vw;
+    }
+    .background__letter__m
+    {
+        top: 10vh;
+        left: 25vw;
     }
     
 }
