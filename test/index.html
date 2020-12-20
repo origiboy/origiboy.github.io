@@ -44,6 +44,35 @@
             <div class="header__nav__border">
                 <div class="header__nav__border-inner"></div>
             </div>
+            
+            <div class="header__mnav__wrapper">
+                <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+                <label for="checkbox3">
+                    <div class="hamburger hamburger3">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+            
+            <div id="header__mobile">
+                <div class="header__mobile">{{content_0}}</div>
+                <div class="header__mobile">{{content_1}}</div>
+                <div class="header__mobile">{{content_2}}</div>
+                <div class="header__mobile">{{content_3}}</div>
+                <div class="header__lang__m">
+                    <div class="header__lang__block ">EN</div>&nbsp;|&nbsp;<div class="header__lang__block header__lang-click">PT</div>
+                </div>
+                <div id="socials__wrapper__m">
+                    <div id="socials__m">
+                        <a href="https://www.facebook.com/CicloConversasDesignMultimedia" target="_blank"><img src="icons/facebook.svg" class="socials__block__m" alt="facebook"></a>
+                        <a href="https://www.instagram.com/ucoimbra" target="_blank"><img src="icons/instagram.svg" class="socials__block__m" alt="instagram"></a>
+                        <a href="https://twitter.com/univdecoimbra" target="_blank"><img src="icons/twitter.svg" class="socials__block__m" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
         </header>
         <div id="socials__wrapper">
             <div id="socials">
@@ -81,7 +110,7 @@
         </div>
         
         
-        <div class="screen screen__3" style="background: rgb(255, 255, 255);">
+        <div class="screen screen__3 screen__3__display" style="background: rgb(255, 255, 255);">
             <div class="screen__third__firstblock screen__third__block">
                 <div class="screen__third__wrapper">
                     <img class="screen__third__fl" src="icons/letters/small/s_1.png">
@@ -128,6 +157,43 @@
             </div>
         </div>
         
+        <div class="screen__3__mobile">
+            <div class="screen__3__mobile__top">
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_1.png">
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_2.png">
+                <div class="screen__third__date-1 screen__third__date"><span style="display: inline-block;">07.<br>04</span></div>
+            </div>
+            <div class="screen__3__mobile__main">
+                <b>{{content_10}}</b><br>{{content_11}}
+            </div>
+        
+            <div class="screen__3__mobile__top screen__3__mobile__top__right">
+               <div class="screen__third__date-2 screen__third__date"><span style="display: inline-block;">14.<br>04</span></div>
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_3.png">
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_4.png">
+                
+            </div>
+            <div class="screen__3__mobile__main">
+                <b>{{content_12}}</b><br>{{content_13}}
+            </div>
+            <div class="screen__3__mobile__top">
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_5.png">
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_6.png">
+                <div class="screen__third__date-1 screen__third__date"><span style="display: inline-block;">21.<br>04</span></div>
+            </div>
+            <div class="screen__3__mobile__main">
+                <b>{{content_14}}</b><br>{{content_15}}
+            </div>
+            <div class="screen__3__mobile__top screen__3__mobile__top__right">
+               <div class="screen__third__date-2 screen__third__date"><span style="display: inline-block;">28.<br>04</span></div>
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_7.png">
+                <img class="screen__3__mobile__img" src="icons/letters/small/s_8.png">
+                
+            </div>
+            <div class="screen__3__mobile__main">
+                <b>{{content_16}}</b><br>{{content_17}}
+            </div>
+        </div>
         
         <div class="screen">
             <div class="screen__fourth__wrapper">
@@ -142,7 +208,7 @@
                     Web: http://www.uc.pt/administracao
                 </div>
                 <div class="screen__fourth__right">
-                    <b>Museu da Ciência</b><br>
+                    <b style="flex-basis: 100%;">Museu da Ciência</b><br>
                     Laboratorio Chimico<br>
                     Largo Marquês de Pombal<br>
                     3000-272 Coimbra<br>
@@ -154,8 +220,6 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script src="js/main.js"></script>  
-        <script src="plugins/pushIn.js/js/pushIn.js"></script> 
-        <script src="plugins/scroll/jquery.scrollme.js"></script>
         
     </body>
 </html>

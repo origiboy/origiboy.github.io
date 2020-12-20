@@ -1,4 +1,5 @@
 var nav_animation_inp = 0;
+var mobile_flag = 0;
 
 function header_animation_border(e) {
     let left = e.offset().left + 44, width = e.outerWidth();
@@ -43,7 +44,10 @@ function screen_1_animation(e) {
     a_l = (a_l - left_base) * left_minus + left_base;
     e.css("top", a_t);
     e.css("left", a_l);
-    setTimeout(screen_1_animation, 6000, e);   
+    
+    if (mobile_flag == 0) {
+        setTimeout(screen_1_animation, 6000, e);   
+    }
 }
 
 /* Анимация движения букв extra*/
@@ -81,7 +85,10 @@ function screen_1_animation_extra(e) {
     a_l = (a_l - left_base) * left_minus + left_base;
     e.css("top", a_t);
     e.css("left", a_l);
-    setTimeout(screen_1_animation_extra, 6000, e);   
+    
+    if (mobile_flag == 0) {
+        setTimeout(screen_1_animation_extra, 6000, e);  
+    }
 }
 
 
@@ -122,13 +129,19 @@ function screen_3_animation(e) {
     
     e.css("top", a_t);
     e.css("left", a_l);
-    setTimeout(screen_3_animation, 6000, e);   
+    
+    if (mobile_flag == 0) {
+        setTimeout(screen_3_animation, 6000, e);  
+    }
 }
 
 
 
 $(document).ready(function() {
 
+    if ($(window).width()<900) {
+        mobile_flag = 1;
+    }
     $(".header__nav").eq(0).click(function() {
         nav_animation_inp = 1;
         header_animation_border( $(".header__nav").eq(0));
@@ -232,17 +245,18 @@ $(document).ready(function() {
     }
     setTimeout(() => $('.header__nav__border-inner').eq(0).css('display', 'inline-block'), 600);
     
+    if (mobile_flag == 0)
+    {
+        screen_1_animation($(".background__letter__c").eq(0));
+        screen_1_animation($(".background__letter__c__second").eq(0));
+        screen_1_animation($(".background__letter__d").eq(0));
+        screen_1_animation($(".background__letter__m").eq(0));
 
-    screen_1_animation($(".background__letter__c").eq(0));
-    screen_1_animation($(".background__letter__c__second").eq(0));
-    screen_1_animation($(".background__letter__d").eq(0));
-    screen_1_animation($(".background__letter__m").eq(0));
-    
-    screen_1_animation_extra($(".background__letter__c").eq(1));
-    screen_1_animation_extra($(".background__letter__c__second").eq(1));
-    screen_1_animation_extra($(".background__letter__d").eq(1));
-    screen_1_animation_extra($(".background__letter__m").eq(1));
-    
+        screen_1_animation_extra($(".background__letter__c").eq(1));
+        screen_1_animation_extra($(".background__letter__c__second").eq(1));
+        screen_1_animation_extra($(".background__letter__d").eq(1));
+        screen_1_animation_extra($(".background__letter__m").eq(1));
+    }
     if ($(window).scrollTop() >= $(window).height() ) {
         $(".background__letters").eq(0).css("top", - ($(window).scrollTop() - $(window).height()));
     } 
@@ -364,13 +378,14 @@ $(document).ready(function() {
 $(window).resize(function() {
     header_animation_border($(".header__nav").eq(header_nav_choosen), 0);
 });
+if (mobile_flag == 0) {
 screen_3_animation($(".screen__third__block").eq(0));
     screen_3_animation($(".screen__third__block").eq(1));
     screen_3_animation($(".screen__third__block").eq(2));
     screen_3_animation($(".screen__third__block").eq(3));
-
+}
 $(window).scroll(function(){     
-    if ($(window).scrollTop() >= $(window).height() * 2 && screen_3_flag == 0) {
+    if ($(window).scrollTop() >= $(window).height() * 2 && screen_3_flag == 0 && mobile_flag == 0) {
         screen_3_animation($(".screen__third__block").eq(0));
         screen_3_animation($(".screen__third__block").eq(1));
         screen_3_animation($(".screen__third__block").eq(2));
@@ -396,6 +411,92 @@ $(window).scroll(function(){
     }
     
     
+});
+
+/* Скрипт мобильных устройств */
+
+$(document).ready(function() {
+    var mob_open = 0;
+    $("#checkbox3").click(function() {
+        if (mob_open == 0) {
+            $("#header__mobile").css("left", 0);
+            mob_open  = 1;
+            
+        } else {
+            $("#header__mobile").css("left", "-100vw");
+            mob_open  = 0;
+        }
+    });
+    
+    $(".header__mobile").eq(0).click(function (){
+        $('html, body').animate({ scrollTop: 0* $(window).height() }, 600); 
+        $("#checkbox3").click()
+    });
+    $(".header__mobile").eq(1).click(function (){
+        $('html, body').animate({ scrollTop: 1* $(window).height() }, 600);
+        $("#checkbox3").click()
+    });
+    $(".header__mobile").eq(2).click(function (){
+        $('html, body').animate({ scrollTop: 2* $(window).height() }, 600);
+        $("#checkbox3").click()
+    });
+    $(".header__mobile").eq(3).click(function (){
+        $('html, body').animate({ scrollTop: 3* $(window).height() }, 600);
+        $("#checkbox3").click()
+    });
+    
+    
+    $(".header__lang__block").eq(2).click(function() {
+            $(".header__lang__block").eq(2).addClass("header__lang-click");
+            $(".header__lang__block").eq(3).removeClass("header__lang-click");
+            
+            app_1.content_0 = content_en[0];
+            app_1.content_1 = content_en[1];
+            app_1.content_2 = content_en[2];
+            app_1.content_3 = content_en[3];
+            app_2.content_4 = content_en[4];
+            app_3.content_5 = content_en[5];
+            app_4.content_6 = content_en[6];
+            app_4.content_7 = content_en[7];
+            app_5.content_8 = content_en[8];
+            app_5.content_9 = content_en[9];
+            app_7.content_10 = content_en[10];
+            app_7.content_11 = content_en[11];
+            app_7.content_12 = content_en[12];
+            app_7.content_13 = content_en[13];
+            app_7.content_14 = content_en[14];
+            app_7.content_15 = content_en[15];
+            app_7.content_16 = content_en[16];
+            app_7.content_17 = content_en[17];
+            $("#checkbox3").click()
+        
+  });
+    $(".header__lang__block").eq(3).click(function() {        
+            $(".header__lang__block").eq(3).addClass("header__lang-click");
+            $(".header__lang__block").eq(2).removeClass("header__lang-click");
+            
+            app_1.content_0 = content_pt[0];
+            app_1.content_1 = content_pt[1];
+            app_1.content_2 = content_pt[2];
+            app_1.content_3 = content_pt[3];
+            app_2.content_4 = content_pt[4];
+            app_3.content_5 = content_pt[5];
+            app_4.content_6 = content_pt[6];
+            app_4.content_7 = content_pt[7];
+            app_5.content_8 = content_pt[8];
+            app_5.content_9 = content_pt[9];
+            app_7.content_10 = content_pt[10];
+            app_7.content_11 = content_pt[11];
+            app_7.content_12 = content_pt[12];
+            app_7.content_13 = content_pt[13];
+            app_7.content_14 = content_pt[14];
+            app_7.content_15 = content_pt[15];
+            app_7.content_16 = content_pt[16];
+            app_7.content_17 = content_pt[17];
+            $("#checkbox3").click()
+        
+        
+    });
 });
 
 
@@ -507,6 +608,20 @@ var app_5 = new Vue({
 
 var app_6 = new Vue({
   el: '.screen__3',
+  data: {
+    content_10: content_pt[10],
+    content_11: content_pt[11],
+    content_12: content_pt[12],
+    content_13: content_pt[13],
+    content_14: content_pt[14],
+    content_15: content_pt[15],
+    content_16: content_pt[16],
+    content_17: content_pt[17]    
+  }
+});
+
+var app_7 = new Vue({
+  el: '.screen__3__mobile',
   data: {
     content_10: content_pt[10],
     content_11: content_pt[11],
