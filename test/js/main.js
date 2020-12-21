@@ -290,7 +290,7 @@ $(document).ready(function() {
         $(this).children().children(".screen__third__text").css("display", "none");
         $(this).children().children(".screen__third__sc").css("left", "0vw");
         $(this).children().children(".screen__third__date-1").css("left", "0vw");
-        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "8vw");
         $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
     
@@ -316,7 +316,7 @@ $(document).ready(function() {
         $(this).children().children(".screen__third__text").css("display", "none");
         $(this).children().children(".screen__third__sc").css("left", "0vw");
         $(this).children().children(".screen__third__date-1").css("left", "0vw");
-        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "8vw");
         $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
    
@@ -342,7 +342,7 @@ $(document).ready(function() {
         $(this).children().children(".screen__third__text").css("display", "none");
         $(this).children().children(".screen__third__sc").css("left", "0vw");
         $(this).children().children(".screen__third__date-1").css("left", "0vw");
-        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "8vw");
         $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
     
@@ -368,7 +368,7 @@ $(document).ready(function() {
         $(this).children().children(".screen__third__text").css("display", "none");
         $(this).children().children(".screen__third__sc").css("left", "0vw");
         $(this).children().children(".screen__third__date-1").css("left", "0vw");
-        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "5vw");
+        $(".screen__third__wrapper").children(".screen__third__fl").css("width", "8vw");
         $(".screen__third__wrapper").children(".screen__third__date").css("font-size", "18px"); 
     });
    
