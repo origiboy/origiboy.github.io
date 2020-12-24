@@ -1,3 +1,4 @@
+/* Общие стили */
 html, body
 {
     margin: 0;
@@ -7,6 +8,7 @@ body
 {
     scroll-behavior: smooth;
 }
+/* Стили букв на фоне */
 #background
 {
     z-index: -10;
@@ -58,6 +60,7 @@ body
     top: 10vh;
     left: 55vw;
 }
+/* Стили хедера */
 #header
 {
     z-index: 90;
@@ -139,6 +142,7 @@ body
     cursor: pointer;
     opacity: 0.7;
 }
+/* Стили блокировки некоторых блоков мобильной версии */
 #header__mobile
 {
     display: none;
@@ -151,6 +155,7 @@ body
 {
     display: none;
 }
+/* Стили иконок социальных сетей */
 #socials__wrapper
 {
     z-index: 80;
@@ -171,6 +176,7 @@ body
 {
     opacity: 0.7;
 }
+/* Стили нижних фикированных элементов */
 #name
 {
     z-index: 80;
@@ -212,6 +218,7 @@ body
     text-align: center;
     color: #000000;
 }
+/* Общие стили для каждого блока */
 .screen
 {
     position: relative;
@@ -223,10 +230,12 @@ body
     font-family: Muller;
     font-style: normal;
     font-weight: 900;
+    
     font-size: 72px;
     line-height: 100%;
     overflow: hidden;
 }
+/* Стили второго блока */
 .screen__second__wrapper
 {
     width: 100%;
@@ -272,7 +281,7 @@ color: #000000;
     line-height: 24px;
     text-align: justify;
 }
-
+/* Стили третьего блока */
 .screen__third__block
 {
     position: absolute;
@@ -374,6 +383,7 @@ color: #000000;
 {
     color: #E36F1A;
 }
+/* Стили четвертого блока */
 .screen__fourth__wrapper
 {
     width: 100%;
@@ -415,6 +425,7 @@ screen__3__mobile
     {
         display: none;
     }
+/* Стили для адаптации под планшеты */
 @media (max-width: 1200px) 
 { 
    .screen
@@ -468,28 +479,29 @@ screen__3__mobile
         max-width: none;
     }
 }
+/* Стили для адаптации под мобильные устройства */
 @media (max-width: 900px) 
 { 
     .screen
     {
-        font-size: 24px;
+        font-size: 28px;
     }
     #name
     {
-        bottom: 19px;
-        font-size: 10px;
+        bottom: 35px;
+        font-size: 14px;
         line-height: 100%;
     }
     #date
     {
-        bottom: 19px;
-        font-size: 10px;
+        bottom: 35px;
+        font-size: 14px;
         line-height: 100%;
         align-items: flex-end;
     }
     #date__big
     {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 100%;
     }
     
@@ -801,26 +813,44 @@ screen__3__mobile
         height: 18vh;
         margin-top: 2vh;
     }
+    .background__letter
+    {
+        position: fixed;
+        height: auto;
+        width: 50vw;
+    }
     .background__letter__c
     {
-        top: 0vh;
-        left: -35vw;
+        top: 10vh;
+        left: 0vw;
 
     }
     .background__letter__c__second
     {
-        top: 0vh;
-        left: -15vw;
+        top: 10vh;
+        left: 50vw;
     }
     .background__letter__d
     {
-        top: 10vh;
-        left: 5vw;
+        bottom: 10vh;
+        left: 0vw;
+        top: auto;
     }
     .background__letter__m
     {
-        top: 10vh;
-        left: 25vw;
+        bottom: 10vh;
+        left: 50vw;
+        top: auto;
+    }
+    .screen__second__left
+    {
+        align-content: flex-end;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 30px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
     
 }
