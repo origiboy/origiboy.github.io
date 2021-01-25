@@ -279,7 +279,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     z-index: 90;
     top: 58px;
     left: 100vw;
