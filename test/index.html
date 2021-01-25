@@ -1,223 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="fonts/stylesheet.css">
-        <link rel="stylesheet" href="plugins/revealator/fm.revealator.jquery.min.css">
-        <style>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ELQUIREX</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/background.svg" alt="ELQUIREX" class="header__bg">
+        <div class="header__bg__text">ELQUIREX</div>
+        <div class="nav">
+            <a class="nav__point" href="#">About us</a>
+            <a class="nav__point" href="#">PROFIT CALCULATOR</a>
+            <a class="nav__point" href="#">REASONS FOR JOIN</a>
+        </div>
+        <img src="images/smartphone.svg" alt="смартфон" class="smartphone">
+            <div class="header__desc">
+                <h1 class="header__desc__head">Multifunctional platform</h1>
+                <p class="header__desc__text">For Exchanging, Saving, Investing And Borrowing Your Digital Assets</p>
+                <div class="header__form__wrapper">
+                    <div class="header__form__block">
+                        <p class="header__form__block__head">LOG IN</p>
+                        <div class="header__form__block__submit">Log in</div>
+                    </div>
+                    <div class="header__form__block">
+                        <p class="header__form__block__head header__form__text__g">SING UP</p>
+                        <div class="header__form__block__submit header__form__bg__g">Registration</div>
+                    </div>    
+                </div>
+                
+            </div>
+    </header>
+    <img src="images/background_2.svg" alt="фон" class="bg__2">
+    <section class="block__1">
+        <div class="block__1__text">
+            <span>
+                Traditional banking ceased to meet current international standards long ago and is not able to meet the needs of a modern person.
+                <p class="block__1__text__light">
+                    Our mission is to provide our community with effective ways to receive royalty payments for the use of digital technologies, as well as grant users exclusive access to exchange, loans and investment options using those assets.
+                </p>
+            </span>
+            
 
-        </style>
-    </head>
-    <body id="main">
-       <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
-            
-        
-        <!-- Разметка для фона -->
-        <div id="background">
-            <div class="background__letters">
-                <img src="icons/letters/big/c.png" class="background__letter background__letter__c">
-                <img src="icons/letters/big/c.png" class="background__letter background__letter__c__second">
-                <img src="icons/letters/big/d.png" class="background__letter background__letter__d">
-                <img src="icons/letters/big/m.png" class="background__letter background__letter__m">
-            </div>
-            <div class="background__letters background__letters__second">
-                <img src="icons/letters/big/c.png" class="background__letter background__letter__c">
-                <img src="icons/letters/big/c.png" class="background__letter background__letter__c__second">
-                <img src="icons/letters/big/d.png" class="background__letter background__letter__d">
-                <img src="icons/letters/big/m.png" class="background__letter background__letter__m">
-            </div>
         </div>
-        <!-- Разметка для хедера -->
-        <header id="header">
-            <div class="header__nav__wrapper">
-                <div class="header__nav">{{content_0}}</div>
-                <div class="header__nav">{{content_1}}</div>
-                <div class="header__nav">{{content_2}}</div>
-                <div class="header__nav">{{content_3}}</div>
-                <div class="header__lang">
-                    <div class="header__lang__block">EN</div>&nbsp;|&nbsp;<div class="header__lang__block header__lang-click">PT</div>
-                </div>
-            </div>
-            
-            <div class="header__nav__border">
-                <div class="header__nav__border-inner"></div>
-            </div>
-            <!-- Разметка для мобильного хедера -->
-            <div class="header__mnav__wrapper">
-                <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
-                <label for="checkbox3">
-                    <div class="hamburger hamburger3">
-                        <span class="bar bar1"></span>
-                        <span class="bar bar2"></span>
-                        <span class="bar bar3"></span>
-                        <span class="bar bar4"></span>
-                    </div>
-                </label>
-            </div>
-            <!-- Разметка для всплывающего окна навигации в мобильной версии -->
-            <div id="header__mobile">
-                <div class="header__mobile">{{content_0}}</div>
-                <div class="header__mobile">{{content_1}}</div>
-                <div class="header__mobile">{{content_2}}</div>
-                <div class="header__mobile">{{content_3}}</div>
-                <div class="header__lang__m">
-                    <div class="header__lang__block ">EN</div>&nbsp;|&nbsp;<div class="header__lang__block header__lang-click">PT</div>
-                </div>
-                <div id="socials__wrapper__m">
-                    <div id="socials__m">
-                        <a href="https://www.facebook.com/CicloConversasDesignMultimedia" target="_blank"><img src="icons/facebook.svg" class="socials__block__m" alt="facebook"></a>
-                        <a href="https://www.instagram.com/ucoimbra" target="_blank"><img src="icons/instagram.svg" class="socials__block__m" alt="instagram"></a>
-                        <a href="https://twitter.com/univdecoimbra" target="_blank"><img src="icons/twitter.svg" class="socials__block__m" alt="twitter"></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Разметка для иконок социальных сетей -->
-        <div id="socials__wrapper">
-            <div id="socials">
-                <a href="https://www.facebook.com/CicloConversasDesignMultimedia" target="_blank"><img src="icons/facebook.svg" class="socials__block" alt="facebook"></a>
-                <a href="https://www.instagram.com/ucoimbra" target="_blank"><img src="icons/instagram.svg" class="socials__block" alt="instagram"></a>
-                <a href="https://twitter.com/univdecoimbra" target="_blank"><img src="icons/twitter.svg" class="socials__block" alt="twitter"></a>
-            </div>
+        <div class="block__1__img">
+            <img src="images/section__1__1.webp" alt="Elquirex CEO Roger Woo" class="block__1__img__inner">
         </div>
-        <div id="name">{{content_4}}</div>
-        <div id="date">{{content_5}}<div id="date__big">7-28</div></div>
-        <section style="width: 100%; overflow: hidden;">
-        <div class="screen screen__1 layer" >
-            {{content_6}}<br>{{content_7}}
-        </div>
-        </section>
-        <div class="screen screen__2 ">
-           <div class="screen__second__wrapper scrollme">
-                <div class="screen__second__left animateme" data-when="enter"
-        data-from="0.5"
-        data-to="0"
-        data-opacity="0"
-        data-translatex="-200"
-        >
-                    {{content_8}}
-                </div>
-                <div class="screen__second__right animateme" data-when="enter"
-        data-from="0.5"
-        data-to="0"
-        data-opacity="0"
-        data-translatex="+200"
-        >
-                    {{content_9}}
-                </div>
-            </div>
-        </div>
+    </section>
+    <section class="block__2">
         
-        
-        <div class="screen screen__3 screen__3__display" style="background: rgb(255, 255, 255);">
-            <div class="screen__third__firstblock screen__third__block">
-                <div class="screen__third__wrapper">
-                    <img class="screen__third__fl" src="icons/letters/small/s_1.png">
-                    <div class="screen__third__text">
-                        <span style="display: inline-block; height: auto;"><b>{{content_10}}</b><br>{{content_11}}</span>
-                    </div>
-                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_2.png"> 
-                    <div class="screen__third__date-1 screen__third__date"><span style="display: inline-block;">07.<br>04</span></div>
-                </div> 
-            </div>
-            <div class="screen__third__secondblock screen__third__block">
-                <div class="screen__third__wrapper">
-                    <div class="screen__third__date-2 screen__third__date">14.<br>04</div>
-                    <img class="screen__third__fl" src="icons/letters/small/s_3.png">
-                    <div class="screen__third__text" style="left: 15vw;">
-                        <span style="display: inline-block;"><b>{{content_12}}</b><br>{{content_13}}</span>
-                    </div>
-                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_4.png"> 
-                </div>
-                
-            </div>
-            <div class="screen__third__thirdblock screen__third__block">
-                <div class="screen__third__wrapper">
-                    <img class="screen__third__fl" src="icons/letters/small/s_5.png">
-                    <div class="screen__third__text">
-                        <span style="display: inline-block;"><b>{{content_14}}</b><br>{{content_15}}</span>
-                    </div>
-                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_6.png"> 
-                    <div class="screen__third__date-1 screen__third__date">21.<br>04</div>
-                </div>
-                
-            </div>
-            <div class="screen__third__fourthblock screen__third__block">
-                <div class="screen__third__wrapper">
-                   <div class="screen__third__date screen__third__date-2">28.<br>04</div>
-                    <img class="screen__third__fl" src="icons/letters/small/s_7.png">
-                    <div class="screen__third__text" style="left: 15vw;">
-                        <span style="display: inline-block;"><b>{{content_16}}</b><br>{{content_17}}</span>
-                    </div>
-                    <img class="screen__third__fl screen__third__sc" src="icons/letters/small/s_8.png"> 
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="screen__3__mobile">
-            <div class="screen__3__mobile__top">
-                <img class="screen__3__mobile__img" src="icons/letters/small/mobile/jm.png">
-                <div class="screen__third__date-1 screen__third__date"><span style="display: inline-block;">07.<br>04</span></div>
-            </div>
-            <div class="screen__3__mobile__main">
-                <b>{{content_10}}</b><br>{{content_11}}
-            </div>
-        
-            <div class="screen__3__mobile__top screen__3__mobile__top__right">
-               <div class="screen__third__date-2 screen__third__date"><span style="display: inline-block;">14.<br>04</span></div>
-                <img class="screen__3__mobile__img" src="icons/letters/small/mobile/ms.png">
-                
-            </div>
-            <div class="screen__3__mobile__main">
-                <b>{{content_12}}</b><br>{{content_13}}
-            </div>
-            <div class="screen__3__mobile__top">
-                <img class="screen__3__mobile__img" src="icons/letters/small/mobile/ra.png">
-                <div class="screen__third__date-1 screen__third__date"><span style="display: inline-block;">21.<br>04</span></div>
-            </div>
-            <div class="screen__3__mobile__main">
-                <b>{{content_14}}</b><br>{{content_15}}
-            </div>
-            <div class="screen__3__mobile__top screen__3__mobile__top__right">
-               <div class="screen__third__date-2 screen__third__date"><span style="display: inline-block;">28.<br>04</span></div>
-                <img class="screen__3__mobile__img" src="icons/letters/small/mobile/sc.png">
-                
-            </div>
-            <div class="screen__3__mobile__main">
-                <b>{{content_16}}</b><br>{{content_17}}
-            </div>
-        </div>
-        
-        <div class="screen">
-            <div class="screen__fourth__wrapper">
-                <div class="screen__fourth__left">
-                    <b>Administração da Universidade de Coimbra</b><br>
-                    Rua Larga<br> 
-                    Edifício Faculdade de Medicina (R/Ch. Esq.)<br>
-                    3004-504 Coimbra<br>
-                    Telefone: +351 239 859 900<br>
-                    Fax:+351 239 827 994<br>
-                    E-mail: gabadmin@uc.pt<br>
-                    Web: http://www.uc.pt/administracao
-                </div>
-                <div class="screen__fourth__right">
-                    <b style="flex-basis: 100%;">Museu da Ciência</b><br>
-                    Laboratorio Chimico<br>
-                    Largo Marquês de Pombal<br>
-                    3000-272 Coimbra<br>
-                    T: 351 239 85 43 50<br>
-                    F: 351 239 85 43 59<br>
-                    geral@museudaciencia.org
-                </div>
-            </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script src="js/main.js"></script>  
-        
-    </body>
+    </section>
+    
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>   
+</body>
 </html>
