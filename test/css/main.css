@@ -2,11 +2,16 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none;
 }
 .header
 {
     width: 100%;
+    overflow-x: hidden;
 }
 .header__bg
 {
@@ -94,6 +99,7 @@ html, body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    padding-bottom: 20px;
 }
 .header__form__block
 {
@@ -226,7 +232,7 @@ html, body {
     color: #000000;
     position: absolute;
     right: -43px;
-    bottom: -7px;
+    bottom: -27px;
 }
 .block__1__author__bold
 {
@@ -606,9 +612,9 @@ html, body {
     align-content: flex-start;
     flex-wrap: wrap;
     max-width: 240px;
-    max-height: 240px;
+    max-height: 360px;
     width: 16vw;
-    height: 16vw;
+    height: auto;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.42);
     border-radius: 22px;
@@ -756,6 +762,36 @@ html, body {
     line-height: 17px;
     text-transform: uppercase;
     color: #9F81D8;
+}
+
+
+.mob_bg_1
+{
+    display: none;
+}
+.burger__mobile
+{
+    display: none;
+}
+.head__mobile
+{
+    display: none;
+}
+
+.popup__1, .popup__2
+{
+    position: fixed;
+    z-index: 100;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+     display: none;
 }
 
 /* Слайдер */
