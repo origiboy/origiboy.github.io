@@ -1,748 +1,2594 @@
-<!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" prefix="og: http://ogp.me/ns#" lang="ru">
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-   <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Howdy</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+<title>Пройти PAEI-тест на стиль менеджмента</title>
 
-   <!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta id="head_title" name="title"
+    content="Пройти PAEI-тест на стиль менеджмента">
+<meta name="description"
+    content="Определить свой стиль управления по Адизесу и собрать сбалансированную команду.">
 
- 	<!-- CSS
-   ================================================== -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/main.css">  
-    
-   <!-- script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+<link id="link_image_src" rel="image_src" href="img/results/default.png">
 
-   <!-- favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta id="og_title" property="og:title" content="Пройти PAEI-тест на стиль менеджмента">
+<meta id="og_url" property="og:url" content="http://paei.denero.ru/">
+<meta id="og_description" property="og:description"
+    content="Определить свой стиль управления по Адизесу и собрать сбалансированную команду.">
+<meta id="og_image" property="og:image" content="img/results/default.png">
 
+<link rel="canonical" href="http://paei.denero.ru/">
+<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+<link rel="dns-prefetch" href="//yastatic.net">
+<link rel="dns-prefetch" href="//mc.yandex.ru">
+<link rel="dns-prefetch" href="//s7.addthis.com">
+<link rel="dns-prefetch" href="//platform.linkedin.com">
+<link rel="dns-prefetch" href="//connect.facebook.net">
+<link rel="dns-prefetch" href="//vk.com">
+
+<link rel="stylesheet" href="fonts/roboto-fontfacekit/web_fonts/roboto_black_cyrillic/stylesheet.css">
+<link rel="stylesheet" href="fonts/roboto-fontfacekit/web_fonts/roboto_medium_cyrillic/stylesheet.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+<link rel="stylesheet" href="fonts/gotham_pro/stylesheet.css">
+<link rel="stylesheet" href="fonts/gotham_pro2/stylesheet.css">
+<link rel="stylesheet" href="fonts/gotham_pro3/stylesheet.css">
+<link rel="stylesheet" href="fonts/gotham_pro4/stylesheet.css">
+
+<link rel="stylesheet" href="css/normalize.css">
+
+<link rel="stylesheet" href="styles/font-awesome.css">
+<link rel="stylesheet" href="styles/nanoscroller.css">
+<link rel="stylesheet" href="styles/jquery.nouislider.css">
+<link rel="stylesheet" href="styles/jquery.formstyler.css">
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/template.css">
+<link rel="stylesheet" href="styles/k2.css">
+
+<!-- TODO: -->
+<link rel="stylesheet" href="styles/gk.stuff.css">
+
+<link rel="stylesheet" href="styles/menu/menu.css">
+<link rel="stylesheet" href="styles/small.desktop.css"
+    media="(max-width: 1400px)">
+<link rel="stylesheet" href="styles/tablet.css" media="(max-width: 1040px)">
+<link rel="stylesheet" href="styles/small.tablet.css"
+    media="(max-width: 820px)">
+<link rel="stylesheet" href="styles/mobile.css" media="(max-width: 600px)">
+<link rel="stylesheet" href="styles/mobile.css" media="(max-width: 320px)">
+
+<!-- TODO: -->
+<link rel="stylesheet" href="css/test.css">
+
+<!--[if IE 9]>
+        <link rel="stylesheet" href="/styles/ie/ie9-min.css">
+    <![endif]-->
+<!--[if IE 8]>
+        <link rel="stylesheet" href="/styles/ie/ie8-min.css">
+    <![endif]-->
+<!--[if lte IE 7]>
+        <link rel="stylesheet" href="/styles/ie/ie7-min.css">
+    <![endif]-->
+
+<style type="text/css">
+
+    .custom {
+       position: relative;
+    }
+
+    .jcarousel-wrapper {
+        margin: 0px auto;
+        position: relative;
+    }
+
+    /*
+            This is the visible area of you carousel.
+            Set a width here to define how much items are visible.
+            The width can be either fixed in px or flexible in %.
+            Position must be relative!
+            */
+    .jcarousel {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /*
+            This is the container of the carousel items.
+            You must ensure that the position is relative or absolute and
+            that the width is big enough to contain all items.
+            */
+    .jcarousel ul {
+        width: 20000em;
+        position: relative;
+        /* Optional, required in this case since it's a <ul> element */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*
+            These are the item elements. jCarousel works best, if the items
+            have a fixed width and height (but it's not required).
+            */
+    .jcarousel li {
+        /* Required only for block elements like <li>'s */
+        float: left;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .jcarousel li:before {
+        /* Required only for block elements like <li>'s */
+        float: left;
+        border: 0;
+        display: none;
+    }
+
+    .jcarousel-control-prev {
+        left: -50px;
+    }
+
+    .jcarousel-control-next {
+        right: -50px;
+    }
+
+    .jcarousel-control-prev:hover span, .jcarousel-control-next:hover span {
+        display: block;
+    }
+
+    .jcarousel-control-prev.inactive, .jcarousel-control-next.inactive {
+        display: none;
+    }
+
+    .first-div {
+        position: absolute;
+        z-index: 101;
+        width: 100%;
+    }
+
+    #gkBottom6 {
+         z-index: 2;
+    }
+
+    #gkBottom5 {
+         z-index: 2;
+    }
+
+    #gkBottom5:fixed {
+         z-index: 100;
+    }
+
+    @media (max-width: 600px) {
+        .gk-header1 p {
+            margin-left: 5% !important;
+        }
+        .jcarousel-control-next {
+            right: -5% !important;
+        }
+        .jcarousel-control-prev {
+            left: -5% !important;
+        }
+        .bigLetter_description h4 {
+            white-space: normal !important;
+        }
+        .test_question__row {
+            margin-left: 10% !important;
+        }
+        .test_question__row > span:first-child {
+            margin-left: -25px !important;
+        }
+        .test_question__row_title {
+            width: 185px !important;
+            min-height: 20px;
+            height: inherit;
+        }
+    }
+}
+
+</style>
+
+<script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+<!-- ADDTHIS BUTTON BEGIN -->
+<script>
+    var addthis_config = { "data_track_addressbar": false };
+</script>
+
+<script src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-526f8fae4aa8eb82"></script>
+<!--<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526f8fae4aa8eb82"></script>-->
+<!-- ADDTHIS BUTTON END -->
+<script src="https://vk.com/js/api/openapi.js?152" type="text/javascript"></script>
+<script type="text/javascript">
+  VK.init({
+    apiId: 6426067
+  });
+</script>
+<div style="position:absolute;">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T8C328Z');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8C328Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</div>
 </head>
-
-
-<body id="top">
-
-	<!-- header 
-   ================================================== -->
-   <header> 
-
-   	<div class="header-logo">
-	      <a href="#">Origiboy</a>
-	   </div> 
-
-		<a id="header-menu-trigger" href="#0">
-		 	<span class="header-menu-text">Меню</span>
-		  	<span class="header-menu-icon"></span>
-		</a> 
-
-		<nav id="menu-nav-wrap">
-
-			<a href="#0" class="close-button" title="close"><span>Close</span></a>	
-
-	   	<h3>Origiboy.</h3>  
-
-			<ul class="nav-list">
-				<li class="current"><a class="smoothscroll" href="#home" title="">Главная</a></li>
-				<li><a class="smoothscroll" href="#about" title="">Обо мне</a></li>
-				<li><a class="smoothscroll" href="#skills" title="">Навыки</a></li>
-				<li><a class="smoothscroll" href="#credentials" title="">Опыт</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Работы</a></li>
-				<li><a class="smoothscroll" href="#stats" title="">Немного цифр</a></li>				
-				<li><a class="smoothscroll" href="#contact" title="">Написать мне</a></li>						
-			</ul>	
-
-			<ul class="header-social-list">
-	         <li>
-	         	<a href="#"><i class="fa fa-facebook-square"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-twitter"></i></a>
-	         </li>
-            <li>
-            	<a href="#"><i class="fa fa-behance"></i></a>
-            </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-dribbble"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-instagram"></i></a>
-	         </li>
-	      </ul>		
-
-		</nav>  <!-- end #menu-nav-wrap -->
-
-	</header> <!-- end header -->  
-
-
-   <!-- home
-   ================================================== -->
-   <section id="home">
-
-   	<div class="overlay"></div><div class="gradient-overlay"></div>
-
-   	<div class="home-content-table">		   
-
-		   <div class="home-content-tablecell">
-		   	<div class="row">
-		   		<div class="col-twelve">		   			
-			  			<div class="home-bottom-text">
-
-			  				<h3 class="animate-intro">Привет!</h3>
-				  			<h1 class="animate-intro">
-							Меня зовут Михаил <br>
-							Я веб-разработчик &amp; UI/UX Designer <br>
-							В Москве. 
-				  			</h1>	
-
-							<!--<ul class="home-section-links">
-								<li class="animate-intro">Больше <a href="#about" >Про меня</a></li>
-								<li class="animate-intro">Посмотреть <a href="#portfolio" class="smoothscroll">Мои работы</a></li>
-								<li class="animate-intro">Написать мне <a href="#contact" class="smoothscroll">e-mail</a></li>								
-							</ul>
-                          -->
-
-			  			</div> <!-- end home-bottom-text -->
-			   	</div> <!-- end col-twelve --> 
-		   	</div> <!-- end row --> 
-		   </div> <!-- end home-content-tablecell --> 		   
-		</div> <!-- end home-content-table -->
-
-		<a href="#about" class="scroll-icon smoothscroll">		
-		   <span class="icon-DownArrow"></span>
-		</a>	
-   
-   </section> <!-- end home -->
-
-
-   <!-- about
-   ================================================== -->
-   <section id="about">
-
-   	<div class="about-profile-bg"></div>
-
-   	<div class="about-wrap">
-
-   		<div class="about-profile">
-
-   			<div class="about-profile-bg"></div>
-
-				<div class="intro">
-					<h3 class="animate-this">About</h3>
-	   			<h1 class="animate-this">Обо мне.</h1>
-
-	   			<p class="lead animate-this">Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud mollit laboris sunt magna velit culpa consectetur nostrud consectetur labore sed do.</p>					
-				</div>   		
-
-   			<p class="animate-this">
-   			Lorem ipsum Nisi officia Duis irure voluptate dolor commodo pariatur occaecat aliquip adipisicing voluptate Ut in qui ea sint occaecat in commodo in in in incididunt ut sunt in Ut Duis in ut ex qui anim cupidatat cupidatat ex in non dolore labore ea amet cillum ea qui dolor nisi sed velit mollit exercitation ex fugiat labore in deserunt culpa laborum culpa anim dolore laboris amet irure mollit proident velit fugiat aute ea elit magna consequat qui officia quis elit Duis dolor esse cupidatat tempor proident voluptate aliqua ex cupidatat do eiusmod veniam irure laborum ut magna nostrud dolore ullamco commodo elit sit magna aliqua laborum veniam officia dolor.	
-   			</p>
-
-   			<p class="animate-this">Lorem ipsum Minim nisi dolore proident Ut dolor quis deserunt voluptate Ut voluptate enim ut adipisicing fugiat cupidatat nisi adipisicing labore non adipisicing in sit proident. Ut in qui ea sint occaecat in commodo in in in incididunt ut</p>
-
-   			<p>
-   				<a href="#" class="button full-width animate-this">Написать мне</a>
-   				<a href="#" class="button button-primary full-width animate-this">Резюме</a>
-   			</p>  			
-
-   		</div> <!-- end about-profile  -->
-
-   		<div class="about-services">
-
-				<div class="intro">
-	   			<h3 class="animate-this">Services</h3>
-	   			<h1 class="animate-this">Чем я занимаюсь.</h1>
-
-	   			<p class="lead animate-this">Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud mollit laboris sunt magna velit. Ut dolor quis deserunt voluptate.</p>
-   			</div>
-
-   			<ul class="services">
-   				<li class="item-branding animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-RegisteredTrademark"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Branding</h4>
-   						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
-   						</p>
-   					</div>   					
-   				</li>
-   				<li class="item-photography animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-Picture"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Photography</h4>
-   						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
-   						</p>
-   					</div>   					
-   				</li>
-   				<li class="item-webdesign animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-HTML"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Web Design</h4>
-   						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
-   						</p>
-   					</div>   					
-   				</li>
-   				<li class="item-uiux animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-Checked"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>UI/UX Design</h4>
-   						<p>Lorem ipsum Sit Ut eu Ut commodo velit ea et ex officia dolor laborum do in quis ut in occaecat non Duis ut sint voluptate esse consequat aute incididunt in voluptate incididunt.
-   						</p>
-   					</div>   					
-   				</li>
-   			</ul>   			
-
-   		</div> <!-- end about-services  -->   		
-
-   	</div> <!-- end about-wrap  -->
-
-   </section> <!-- end about -->
-
-
-   <!-- about
-   ================================================== -->
-   <section id="skills">
-
-   	<div class="overlay"></div>
-   	<div class="gradient-overlay"></div>
-   	
-   	<div class="row wide">
-   		<div class="col-skills">
-
-   			<div class="section-intro">
-   				<h3 class="animate-this">Skillset</h3>
-   			   <h1 class="animate-this">Мои навыки</h1>
-   			
-   			   <p class="animate-this">Lorem ipsum Elit ut consequat veniam eu nulla nulla reprehenderit reprehenderit sit velit in cupidatat ex aliquip ut cupidatat Excepteur tempor id irure sed dolore sint sunt voluptate ullamco nulla qui Duis qui culpa voluptate enim ea aute qui veniam in irure et nisi nostrud deserunt est officia minim.</p>
-   			</div>
-
-   			<ul class="skill-bars">
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>JQuery</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>PHP</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Wordpress</strong>
-				   </li>   
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Angular JS</strong>
-				   </li>   
-				</ul>
-   			
-   		</div> <!-- end col-six -->
-   	</div> <!-- end row wide -->
-
-   </section> <!-- end skills -->
-
-
-   <!-- credentials
-   ================================================== -->
-   <section id="credentials">
-
-   	<div class="row narrow section-intro with-bottom-sep">
-   		<div class="col-twelve">
-   			<h3 class="animate-this">Career and Education</h3>
-	   		<h1 class="animate-this">More of My Credentials.</h1>  			
-	   		
-	   		<p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>	   			
-   		</div>   		
-   	</div> <!-- end section-intro -->
-
-		<div class="row wide credentials-content">
-
-			<div class="col-six tab-full left">
-
-				<h2 class="animate-this">Experience</h2>
-
-	   		<div class="timeline-wrap">
-
-   				<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">July 2015 - Present</p>
-	   					<h3>Awesome Studio</h3>
-	   					<h4>UI Designer</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
-
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">July 2014 - June 2015</p>
-	   					<h3>Super Cool Agency</h3>
-	   					<h4>Front-end Developer</h4>	   				
-	   				</div>
-	   				<div class="timeline-desc">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
-
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-briefcase"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">May 2013 - June 2014</p>
-	   					<h3>Great Designs Studio</h3>
-	   					<h4>Web Designer</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
-
-   			</div> <!-- end timeline-wrap -->				
-   		
-	   	</div> <!-- end col-six -->
-
-	   	<div class="col-six tab-full right">
-
-	   		<h2 class="animate-this">Education</h2>
-
-				<div class="timeline-wrap">
-
-   				<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">June 2012 - April 2013</p>
-	   					<h3>University of Life</h3>
-	   					<h4>Master Degree</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
-
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">June 2008 - March 2012</p>
-	   					<h3>State Design University</h3>
-	   					<h4>Bachelor Degree</h4>	   				
-	   				</div>
-	   				<div class="timeline-desc">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-	   			</div> <!-- end timeline-block -->
-
-	   			<div class="timeline-block animate-this">
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
-	   				<div class="timeline-header">
-	   					<p class="timeframe">June 2006 - October 2008</p>
-	   					<h3>Design College</h3>
-	   					<h4>Bachelor Degree</h4>	   					
-	   				</div>
-	   				<div class="timeline-content">	   					
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
-
-	   			</div> <!-- end timeline-block -->
-
-   			</div> <!-- end timeline-wrap -->	   		
-	   		
-	   	</div> <!-- end col-six --> 			
-
-		</div> <!-- end row wide -->    	  	
-
-   </section> <!-- end credentials -->
-   
-
-	<!-- portfolio
-   ================================================== -->
-   <section id="portfolio">
-
-   	<div class="row narrow section-intro with-bottom-sep">
-   		<div class="col-twelve">
-   			<h3 class="animate-this">Portfolio</h3>
-	   		<h1 class="animate-this">See My Latest Projects.</h1>  			
-	   		
-	   		<p class="lead animate-this">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>	   			
-   		</div>   		
-   	</div> <!-- end row section-intro -->
-
-   	<div class="row portfolio-content">
-   		<div class="col-twelve">
-   			<div id="folio-wrap" class="bricks-wrapper">					
-
-   				<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-skaterboy.jpg" data-sub-html="#01" > 	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/skaterboy.jpg" alt="Skaterboy">	                     
-	                     <div class="item-text">
-	                     	<span class="folio-types">
-		     					      Web Development
-		     					   </span>
-		     					   <h3 class="folio-title">Skaterboy</h3>	     					   
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
-						
-						<div id="01" class='hide'>
-							<h4>Skater Boy</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="www.behance.net">Details</a></p>
-						</div>
-	        		</div> <!-- end folio-item -->
-
-	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-shutterbug.jpg" data-sub-html="#02"> 	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">	                     
-	                     <div class="item-text">
-	                     	<span class="folio-types">
-		     					      Photography
-		     					   </span>
-		     					   <h3 class="folio-title">Shutterbug</h3>  	     					   
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
-
-	               <div id="02" class='hide'>
-							<h4>Shutterbug</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="www.behance.net">Details</a></p>
-						</div>	               
-	        		</div> <!-- end folio-item -->
-
-	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-explore.jpg" data-sub-html="#03" >   	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/explore.jpg" alt="Explore">	                     
-	                     <div class="item-text">	                     		     					    
-		     					   <span class="folio-types">
-		     					      UI/UX Design
-		     					   </span>
-		     					   <h3 class="folio-title">Explore</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->	
-
-	               <div id="03" class='hide'>
-							<h4>Explore</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="www.behance.net">Details</a></p>
-						</div>               
-	        		</div> <!-- end folio-item -->
-
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-minimalismo.jpg"  data-sub-html="#04" >
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/minimalismo.jpg" alt="Minimalismo">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Web Design
-		     					   </span>
-		     					   <h3 class="folio-title">Minimalismo</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
-
-	               <div id="04" class='hide'>
-							<h4>Minimalismo</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="www.behance.net">Details</a></p>
-						</div>  	               
-	        		</div> <!-- end folio-item -->
-
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-bicycle.jpg"  data-sub-html="#05" >  	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/bicycle.jpg" alt="Bicycle">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Branding
-		     					   </span>
-		     					   <h3 class="folio-title">Bicycle</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
-
-	               <div id="05" class='hide'>
-							<h4>Bicycle</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="www.behance.net">Details</a></p>
-						</div>	               
-	        		</div> <!-- end folio-item -->
-	           
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-salad.jpg"  data-sub-html="#06">     	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/salad.jpg" alt="Salad">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Photography
-		     					   </span>
-		     					   <h3 class="folio-title">Salad</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
-
-	               <div id="06" class='hide'>
-							<h4>Salad</h4>
-							<p>Lorem ipsum Dolor deserunt labore sint officia. Magna et aute enim proident tempor sunt quis nulla voluptate fugiat velit. <a href="www.behance.net">Details</a></p>
-						</div>	               
-	        		</div> <!-- end folio-item -->   				
-
-   			</div> <!-- end folio-wrap -->
-   		</div> <!-- end twelve -->
-   	</div> <!-- end portfolio-content -->   	
-
-   </section>  <!-- end portfolio -->
-
-
-	<!-- stats
-   ================================================== -->
-   <section id="stats">
-
-		<div class="row">
-			<div class="col-twelve">
-				<div class="block-1-4 block-tab-1-2 block-mob-full stats-list">
-
-					<div class="bgrid stat">
-						<div class="icon-part">
-							<i class="icon-Briefcase"></i>
-						</div>
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
-						<h3 class="stat-count">430</h3>
-					</div> <!-- end stat -->					
-
-					<div class="bgrid stat">
-						<div class="icon-part">
-							<i class="icon-AddressBook"></i>
-						</div>
-						<h5 class="stat-title">
-							Happy Clients
-						</h5>
-						<h3 class="stat-count">390</h3>
-					</div> <!-- end stat -->
-
-					<div class="bgrid stat">
-						<div class="icon-part">
-							<i class="icon-Diploma1"></i>
-						</div>
-						<h5 class="stat-title">
-							Awards Received
-						</h5>
-						<h3 class="stat-count">100</h3>
-					</div> <!-- end stat -->									
-
-					<div class="bgrid stat">
-						<div class="icon-part">
-							<i class="icon-Idea"></i>
-						</div>
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-						<h3 class="stat-count">120</h3>
-					</div> <!-- end stat -->
-					
-				</div> <!-- end stats-list -->
-			</div> <!-- end col-twelve -->
-		</div> <!-- end row -->
-
-   </section> <!-- end stats -->
-
-
-	<!-- contact
-   ================================================== -->
-   <section id="contact">
-
-      <div class="overlay"></div>
-
-		<div class="row narrow section-intro">
-   		<div class="col-twelve">
-   			<h3 class="animate-this">Contact</h3>
-   			<h1 class="animate-this">I'm Available for Freelance Work. Feel Free to Contact Me.</h1>
-
-   			<p class="lead animate-this">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-   		</div> 
-   	</div> <!-- end section-intro -->
-
-   	<div class="row contact-form">
-   		<div class="col-twelve">
-
-            <!-- form -->
-            <form name="contactForm" id="contactForm" method="post">
-      			
-
-                  <div class="form-field animate-this">
- 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                  </div>
-                  <div class="form-field animate-this">
-	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-	               </div>
-                  <div class="form-field animate-this">
-	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-	               </div>                       
-                  <div class="form-field animate-this">
-	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div> 
-
-                  <div class="form-field animate-this">
-                     <button class="submitform">Submit</button>
-
-                     <div id="submit-loader">
-                        <div class="text-loader">Sending...</div>                             
-       				      <div class="s-loader">
-								  	<div class="bounce1"></div>
-								  	<div class="bounce2"></div>
-								  	<div class="bounce3"></div>
-								</div>
-							</div>
-                  </div>
-
-      			
-      		</form> <!-- Form End -->
-
-            <!-- contact-warning -->
-            <div id="message-warning"></div> 
-
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
-
-         </div> <!-- end col-twelve -->   		
-   	</div> <!-- end row contact-form -->
-
-   	<div class="row contact-info">
-
-   		<div class="col-four tab-full">
-   			<h5 class="animate-this">Where to find me</h5>
-
-   			<p class="animate-this">
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA<br>
-            94043 US
-            </p>
-   		</div> <!-- end col-four -->
-
-   		<div class="col-four tab-full collapse">
-   			<h5 class="animate-this">Email Me At</h5>
-
-   			<p class="animate-this">
-   				someone@howdywebsite.com<br>
-			   	info@howdywebsite.com			     
-			   </p>
-   		</div> <!-- end col-four -->
-
-   		<div class="col-four tab-full">
-   			<h5 class="animate-this">Call Me At</h5>
-
-   			<p class="animate-this">
-   				Phone: (+63) 555 1212<br>
-			   	Mobile: (+63) 555 0100<br>
-			     	Fax: (+63) 555 0101
-			   </p>
-   		</div> <!-- end col-four -->
-   		
-   	</div> <!-- end row contact-info -->
-		
-	</section> <!-- end contact -->
-
-
-	<!-- footer
-   ================================================== -->
-	<footer>
-     	<div class="row">
-
-     		<div class="col-twelve tab-full social">
-     			<ul class="footer-social">        
-			      <li><a href="#">Facebook</a></li>
-			      <li><a href="#">Twitter</a></li>
-			      <li><a href="#">Behance</a></li>
-			      <li><a href="#">Dribble</a></li>
-			      <li><a href="#">Instagram</a></li>
-			   </ul> 	      		
-	      </div>
-
-      	<div class="col-twelve tab-full">
-	      	<div class="copyright">
-		        	<span>© Copyright Origiboy 2021.</span> 		        	         	
-		      </div>		                  
-	      </div>      	
-
-      </div> <!-- end row -->
-
-      <div id="go-top">
-		   <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-UpArrow"></i></a>
-		</div>		
-   </footer>
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
+<body class="frontpage frontpage-header1 section-nav style2">
+    <!-- vk api -->
+    <!-- <div id="vk_api_transport"></div>
+    <script>
+    window.vkAsyncInit = function() {
+        VK.init({
+            apiId: 6426067
+        });
+    };
+    setTimeout(function() {
+        var el = document.createElement("script");
+        el.type = "text/javascript";
+        el.src = "//vk.com/js/api/openapi.js";
+        el.async = true;
+        document.getElementById("vk_api_transport").appendChild(el);
+    }, 0);
+    </script> -->
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <noscript>
+        <div class="no-js-message">
+            Внимание! В вашем браузере отключен <strong>JavaScript</strong>. Для
+            нормальной работы с сайтом <strong>включите его</strong>.
+        </div>
+    </noscript>
+
+    <div id="gkBg">
+
+        <div id="gkTop">
+            <div class="gkPage">
+                <div class="gkLogoSmall__wrapper">
+                    <a href="http://www.denero.ru/" target="_blank" id="gkLogoSmall" class="cssLogo">Denero</a> <span
+                        class="gkLogoSmall__slogan">Разработка сложных <br>цифровых продуктов и сервисов
+                    </span>
+                </div>
+                <div id="gkMobileMenu" class="gkPage">
+                    <i id="mobile-menu-toggler" class="fa fa-bars"></i> <label
+                        for="mobileMenu">Menu: </label> <select
+                        name="mobileMenu" id="mobileMenu"
+                        onchange="window.location.href = this.value;">
+                        <option value="#team">Кто вы?</option>
+                        <option value="#model">Модель Адизеса</option>
+                        <option value="#test">Пройти PAEI-тест</option>
+                        <option value="#club"
+                            class="show_login">PAEI-клуб</option>
+                        <option value="https://vk.com/paeiclub">ВКонтакте</option>
+                        <option value="https://www.facebook.com/paeiclub">Facebook</option>
+                    </select>
+                </div>
+                <div id="gkMainMenu" class="gkPage">
+                    <nav id="gkExtraMenu" class="gkMenu">
+                        <ul class="gkmenu level0">
+                            <li><a href="#team" id="link_team">Кто вы?</a></li>
+                            <li><a href="#model" id="link_model">Модель Адизеса</a>
+                            </li>
+                            <li><a href="#test" id="link_test">Пройти PAEI-тест</a>
+                            </li>
+                            <li class="paei_club__link"><a href="#club" id="link_club"
+                                class="show_login">PAEI-клуб</a>
+                            </li>
+                            <li class="last haschild button socials"><a
+                                class="socials__item"
+                                href="https://vk.com/paeiclub" target="_blank">
+                                    <i class="fa fa-vk"></i> </a>
+							    <a class="socials__item"
+                                href="https://www.facebook.com/paeiclub"
+                                target="_blank"> <i class="fa fa-facebook"></i>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="gkContentWrapper" class="gkPage">
+
+            <div id="gkHeader" >
+                <div
+                    style="max-width: 1000px; margin: 0 auto; position: relative;">
+                    <a href="http://www.denero.ru/" target="_blank" id="gkLogo" class="cssLogo">Denero</a> <span
+                        class="cssLogo__slogan">Разработка сложных <br>
+                        цифровых продуктов и сервисов
+                    </span>
+                    <div class="custom gk-header1">
+                        <h1 class="gkAnimate active">
+                            Вы —<br> <b>не</b> идеальный<br> руководитель!
+                        </h1>
+                        <p class="gkAnimate active">Согласно концепции Ицхака
+                            Адизеса, мирового эксперта в области менеджмента,
+                            даже самый одаренный руководитель не способен
+                            безупречно выполнять все возложенные на него
+                            функции. То, насколько хорошо он справляется с
+                            каждой из них, характеризует его стиль управления.
+                            Менеджер может быть как "генератором идей", так и
+                            "мертвым пнем".</p>
+
+                    </div>
+                </div>
+                <a href="#team"
+                    class="light gkScrollDown gkAnimate reverse active">Скрольте
+                    вниз</a>
+                <div class="gkHeaderBg active"
+                    style="background-image: url(images/bg/main_bg.jpg);"></div>
+            </div>
+
+            <div id="gkBottom4" class="gkSingleModule" >
+                <div class="gkCols6" id="team">
+                    <div class="box big-title icon-color2 gkmod-1">
+                        <h3 class="header">
+                            Кто<i class="gk-icon-star"></i><br> же<br> вы?
+                        </h3>
+                        <div class="content">
+                            <div class="custom big-title icon-color2">
+                                <div class="gkTeam">
+                                    <div class="jcarousel">
+                                        <ul>
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s">
+                                                        <span>
+                                                            <img src="img/results/0.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.1s">
+                                                            <h3>Производитель</h3>
+                                                            <!-- <small>или одинокий рейнджер</small> -->
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s">
+                                                        <span>
+                                                            <img src="img/results/5.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.1s">
+                                                            <h3>Поджигатель</h3>
+                                                            <!-- <small>или предприниматель</small> -->
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s">
+                                                        <span>
+                                                            <img src="img/results/11.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.1s">
+                                                            <h3>Заботливый <br>бюрократ</h3>
+                                                            <!-- <small>или администратор</small -->
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.6s">
+                                                        <span>
+                                                            <img src="img/results/17.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.7s">
+                                                            <h3>Зануда</h3>
+                                                            <!-- <small>или генеральный менеджер</small> -->
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s">
+                                                        <span>
+                                                            <img src="img/results/1.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.1s">
+                                                            <h3>Герой-одиночка</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.2s">
+                                                        <span>
+                                                            <img src="img/results/6.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.3s">
+                                                            <h3>Интегратор</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/12.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Тренер <br>малой лиги</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/18.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Харизматичный <br>гуру</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/2.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Администратор</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/7.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Горячий <br>сторонник</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/16.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Мнимый <br>лидер</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/default.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Бюрократ</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/4.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Предприниматель</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/10.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Милостивый<br> государь</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/15.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Демагог</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/13.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Основоположник</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/3.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Генератор<br> идей</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/8.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Мертвый<br> пень</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/14.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Изобретатель-<br>одиночка</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div>
+                                                    <figure data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s" >
+                                                        <span>
+                                                            <img src="img/results/9.png" width="186" alt="Team member">
+                                                        </span>
+                                                        <figcaption data-scroll-reveal="enter from the bottom and move 50px over 0.4s after 0.5s">
+                                                            <h3>Надсмотрщик</h3>
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="gkTeamPrev jcarousel-control-prev" href="#"><i class="gk-icon-arrow-left"></i></a>
+                                <a class="gkTeamNext jcarousel-control-next" href="#"><i class="gk-icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#model" class="dark gkScrollDown gkAnimate reverse active">Узнай больше</a>
+            </div>
+
+            <div id="gkBottom1" class="gkSingleModule" >
+                <div class="gkCols6" id="model">
+                    <div class="box big-title icon-color2 dark-bg gkmod-1">
+                        <div class="content">
+                            <div class="custom big-title icon-color2 dark-bg">
+                                <div class="gkColumnLeft">
+                                    <h3 class="header"
+                                        data-scroll-reveal="enter left and move 50px over 0.6s">
+                                        Модель<br> PAEI <i class="gk-icon-prize"></i><br>
+                                        Адизе-<br> са
+                                    </h3>
+                                    <p
+                                        data-scroll-reveal="enter left and move 50px over 0.6s after 0.3s">В
+                                        своей книге "Идеальный руководитель"
+                                        Ицхак Адизес утверждает, что у
+                                        менеджмента есть четыре функции, от
+                                        успешной реализации которых зависит
+                                        благополучие организации. Это
+                                        производство результатов (P),
+                                        администрирование (A),
+                                        предпринимательство (E) и интеграция
+                                        (I).</p>
+                                </div>
+                                <div class="gkColumnRight">
+                                    <figure class="bigLetter_wrapper"
+                                        data-scroll-reveal="enter from the bottom and move 50px over 0.3s after 0.2s">
+                                        <div class="bigLetter">P</div>
+                                        <figcaption
+                                            class="bigLetter_description">
+                                            <h4>Что нужно сделать?</h4>
+                                            <p>Данная функция менеджмента
+                                                отвечает за удовлетворение
+                                                потребностей клиентов. От этого
+                                                зависит результативность
+                                                компании в краткосрочной
+                                                перспективе.</p>
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        data-scroll-reveal="enter from the bottom and move 50px over 0.3s after 0.6s">
+                                        <div class="bigLetter">A</div>
+                                        <figcaption
+                                            class="bigLetter_description">
+                                            <h4>Как это нужно сделать?</h4>
+                                            <p>Организация должна в правильной
+                                                последовательности делать
+                                                правильные вещи. Администратор
+                                                обеспечивает данный процесс.</p>
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        data-scroll-reveal="enter from the bottom and move 50px over 0.3s after 0.4s">
+                                        <div class="bigLetter">E</div>
+                                        <figcaption
+                                            class="bigLetter_description">
+                                            <h4>Когда/зачем это нужно сделать?</h4>
+                                            <p>Придерживаясь творческого подхода
+                                                и готовность идти на риск
+                                                менеджент также должен
+                                                ориентироваться в хаосе
+                                                изменений и определять
+                                                направление развития компании.</p>
+                                        </figcaption>
+                                    </figure>
+                                    <figure
+                                        data-scroll-reveal="enter from the bottom and move 50px over 0.3s after 0.8s">
+                                        <div class="bigLetter">I</div>
+                                        <figcaption
+                                            class="bigLetter_description">
+                                            <h4>Кто это должен сделать?</h4>
+                                            <p>Руководителю нужно уметь
+                                                создавать в компании такую
+                                                систему ценностей, которая в
+                                                свою очередь сформирует в
+                                                команде атмосферу взаимоуважения
+                                                и сотрудничества.</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#test"
+                    class="light gkScrollDown gkAnimate reverse active">Пройти
+                    тест</a>
+            </div>
+
+            <div id="gkBottom2" class="gkSingleModule" >
+                <div class="gkCols6" id="test">
+                    <div class="box big-title icon-color2 gkmod-1">
+                        <h3 class="header">
+                            PAEI-<span>тест</span>
+                        </h3>
+                        <div class="content">
+                            <div class="test_question_intro">
+                                <p>Перед вами 10 блоков, содержащие по 4
+                                    качества личности. Присвойте каждому
+                                    качеству от 1-го до 4-ех баллов в
+                                    зависимости от того, насколько оно подходит
+                                    именно вам. Общая сумма баллов одного блока
+                                    должна быть равна 10.</p>
+                                <p>И да, будьте честны перед собой</p>
+
+
+
+
+
+
+                                <div id="start_test_content">
+                                    <p>Вы уже прошли тест. Вы можете пройти его
+                                        заново, в таком случае результаты будут
+                                        перезаписаны (старый результат будет
+                                        удален).</p>
+                                    </br> <a id="start_test" href="#test"
+                                        class="gray_link">Пройти тест заново</a></span>
+                                </div>
+                            </div>
+
+
+
+
+                            <form id="test_form" name="test_form">
+                                <label style="margin-left: 5px;" for="test_name">Имя:<br>
+                                    <input style="margin: 0px 5px 10px 5px;" type="text" name="test_name">
+                                </label>
+                                <br>
+                                <label style="margin-left: 5px;" for="test_phone">Телефон:<br>
+                                    <input style="margin: 0px 5px 25px 5px;" type="text" name="test_phone">
+                                </label>
+                                <br>
+                            </form>
+
+
+
+
+                            <div class="test_wrapper">
+                                <div class="test_question test_question_1">
+                                    <div class="test_question__row">
+                                        <span
+                                            class="test_question__row_item test_question__row_title">&nbsp;</span>
+                                        <div
+                                            class="test_question__row_circle_wrapper_wrapper">
+                                            <span
+                                                class="test_question__row_item test_question__row_circle_wrapper">
+                                                <span class="num">1</span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper">
+                                                <span class="num">2</span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper">
+                                                <span class="num">3</span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper">
+                                                <span class="num">4</span>
+                                            </span>
+                                        </div>
+                                        <span
+                                            class="test_question__row_item test_question__row_total">Пройдено</span>
+                                    </div>
+                                    <div class="test_question__row"
+                                        data-option="0">
+                                        <span
+                                            class="test_question__row_item test_question__row_title"></span>
+
+                                        <div
+                                            class="test_question__row_circle_wrapper_wrapper">
+                                            <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="1"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="2"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="3"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="4"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span>
+                                        </div>
+
+                                        <span
+                                            class="test_question__row_item test_question__row_total">
+                                            <span class="balls balls_blocks"> <b
+                                                class="num"> <span
+                                                    class="num_inner">0/10</span>
+                                            </b> блоков
+                                        </span>
+                                        </span>
+                                    </div>
+                                    <div class="test_question__row"
+                                        data-option="1">
+                                        <span
+                                            class="test_question__row_item test_question__row_title"></span>
+
+                                        <div
+                                            class="test_question__row_circle_wrapper_wrapper">
+                                            <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="1"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="2"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="3"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="4"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span>
+                                        </div>
+
+                                        <span
+                                            class="test_question__row_item test_question__row_total"></span>
+                                    </div>
+                                    <div class="test_question__row"
+                                        data-option="2">
+                                        <span
+                                            class="test_question__row_item test_question__row_title"></span>
+
+                                        <div
+                                            class="test_question__row_circle_wrapper_wrapper">
+                                            <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="1"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="2"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="3"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="4"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span>
+                                        </div>
+                                        <span
+                                            class="test_question__row_item test_question__row_total">
+                                            <span class="balls balls_balls"> <b
+                                                class="num"> <span
+                                                    class="num_inner">0/10</span>
+                                            </b> баллов
+                                        </span>
+                                        </span>
+                                    </div>
+                                    <div class="test_question__row"
+                                        data-option="3">
+                                        <span
+                                            class="test_question__row_item test_question__row_title"></span>
+
+                                        <div
+                                            class="test_question__row_circle_wrapper_wrapper">
+                                            <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="1"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="2"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="3"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span> <span
+                                                class="test_question__row_item test_question__row_circle_wrapper"
+                                                data-points="4"> <span
+                                                class="test_question__row_circle"></span>
+                                            </span>
+                                        </div>
+                                        <span
+                                            class="test_question__row_item test_question__row_total"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_navigation">
+                                <span class="test_navigation__prev none"> <span
+                                    class="arrow">b</span> предыдущий блок
+                                </span> <span class="test_navigation__next">
+                                    следующий блок <span class="arrow">c</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#result" class="dark gkScrollDown gkAnimate reverse active">Узнать
+                    результат</a>
+                <div class="denero_banner">
+                    <!-- <div class="content"> -->
+                        <div class="step first_step visible">
+                            <p class="content_description"><a class="redirect_link" href="http://extension.agency/" target="_blank">Агентство гибких интернет-стратегий Extension</a>. Работаем 12 лет. Маркетологи агентства сделали > 10 млрд. ₽ в бизнесах партнёров.</p>
+                            <p class="content_description">Проведём аудит на предмет кратного роста бизнеса</p>
+                            <button class="step_trigger"><span>Запрос на бесплатный аудит</span></button>
+                        </div>
+                        <div class="step second_step">
+                            <form class="feedback_form">
+                                <label class="input_label">
+                                    <span class="input_label_holder">Сайт компании <b>*</b></span>
+                                    <input class="input_field name-box" type="text" name="company_site" required />
+                                </label>
+                                <label class="input_label">
+                                    <span class="input_label_holder">Телефон и/или email <b>*</b></span>
+                                    <input class="input_field email-box" type="text" name="number_email" required />
+                                </label>
+                                <label class="input_label">
+                                    <span class="input_label_holder">Коротко о задаче</span>
+                                    <textarea class="input_field text-box" name="task_description" rows="1"></textarea>
+                                </label>
+                                <input class="hidden_input" style="display: none;" type="text" name="company_blabla" required />
+                                <button class="submit_button"></button>
+                            </form>
+                        </div>
+                        <div class="step third_step">
+                            <p class="content_description">Спасибо, мы свяжемся с вами.</p>
+                            <p class="content_description">Перейти на сайт: <a class="redirect_link" href="http://extension.agency" target="_blank">extension.agency</a></p>
+                        </div>
+                        <div class="hiddendiv"></div>
+                    <!-- </div> -->
+                    <button class="banner_close"></button>
+                </div>
+            </div>
+
+            <div id="gkBottom3" class="gkSingleModule">
+                <div class="gkCols6" id="result">
+                    <div class="box big-title icon-color2 gkmod-1">
+                        <h3 class="header"></h3>
+                        <div class="content">
+                            <div
+                                class="result_content_wrapper1 custom big-title icon-color2 dark-bg">
+                                <div class="gkColumnLeft">
+                                    <div class="result_img_wrapper"
+                                        data-scroll-reveal="enter left and move 50px over 0.6s"></div>
+                                </div>
+                                <div class="gkColumnRight">
+                                    <div class="result_content nano"
+                                        data-scroll-reveal="enter right and move 50px over 0.6s">
+                                        <div class="nano-content">
+
+                                            <!-- производитель -->
+                                            <div data-class="Paei">
+                                                <p>Прибыль — результат хорошего
+                                                    менеджмента. Производитель
+                                                    является тем руководителем,
+                                                    который способен его
+                                                    обеспечить. Это преданный
+                                                    своему делу профессионал,
+                                                    разбирающийся в потребностях
+                                                    клиентов и технологиях,
+                                                    которые могут их
+                                                    удовлетворить. Поэтому он
+                                                    всегда знает, что и как
+                                                    нужно делать для достижения
+                                                    результата.</p>
+
+                                                <blockquote>Успеха добивается
+                                                    тот, кто делает больше, чем
+                                                    требуется, и поступает так
+                                                    всегда.</blockquote>
+                                                <div class="author">— Bits and
+                                                    Pieces, декабрь, 1977</div>
+                                                <p>Кроме того, менеджер P-типа
+                                                    на достаточно хорошем уровне
+                                                    выполняет функцию
+                                                    администрирования, что
+                                                    позволяет ему отладить
+                                                    процессы производства.</p>
+                                            </div>
+
+                                            <!-- герой-одиночка -->
+                                            <div data-class="P---">
+                                                <p>Герой-одиночка — это
+                                                    производитель, у которого
+                                                    практически не развиты
+                                                    функции администрирования,
+                                                    предпринимательства и
+                                                    интеграции. Поэтому он не
+                                                    умеет сгенерировать идеи,
+                                                    организовать их воплощение и
+                                                    сплотить команду.</p>
+
+                                                <blockquote>Сначала ввяжемся в
+                                                    бой, а там посмотрим.</blockquote>
+                                                <div class="author">— Наполеон</div>
+
+                                                <p>Тем не менее, выяснив, в чем
+                                                    состоит задача,
+                                                    герой-одиночка всегда
+                                                    добивается ее решения, если
+                                                    при этом он не отвлекается
+                                                    на тушение возникающих то
+                                                    тут, то там пожаров. Поэтому
+                                                    он является идеальным
+                                                    исполнителем для реализации
+                                                    краткосрочных целей.</p>
+                                            </div>
+
+                                            <!-- Администратор -->
+                                            <div data-class="pAei">
+                                                <p>Нельзя добиться результатов
+                                                    без тех, кто организовывает
+                                                    и контролирует процесс их
+                                                    достижения. С этим блестяще
+                                                    справляется администратор,
+                                                    который внимательно и
+                                                    методично работает над
+                                                    повышением эффективности
+                                                    организации.</p>
+
+                                                <blockquote>Дорога к успеху
+                                                    всегда в процессе
+                                                    строительства.</blockquote>
+                                                <div class="quthor">— Арнольд
+                                                    Палмер</div>
+
+                                                <p>Ярко выраженный менеджер
+                                                    А-типа — это человек,
+                                                    который позаботится об
+                                                    организации рабочей среды,
+                                                    проконтролирует бюджет и
+                                                    спланирует достижение целей
+                                                    компании.</p>
+                                            </div>
+
+                                            <!-- Генератор идей -->
+                                            <div data-class="paEi">
+                                                <p>Организация не существует в
+                                                    вакууме, она находится в
+                                                    условиях постоянно
+                                                    изменяющихся реалий.
+                                                    Генератор идей способен
+                                                    сложить воедино поступающую
+                                                    извне информацию и
+                                                    предложить свое видение,
+                                                    куда следует двигаться
+                                                    компании. Это и определяет
+                                                    ее действия в настоящем.</p>
+                                                <blockquote>Провал не грозит
+                                                    лишь тому, кто не проявляет
+                                                    инициативы.</blockquote>
+                                                <div class="author">— Илка Чейз</div>
+                                                <p>Минус такого руководителя в
+                                                    том, что он мечется от одной
+                                                    идеи к другой, поэтому часто
+                                                    он не может довести начатое
+                                                    дело до конца.</p>
+                                            </div>
+
+                                            <!-- Предприниматель -->
+                                            <div data-class="PaEi">
+                                                <p>Если менеджер обладает
+                                                    креативностью, чтобы
+                                                    трансформировать мечту в
+                                                    цель, а цель в реальность,
+                                                    то он является
+                                                    предпринимателем. Он всегда
+                                                    знает, чего хочет и почему.
+                                                    Предпринимателя раздражают
+                                                    идеи без результатов и
+                                                    результаты, за которыми не
+                                                    стоят большие идеи.</p>
+                                                <blockquote>Через тернии к
+                                                    звездам.</blockquote>
+                                                <div class="author">— Девис ВВС
+                                                    Великобритании</div>
+                                                <p>Такой менеджер умеет
+                                                    разрабатывать видение
+                                                    будущего компании, которое
+                                                    диктует ей действия в
+                                                    настоящем. В результате
+                                                    организация прибыльна как в
+                                                    краткосрочной, так и
+                                                    долгосрочной перспективе.</p>
+                                            </div>
+
+                                            <!-- Поджигатель -->
+                                            <div data-class="--E-">
+                                                <p>Поджигатель — это такой тип
+                                                    менеджера, который
+                                                    направляет всю свою неуемную
+                                                    энергию на генерацию и
+                                                    реализацию новых идей. При
+                                                    этом он редко доводит
+                                                    начатое дело до конца, так
+                                                    как в голове уже
+                                                    сформировано пару
+                                                    схематичных планов
+                                                    реализации других инноваций.</p>
+                                                <blockquote>Трудно парить как
+                                                    орел, когда тебя окружают
+                                                    индейки.</blockquote>
+                                                <div class="author">— Афоризм</div>
+                                                <p>Причины своих неудач
+                                                    поджигатель видит, как
+                                                    правило, в подчиненных,
+                                                    поэтому он придирчив к их
+                                                    работе и всегда готов
+                                                    назвать очередного крайнего.</p>
+                                            </div>
+
+                                            <!-- Интегратор -->
+                                            <div data-class="paeI">
+                                                <p>Интегратор — это лидер,
+                                                    который создает в
+                                                    организации связи,
+                                                    обеспечивающие нормальное
+                                                    функционирование в настоящем
+                                                    и преемственность на
+                                                    будущее. Менеджер I-типа
+                                                    обладает креативным
+                                                    мышлением, ведь он действует
+                                                    на поле человеческих
+                                                    отношений, и его задача
+                                                    заключается в сплочении
+                                                    людей с самыми разными
+                                                    характерами и мотивацией.</p>
+                                                <blockquote>Собраться вместе —
+                                                    это начало. Остаться вместе
+                                                    — это прогресс. Работать
+                                                    вместе — это успех.</blockquote>
+                                                <div class="author">— Генри Форд
+                                                    I</div>
+                                                <p>Ему удается добиться этого
+                                                    при помощи создания системы
+                                                    нравственных и поведенческих
+                                                    норм, благодаря которой
+                                                    организация осознает не
+                                                    механически, а как
+                                                    органическую целостность.</p>
+                                            </div>
+
+                                            <!-- Горячий сторонник -->
+                                            <div data-class="---I">
+                                                <p>Горячий сторонник — это
+                                                    политик-популист, который
+                                                    прислушивается ко мнению
+                                                    окружающих и встает на
+                                                    сторону самого
+                                                    поддерживаемого. Он способен
+                                                    добиться видимого согласия
+                                                    между членами команды, но на
+                                                    глубинном уровне могут
+                                                    остаться противоречия,
+                                                    которые в последствии
+                                                    приведут к краху
+                                                    предприятия.</p>
+                                                <blockquote>Человеческие
+                                                    существа — великие
+                                                    приспособленцы.</blockquote>
+                                                <div class="author">— Дуглас
+                                                    Адамс</div>
+                                                <p>Менеджер такого типа нанимает
+                                                    таких же людей, какой он
+                                                    сам, что создает в
+                                                    организации видимость
+                                                    солидарности и лояльности.</p>
+                                            </div>
+
+                                            <!-- Мертвый пень -->
+                                            <div data-class="----">
+                                                <p>Руководитель данного типа —
+                                                    это идеальный подчиненный
+                                                    для героя-одиночки,
+                                                    бюрократа, поджигателя и
+                                                    горячего сторонника. Потому
+                                                    что никогда не жалуется на
+                                                    свою работу и обладает
+                                                    низкой сопротивляемостью к
+                                                    чужому мнению.</p>
+                                                <blockquote>Пытаться добиться
+                                                    успеха, ничего не делая – то
+                                                    же самое, что пытаться
+                                                    собрать урожай там, где вы
+                                                    ничего не сеяли.</blockquote>
+                                                <div class="author">— Давид Блай</div>
+                                                <p>Он безынициативен и его целью
+                                                    является сохранение
+                                                    стабильности своего
+                                                    маленького мирка. Поэтому
+                                                    мертвый пень не любит брать
+                                                    на себя новые проекты и
+                                                    рисковать.</p>
+                                            </div>
+
+                                            <!-- Надсмоторщик -->
+                                            <div data-class="PA--">
+                                                <p>Надсмотрщик нацелен на
+                                                    производство результатов и
+                                                    контроль процессов,
+                                                    направленных на их
+                                                    достижение. Его не
+                                                    интересует творчество и
+                                                    люди, для него важно, что
+                                                    они делают и как.</p>
+                                                <blockquote>Меня никогда не
+                                                    занимала суть проблем. Я
+                                                    механик от политики. Мое
+                                                    дело — программы, а не
+                                                    проблемы, речи и фразы... Я
+                                                    лишь занимаюсь компиляцией</blockquote>
+                                                <div class="author">— Г.Р.
+                                                    Холдеман</div>
+                                                <p>Подобный руководитель
+                                                    автократического типа
+                                                    воспринимает организацию
+                                                    механистически. Его планы и
+                                                    действия расписаны до
+                                                    мелочей.</p>
+                                            </div>
+
+                                            <!-- Милостивый государь -->
+                                            <div data-class="PA-I">
+                                                <p>Милостивый государь успешно
+                                                    справляется с достижением
+                                                    краткосрочных результатов,
+                                                    поддержанием эффективных
+                                                    систем управления и
+                                                    контроля, а также со
+                                                    сплочением людей для
+                                                    реализации принятых решений.</p>
+                                                <blockquote>Презрение и
+                                                    ненависть подданных – это то
+                                                    самое, чего государь должен
+                                                    более всего опасаться.</blockquote>
+                                                <div class="author">— Н.
+                                                    Макиавелли</div>
+                                                <p>Однако ему не достает
+                                                    креативности и харизмы,
+                                                    поэтому он является всего
+                                                    лишь правителем, который
+                                                    умеет выслушать подчиненных
+                                                    и склонить их к работе.</p>
+                                            </div>
+
+                                            <!-- заботливый бюракрат -->
+                                            <div data-class="-A-I">
+                                                <p>Заботливый бюрократ создает
+                                                    систему контроля, которая не
+                                                    вызывает недовольства его
+                                                    сотрудников. При этом он не
+                                                    терпит конфликтов, и его не
+                                                    интересуют результаты.</p>
+                                                <blockquote>Бюрократия есть
+                                                    искусство делать возможное
+                                                    невозможным.</blockquote>
+                                                <div class="author">— Хавьер
+                                                    Паскуаль Сальседо</div>
+                                                <p>Поначалу подчиненным такого
+                                                    менеджера все нравится, и
+                                                    создается впечатление, что
+                                                    компания эффективна. Однако
+                                                    со временем, становится
+                                                    понятно, что она находится в
+                                                    застое.</p>
+                                            </div>
+
+                                            <!-- Тренер малой лиги -->
+                                            <div data-class="P--I">
+                                                <p>Тренер малой лиги отлично
+                                                    умеет формировать и сплочать
+                                                    команду, которую прекрасно
+                                                    координирует для достижения
+                                                    результатов. Его не
+                                                    интересуют внешние условия
+                                                    работы компании, и он не
+                                                    настаивает на соблюдении
+                                                    формальностей. Он поощряет и
+                                                    поддерживает тех, кто делает
+                                                    свое дело.</p>
+                                                <blockquote>Я понял уже давно,
+                                                    что команда всегда одержит
+                                                    верх над одиночкой, а если у
+                                                    тебя команда супер-звезд, то
+                                                    появляется шанс создать
+                                                    целую династию.</blockquote>
+                                                <div class="author">— Джон
+                                                    Чемберс</div>
+                                                <p>Такой стиль приносит плоды
+                                                    только лишь в краткосрочном
+                                                    аспекте. Тренер малой лиги
+                                                    не умеет закреплять свои
+                                                    достижения, не разрабатывает
+                                                    стратегию и не выдвигает
+                                                    серьезных идей.</p>
+                                            </div>
+
+                                            <!-- Основоположник -->
+                                            <div data-class="P-E-">
+                                                <p>Основоположник — отличный
+                                                    менеджер на ранних этапах
+                                                    развития компании. Но в
+                                                    долгосрочной перспективе он
+                                                    становится неэффективным,
+                                                    потому что для устойчивого
+                                                    развития компании требуются
+                                                    администрирование и
+                                                    интеграция.</p>
+                                                <blockquote>Нет ничего плохого в
+                                                    том, чтобы оставаться
+                                                    небольшим проектом.
+                                                    Маленькие команды могут
+                                                    создавать великие вещи.</blockquote>
+                                                <div class="author">— Джейсон
+                                                    Фрайд</div>
+                                                <p>Обычно основоположник
+                                                    превращает компанию в театр
+                                                    одного актера, поскольку ему
+                                                    некогда делегировать
+                                                    полномочия или сплачивать
+                                                    людей.</p>
+                                            </div>
+
+                                            <!-- Изобретатель-одиночка -->
+                                            <div data-class="PAE-">
+                                                <p>Изобретатель-одиночка отлично
+                                                    справляется с реализацией
+                                                    сложнейших проектов — от
+                                                    разработки идеи к построении
+                                                    системы управления и
+                                                    контроля и далее к
+                                                    результатам.</p>
+                                                <blockquote>Незаменимые люди —
+                                                    это те, кто не позволяет
+                                                    себя заменить.</blockquote>
+                                                <div class="author">— Афоризм</div>
+                                                <p>Однако опасность такого
+                                                    руководителя в том, что он
+                                                    единолично занимается и
+                                                    производством результатов, и
+                                                    администрированием, и
+                                                    предпринимательством.
+                                                    Поэтому если
+                                                    изобретатель-одиночка
+                                                    покинет организацию, то ее
+                                                    ждет крах, так как не
+                                                    обеспечено выполнение
+                                                    I-функции — преемственности.</p>
+                                            </div>
+
+                                            <!-- Демагог -->
+                                            <div data-class="--EI">
+                                                <p>Демагог старается уловить
+                                                    настроение коллектива,
+                                                    воодушевить его своей идеей
+                                                    и заручиться поддержкой. Но
+                                                    он никогда не думает о
+                                                    результатах. Поэтому из
+                                                    менеджеров подобного типа
+                                                    получаются отличные
+                                                    политики.</p>
+                                                <blockquote>Он ничего не знает,
+                                                    а думает, что знает все: ему
+                                                    на роду написано быть
+                                                    политиком.</blockquote>
+                                                <div class="author">— Джордж
+                                                    Бернард Шоу</div>
+                                                <p>Демагог получает удовольствие
+                                                    от одного того, что кто-то
+                                                    поддерживает его и готов
+                                                    воплощать в жизнь его идеи.</p>
+                                            </div>
+
+                                            <!-- Мнимый лидер -->
+                                            <div data-class="-AEI">
+                                                <p>Мнимый лидер фонтанирует
+                                                    идеями, воодушевляет ими
+                                                    своих подчиненных и создает
+                                                    систему для их реализации.
+                                                    Но добиться желаемых
+                                                    результатов не получается.</p>
+                                                <blockquote>Удача — это
+                                                    результат последовательности
+                                                    действий.</blockquote>
+                                                <div class="author">— Флавио
+                                                    Бриаторе</div>
+                                                <p>Дело в том, что он не
+                                                    разбирается в том, что нужно
+                                                    делать для удовлетворения
+                                                    потребностей и нужд
+                                                    клиентов. Как следствие,
+                                                    мнимый лидер не может
+                                                    выполнять функцию
+                                                    производства результатов.</p>
+                                            </div>
+
+                                            <!-- Зануда -->
+                                            <div data-class="-AE-">
+                                                <p>Зануда стремится все
+                                                    контролировать и безразличен
+                                                    к мнению окружающих. Он
+                                                    постоянно генерирует идеи
+                                                    преобразований, но боится
+                                                    воплотить их в реальность.
+                                                    Поэтому компании не удается
+                                                    добиться каких бы то ни было
+                                                    результатов.</p>
+                                                <blockquote>Хорошо
+                                                    информированный человек —
+                                                    самый бесполезный зануда на
+                                                    свете.</blockquote>
+                                                <div class="author">— Альфред
+                                                    Уайтхед</div>
+                                                <p>Подавленный собственной
+                                                    несостоятельностью, зануда
+                                                    всегда мрачен и агрессивен.</p>
+                                            </div>
+
+                                            <!-- Бюрократ -->
+                                            <div data-class="-A--">
+                                                <p>Бюрократ стремится, чтобы все
+                                                    процессы компании были
+                                                    безупречны. Он добивается
+                                                    этого при помощи
+                                                    регламентации и отчетности,
+                                                    что способно задушить
+                                                    организацию в долгосрочной
+                                                    перспективе.</p>
+                                                <blockquote>Те, кто плюет на
+                                                    документы, — воск в руках
+                                                    тех, кто на них не плюет.</blockquote>
+                                                <div class="author">— Айрис
+                                                    Мердок</div>
+                                                <p>Менеджер данного типа уделяет
+                                                    много времени мелочам,
+                                                    упуская при этом из вида
+                                                    общую картину. Бюрократ
+                                                    сосредоточен не на том, что
+                                                    стоит и делать и для чего, а
+                                                    на том, как это стоит
+                                                    делать.</p>
+                                            </div>
+
+                                            <!-- Харизматичный гуру -->
+                                            <div data-class="P-EI">
+                                                <p>Харизматический гуру может
+                                                    проанализировать текущую
+                                                    ситуацию в компании,
+                                                    предложить решение для
+                                                    достижения желаемого
+                                                    будущего и произвести нужный
+                                                    результат.</p>
+                                                <blockquote>Существуют люди,
+                                                    способные вести за собой
+                                                    целые народы исключительно
+                                                    благодаря своему обаянию.</blockquote>
+                                                <div class="author">— Ральф
+                                                    Уолдо Эмерсон</div>
+                                                <p>Проблема гуру в том, что он
+                                                    приводит организацию к цели
+                                                    при помощи своей харизмы.
+                                                    Стоит ему покинуть свой пост
+                                                    руководителя, как она
+                                                    распадется из-за отсутствия
+                                                    системности.</p>
+                                            </div>
+
+                                            <!-- PAEI-код -->
+                                            <div data-class="custom_code">
+                                                <div data-attr="P"
+                                                    data-value="-">
+                                                    <p>Менеджер, P-функция
+                                                        которого находится на
+                                                        таком низком уровне, не
+                                                        понимает рынка и
+                                                        потребностей клиентов.
+                                                        Он также не знает
+                                                        технологий, которые
+                                                        могут эти потребности
+                                                        удовлетворить. Как
+                                                        следствие,
+                                                        результативность
+                                                        компании в краткосрочном
+                                                        аспекте находится под
+                                                        угрозой.</p>
+                                                </div>
+
+                                                <div data-attr="P"
+                                                    data-value="p">
+                                                    <p>Функция производства
+                                                        результатов развита
+                                                        ровно настолько, чтобы
+                                                        понимать, что нужно
+                                                        делать. Тем не менее,
+                                                        разработку продукта
+                                                        лучше делегировать ярко
+                                                        выраженному P-менеджеру,
+                                                        который знает рынок,
+                                                        потребности клиентов и
+                                                        технологии, способные их
+                                                        удовлетворить.</p>
+                                                </div>
+
+                                                <div data-attr="P"
+                                                    data-value="P">
+                                                    <p>Выполнение функции
+                                                        производства результатов
+                                                        находится на высоком
+                                                        уровне. Такой менеджер
+                                                        не просто понимает, что
+                                                        нужно делать. Он
+                                                        обладает достаточной
+                                                        целеустремленностью,
+                                                        чтобы воплотить идею в
+                                                        готовый продукт, который
+                                                        будет удовлетворять
+                                                        потребности клиентов.</p>
+                                                </div>
+
+                                                <div data-attr="A"
+                                                    data-value="-">
+                                                    <p>Функция администрирования
+                                                        находится на низком
+                                                        уровне. Менеджер,
+                                                        который ею обладает, не
+                                                        может организовать
+                                                        процесс производства
+                                                        результатов. Он не
+                                                        обращает внимания на
+                                                        детали и не может
+                                                        систематизировать работу
+                                                        компании.</p>
+                                                </div>
+
+
+                                                <div data-attr="A"
+                                                    data-value="a">
+                                                    <p>Функция администрирования
+                                                        развита на приемлемом
+                                                        уровне. Такой менеджер
+                                                        сможет осуществлять
+                                                        контроль производства
+                                                        результатов в настоящий
+                                                        момент. Однако создание
+                                                        системы бесперебойного
+                                                        функционирования
+                                                        предприятия лучше
+                                                        поручить настоящему
+                                                        Администратору.</p>
+                                                </div>
+
+                                                <div data-attr="A"
+                                                    data-value="A">
+                                                    <p>Менеджер, выполняющий
+                                                        функцию
+                                                        администрирования на
+                                                        таком уровне, блестяще
+                                                        справляется с
+                                                        организацией рабочей
+                                                        среды, планированием,
+                                                        управлением и контролем
+                                                        ресурсов компании. Тем
+                                                        самым он подготавливает
+                                                        почву для производства
+                                                        результатов.</p>
+                                                </div>
+
+                                                <div data-attr="E"
+                                                    data-value="-">
+                                                    <p>Менеджер, выполняющий
+                                                        функцию
+                                                        предпринимательства на
+                                                        столь низком уровне, не
+                                                        обладает пониманием, что
+                                                        нужно делать сегодня,
+                                                        чтобы быть успешным
+                                                        завтра. Он не может
+                                                        руководить организацией
+                                                        в реалиях постоянно
+                                                        изменяющегося мира.</p>
+                                                </div>
+
+                                                <div data-attr="E"
+                                                    data-value="e">
+                                                    <p>Функция
+                                                        предпринимательства
+                                                        развита на
+                                                        удовлетворительном
+                                                        уровне. Такой менеджер
+                                                        понимает важность
+                                                        стратегического
+                                                        планирования и действий,
+                                                        направленных на
+                                                        достижение долгосрочных
+                                                        целей. Тем не менее,
+                                                        разработку такого плана
+                                                        того, что делать
+                                                        сегодня, чтобы быть
+                                                        успешным завтра лучше
+                                                        поручить E-менеджеру.</p>
+                                                </div>
+
+                                                <div data-attr="E"
+                                                    data-value="E">
+                                                    <p>Функция
+                                                        предпринимательства
+                                                        находится на высоком
+                                                        уровне. Такой менеджер
+                                                        обладает аналитическим
+                                                        мышлением, которое
+                                                        позволяет ему
+                                                        анализировать изменения
+                                                        окружающей среды. Его
+                                                        креативность помогает
+                                                        создать такое видение
+                                                        компании, которое
+                                                        сделает её успешной в
+                                                        долгосрочной
+                                                        перспективе, но работать
+                                                        над его достижением он
+                                                        начинает сразу же.</p>
+                                                </div>
+
+                                                <div data-attr="I"
+                                                    data-value="-">
+                                                    <p>Функция интеграции
+                                                        находится в зачаточном
+                                                        состоянии.
+                                                        Следовательно,
+                                                        формирование, сплочение
+                                                        и мотивацию команды
+                                                        лучше поручить
+                                                        I-менеджеру. Он сможет
+                                                        создать в компании
+                                                        систему ценностей и норм
+                                                        поведения, которые
+                                                        направят усилия ее
+                                                        сотрудников на
+                                                        достижение общей цели.</p>
+                                                </div>
+
+                                                <div data-attr="I"
+                                                    data-value="i">
+                                                    <p>Реализация I-функции
+                                                        находится на среднем
+                                                        уровне. Такой менеджер
+                                                        не справляется с ней в
+                                                        полной мере, поэтому ее
+                                                        следует делегировать
+                                                        ярко выраженному
+                                                        интегратору, который
+                                                        сможет организовать
+                                                        взаимодействие команды
+                                                        для достижения общей
+                                                        цели.</p>
+                                                </div>
+
+                                                <div data-attr="I"
+                                                    data-value="I">
+                                                    <p>Менеджер, выполняющий
+                                                        функцию интеграции на
+                                                        таком уровне, блестяще
+                                                        справляется с созданием
+                                                        в компании атмосферы
+                                                        взаимоуважения и
+                                                        взаимодействия. Он
+                                                        направляет свое
+                                                        креативное мышление,
+                                                        чтобы сплотить людей с
+                                                        самыми разными мотивами
+                                                        и интересами для
+                                                        достижения общей цели.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom big-title icon-color2 dark-bg">
+                                <div class="gkColumnLeft top_block">
+                                    <div
+                                        class="result_list_wrapper custom big-title icon-color2 dark-bg"
+                                        data-scroll-reveal="enter bottom and move 50px over 0.6s">
+                                        <div
+                                            class="gkColumnLeft result_list_inner">
+                                            <h4>
+                                                <i class="fa fa-magic"></i>Качества:
+                                            </h4>
+                                            <ul class="result_list"></ul>
+                                        </div>
+                                        <div
+                                            class="gkColumnRight result_list_inner">
+                                            <h4>
+                                                <i class="fa fa-tachometer"></i>Навыки:
+                                            </h4>
+                                            <ul class="result_list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gkColumnRight">
+                                    <div class="result_content"
+                                        data-scroll-reveal="enter right and move 50px over 0.6s">
+                                        <div class="diagrams_wrapper">
+                                            <div class="diagrams_item"
+                                                data-scroll-reveal="enter from the top and move 50px over 0.4s">
+                                                <div class="diagrams_item__head">P=0</div>
+                                                <div class="svg"></div>
+                                            </div>
+                                            <div class="diagrams_item"
+                                                data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.2s">
+                                                <div class="diagrams_item__head">A=0</div>
+                                                <div class="svg"></div>
+                                            </div>
+                                            <div class="diagrams_item"
+                                                data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.4s">
+                                                <div class="diagrams_item__head">E=0</div>
+                                                <div class="svg"></div>
+                                            </div>
+                                            <div class="diagrams_item"
+                                                data-scroll-reveal="enter from the top and move 50px over 0.4s after 0.6s">
+                                                <div class="diagrams_item__head">I=0</div>
+                                                <div class="svg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="share_block custom big-title icon-color2 dark-bg">
+                              <div class="gkColumnLeft"
+                                    data-scroll-reveal="enter bottom and move 50px over 0.6s">
+                                    <div class="result_link_wrapper">
+                                        <div class="title">Постоянная ссылка:</div>
+                                        <div class="result_link_field_wrapper">
+                                            <span class="result_link_field_inner" id="copy_button">
+                                                <input class="result_link_field result_link_field_copylink" id="copy_to_clipboard_button" type="text" value="http://paei.alesta-up.ru" readonly="readonly" />
+                                                <span class="result_link_field_tip">ссылка скопирована</span>
+                                            </span>
+                                            <button class="copylink-button">скопировать</button>
+                                            <span class="copylink-helper" style="display: none;">Подсказка: ссылку можно использовать в резюме.</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="result_link_wrapper" id="copylink_name_wrapper" style="display: none;">
+                                        <div class="result_link_field_wrapper">
+                                            <span class="result_link_field_inner">
+                                                <input class="copylink_name_field result_link_field_copylink_name" type="text" value="" placeholder="добавить имя и фамилию"  maxlength="50" />
+                                                <span class="copylink_name_tip">Ваша имя и фамилия будет отображаться по данному адресу в заголовке страницы</span>
+                                            </span>
+                                            <button class="copylink_name-button">добавить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gkColumnRight w40percent">
+                                    <div class="social_contacts_wrapper"
+                                        data-scroll-reveal="enter right and move 50px over 0.6s">
+                                        <div class="social_contacts">
+                                            <span class="title">Поделиться:</span>
+
+                                            <div id="addthis_toolbox"
+                                                class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                                                <a
+                                                    class="addthis_button_preferred_1"></a>
+                                                <a
+                                                    class="addthis_button_preferred_2"></a>
+                                                <a
+                                                    class="addthis_button_preferred_3"></a>
+                                                <a
+                                                    class="addthis_button_compact"></a>
+                                                <a
+                                                    class="addthis_counter addthis_bubble_style"></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                             <div class="gkColumnRight w40percent save_on_mail">
+                                    <div class="result_link_wrapper">
+                                        <div class="title">Сохранить на почту</div>
+                                        <form class="result_link_field_wrapper" id="resulta" name="resulta">
+                                            <span class="email_holder_field_inner">
+                                                <input class="email_holder_field" type="text" placeholder="Введите адрес своей почты" name="email_sender_field" id="email_sender_field"/>
+                                            </span>
+                                            <button class="email_sender">ok</button>
+                                            <span class="copylink-helper" style="display: none;">Отправляя форму, вы соглашаетесь на обработку <a href="/privacy_policy.pdf" target="_blank">персональных данных</a></span>
+                                            <input class="result_link_field result_link_field_copylink" id="copy_to_clipboard_button-2" type="text" value="http://paei.denero.ru/" style="display: none;" name="personal_link" readonly="readonly" />
+                                        </form>
+                                        <div class="send_mail_result" style="display: none">
+                                            <!--<span class="copylink-helper">Спасибо. Ссылка на результаты теста была отправлена Вам на почту</span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#stats"
+                    class="light gkScrollDown gkAnimate reverse active" id="stats-href">Смотреть статистику</a>
+            </div>
+
+
+            <div id="gkBottom7" class="gkSingleModule stats__section">
+                <div class="gkCols6" id="stats">
+                    <div class="box big-title icon-color2 gkmod-1">
+                        <h3 class="header">
+                            С<span>татистика сервиса</span>
+                        </h3>
+                        <div class="content">
+                            <div class="stats-row stats-row--counters">
+                                <div class="stats-holder paei-p">
+                                    <span class="stats-holder__item" id="paei_p" data-col="39080">0</span>
+                                    <p class="stats-holder__name">Производителей</p>
+                                </div>
+                                <div class="stats-holder paei-a">
+                                    <span class="stats-holder__item" id="paei_a" data-col="16088">0</span>
+                                    <p class="stats-holder__name">Администраторов</p>
+                                </div>
+                                <div class="stats-holder paei-e">
+                                    <span class="stats-holder__item" id="paei_e" data-col="31354">0</span>
+                                    <p class="stats-holder__name">Предпринимателей</p>
+                                </div>
+                                <div class="stats-holder paei-i">
+                                    <span class="stats-holder__item" id="paei_i" data-col="25100">0</span>
+                                    <p class="stats-holder__name">Интеграторов</p>
+                                </div>
+                            </div>
+
+                            <div class="stats-row stats-row--statistics">
+                                <div class="stats-holder">
+                                    <span class="stats-holder__item">#1</span>
+                                    <p class="stats-holder__name">Первые места в выдаче <br> Яндекс и Google</p>
+                                </div>
+                                <div class="stats-holder">
+                                    <span class="stats-holder__item">>130K</span>
+                                    <p class="stats-holder__name">Уникальных пользователей, <br> прошедших тест</p>
+                                </div>
+                                <div class="stats-holder">
+                                    <span class="stats-holder__item">>5,5K</span>
+                                    <p class="stats-holder__name">Поделились результатами теста в <br> соцсетях или рассказали о сервисе</p>
+                                </div>
+                                <div class="stats-holder">
+                                    <span class="stats-holder__item">0 руб.</span>
+                                    <p class="stats-holder__name">на рекламу и продвижение</p>
+                                </div>
+                            </div>
+
+                            <div class="stats-footer">
+                                <a class="stats-footer__logo" href="http://www.denero.ru" target="_blank">
+                                    <img src="images/logo.png">
+                                </a>
+
+                                <p class="stats-footer__description">Придумываем и разрабатываем полезные веб-сервисы, которыми приятно пользоваться и делиться с друзьями. Консультируем стартапы и <br> интернет-магазины на предмет увеличения выручки.</p>
+
+                                <a class="stats-footer__button" target="_blank" href="http://www.denero.ru/contacts/">задать вопрос</a>
+
+                                <div class="stats-footer__links">
+                                    <a class="stats-footer__link" target="_blank" href="http://www.denero.ru/">перейти на сайт denero.ru</a>
+                                    <a class="stats-footer__link" target="_blank" href="http://www.denero.ru/cases/paei/">читать кейс о разработке сервиса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#club"
+                    class="light gkScrollDown gkAnimate reverse active" id="club-href">Подобрать
+                    команду</a>
+            </div>
+
+            <div id="gkBottom6" class="gkSingleModule" style="display:none;">
+                <div class="gkCols6" id="club">
+                    <div class="box big-title icon-color2 gkmod-1">
+                        <div class="content">
+                            <div class="custom big-title icon-color2 dark-bg">
+                                <div class="header_wrapper">
+                                    <div class="header_inner">
+                                        <h3 class="header">PAEI-КЛУБ</h3>
+                                    </div>
+                                    <span
+                                        class="club_filter__application gray_link_dash">Изменить
+                                        мои данные</span>
+                                </div>
+                                <div class="club_filter__wrapper">
+                                    <div class="club_filter__list">
+                                        <div class="club_filter__item">
+                                            <div
+                                                class="club_filter__value_wrapper">
+                                                P=<span
+                                                    id="club_filter__value_1"
+                                                    class="club_filter__value">80%</span>
+                                            </div>
+                                            <div id="club_filter__slider_1"
+                                                class="club_filter__slider"></div>
+                                            <input type="hidden"
+                                                id="club_filter__slider_value_1" />
+                                        </div>
+
+                                        <div class="club_filter__item">
+                                            <div
+                                                class="club_filter__value_wrapper">
+                                                A=<span
+                                                    id="club_filter__value_2"
+                                                    class="club_filter__value">80%</span>
+                                            </div>
+                                            <div id="club_filter__slider_2"
+                                                class="club_filter__slider"></div>
+                                            <input type="hidden"
+                                                id="club_filter__slider_value_2" />
+                                        </div>
+
+                                        <div class="club_filter__item">
+                                            <div
+                                                class="club_filter__value_wrapper">
+                                                E=<span
+                                                    id="club_filter__value_3"
+                                                    class="club_filter__value">80%</span>
+                                            </div>
+                                            <div id="club_filter__slider_3"
+                                                class="club_filter__slider"></div>
+                                            <input type="hidden"
+                                                id="club_filter__slider_value_3" />
+                                        </div>
+
+                                        <div class="club_filter__item">
+                                            <div
+                                                class="club_filter__value_wrapper">
+                                                I=<span
+                                                    id="club_filter__value_4"
+                                                    class="club_filter__value">80%</span>
+                                            </div>
+                                            <div id="club_filter__slider_4"
+                                                class="club_filter__slider"></div>
+                                            <input type="hidden"
+                                                id="club_filter__slider_value_4" />
+                                        </div>
+                                    </div>
+
+                                    <div class="legend_list">
+                                        <div class="legend_item__wrapper">
+                                            <input
+                                                class="custom_elem type_2 pink"
+                                                type="checkbox"
+                                                id="filter_partnership"> <label
+                                                for="filter_partnership"
+                                                class="legend_item__value pink">открыт
+                                                к партнерству</label>
+                                        </div>
+                                        <div class="legend_item__wrapper">
+                                            <input
+                                                class="custom_elem type_2 green"
+                                                type="checkbox"
+                                                id="filter_person_job"> <label
+                                                for="filter_person_job"
+                                                class="legend_item__value green">ищу
+                                                работу</label>
+                                        </div>
+                                        <div class="legend_item__wrapper">
+                                            <input
+                                                class="custom_elem type_2 blue"
+                                                type="checkbox"
+                                                id="filter_person_employee"> <label
+                                                for="filter_person_employee"
+                                                class="legend_item__value blue">ищу
+                                                сотрудника</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="paei_club__filter_addition">
+                                    <div
+                                        class="paei_club__filter_addition__checkbox_wrapper">
+                                        <input id="paei_club__best"
+                                            class="paei_club__filter_addition_checkbox custom_elem type_2"
+                                            type="checkbox"
+                                             disabled="disabled">
+                                        <label
+                                            class="paei_club__filter_addition_label"
+                                            for="paei_club__best">выставить
+                                            идеально дополняющие мои качества
+                                            значения</label>
+                                    </div>
+                                    <!-- <div
+                                        class="paei_club__show_instruction_wrapper">
+                                        <span
+                                            class="paei_club__show_instruction">инструкция
+                                            по использованию</span>
+                                        <div class="paedi_club__instruction">
+                                            <span class="close"></span>
+                                            <div
+                                                class="paedi_club__instruction__head">Инструкция
+                                                по использованию</div>
+                                            <p>Иногда брифинга недостаточно для
+                                                создания интерфейса, который бы
+                                                удовлетворял потребности целевой
+                                                аудитории и соответствовал
+                                                задачам бизнеса. UX-стратегия
+                                                позволит создать положительный
+                                                опыт взаимодействия аудитории с
+                                                вашим продуктом. Не имея ясной
+                                                стратегии можно потратить
+                                                большое количество времени на
+                                                тактические задачи впустую и так
+                                                и не понять верное направление.</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="nano"
+                                    style="height: 450px !important">
+                                    <div class="people_list nano-content"
+                                        style="padding: 0;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="gkBottom5" class="gkSingleModule">
+                <div class="gkBottom5-actions">
+                    <div class="box gkBottom5-box">
+                        <div class="content build_team_wrapper gkBottom5-box">
+                            <div class="build_team_text">
+                                <span class="gkBottom5-show">скрыть <i id="gkBottom5-show-icon" class="fa fa-chevron-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gkCols6" id="build">
+                    <div class="box big-title icon-color2 gkmod-1">
+                        <div class="content build_team_wrapper">
+                            <div class="build_team_text">
+                                <div class="build_team__social custom big-title icon-color2 dark-bg">
+                                    <div class="gkColumnLeft">
+                                        <div class="build_team_text__title">
+                                            <a href="http://www.extension.agency" class="gray_link" target="_blank" onclick="yaCounter24967658.reachGoal('extension')"><b>Extension</b></a> — разработка и реализация гибких интернет-стратегий, которые помогают
+хорошему бизнесу расширяться.
+                                        </div>
+                                        <div>
+                                            <ul class="build_team__social__list">
+                                                <li>— разработка стратегии комплексного интернет-маркетинга;</li>
+                                                <li>— внедрение и реализация стратегии;</li>
+                                                <li>— создание потока входящих заявок из интернета, увеличение продаж.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="gkColumnRight">
+                                        <div
+                                            style="height: 100%; overflow: auto;">
+                                            <form action="/?mail"
+                                                class="subscribe_form">
+                                                 <form action="" class="subscribe_form"> эта строка была отдельно закомментирована
+                                                <div
+                                                    class="subscribe_form_title">Получить презентацию на почту:</div>
+                                                <div
+                                                    class="subscribe_form__field_wrapper">
+                                                    <input
+                                                        class="subscribe_form__field"
+                                                        id="subscribe_mail"
+                                                        type="email" required
+                                                        placeholder="e-mail"
+                                                        onfocus="this.placeholder = ''"
+                                                        onblur="this.placeholder = 'e-mail'">
+                                                    <button class="subscribe_form__field__submit subscribe_form__field__submit-icon" type="submit">получить!</button>
+                                                </div>
+                                                <div class="subscribe_form__field_wrapper subscribe_form_title subscribe_user">
+                                                    <input checked="checked" class="jq-checkbox custom_elem type_1" type="checkbox" id="subscribe_user"/><label for="subscribe_user">Подписаться на рассылку</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div id="modal-rewrite-result"
+                 class="modal fade"
+                 aria-hidden="true"
+                 role="dialog"
+                 data-keyboard="false"
+                 data-backdrop="static"
+                 tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="paei_club__registration">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="paei_club__registration__head">Авторизация</div>
+                                <span class="modal-close"></span>
+                            </div>
+                            <div class="modal-body">
+                                <p>Вы уже проходили тест ранее: перезаписать результаты новыми данными?
+                                <div class="rewrite-result-buttons">
+                                    <span class="rewrite-result-ok">Войти и перезаписать</span>
+                                    <div class="rewrite-result-cancel gray_link">Войти не записывая</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="modal-paei_club__registration"
+                 class="modal fade first-div"
+                 aria-hidden="true"
+                 role="dialog"
+                 data-keyboard="false"
+                 data-backdrop="static"
+                 tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="paei_club__registration">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="modal-close"></span>
+                                    <!--  style="display: none;"></span> -->
+                                <div class="paei_club__registration__head">
+                  Авторизация                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="auth_form"
+                                     style="display: block;">
+                                    <div class="paei_club__registration__intro">Если
+                                        вы уже проходили тест и
+                                        регистрировались, введите данные своей
+                                        учетной записи. Если нет — пройдите тест
+                                        и вам будет доступна регистрация</div>
+                                    <div class="paei_club__auth">
+                                        Войти через
+										    <!--<a class="socials__item linkedin"
+                                            href="http://www.linkedin.com/company/denero"
+                                            target="_blank"><i
+                                            class="fa fa-linkedin"></i> </a>-->
+											<a class="socials__item facebook"
+                                            href="https://www.facebook.com/paeiclub"
+                                            target="_blank">
+											<i class="fa fa-facebook"></i> </a>
+											<a class="socials__item vkontakte"
+                                            href="https://vk.com/paeiclub"
+                                            target="_blank"><i class="fa fa-vk"></i>
+                                            </a> <span
+                                            class="paei_club__auth__email"
+                                             style="display: none;">Зарегистрироваться
+                                            через e-mail</span>
+                                    </div>
+                                    <div class="paei_club__auth">
+                                        Войти, используя <a href="/?login"
+                                            class="email_auth">e-mail и пароль</a>
+                                    </div>
+
+                                    <div style="clear: both;"></div>
+                                    <div id="auth_error" class="login_error"></div>
+                                </div>
+
+                                <div class="paei_club__auth_form">
+                                    <div class="paei_club__login_wrapper"
+                                        style="float: left;">
+                                        <div class="paei_club__email_label">Email:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input class="paei_club__name_field"
+                                                id="login" type="email"
+                                                placeholder="mail@example.com"
+                                                required>
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__password_wrapper"
+                                        style="float: left;">
+                                        <div class="paei_club__email_label">Пароль:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input class="paei_club__name_field"
+                                                id="password" type="password"
+                                                required>
+                                        </div>
+                                    </div>
+
+                                    <div style="clear: both;"></div>
+                                    <div id="login_error" class="login_error"></div>
+
+                                    <div class="paei_club__send_wrapper">
+                                        <span class="paei_club__login">Войти</span>
+                                        <div class="cancel_button gray_link"
+                                            style="display: inline-block; margin: 5px 5px 5px 30px">Отмена</div>
+                                    </div>
+                                </div>
+
+
+                <div class="paei_club__user_data_form"
+                                    >
+                                    <div class="paei_club__name_wrapper"
+                                        style="float: left;">
+                                        <div class="paei_club__email_label">Ваше
+                                            имя:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input class="paei_club__name_field"
+                                                id="_name"
+                                                value=""
+                                                placeholder="Ваше имя"
+                                                type="text" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__name_wrapper"
+                                        style="float: left; margin-left: 25px;">
+                                        <div class="paei_club__email_label">Ваш
+                                            город:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input class="paei_club__name_field"
+                                                id="_city"
+                                                value=""
+                                                placeholder="Ваш город"
+                                                type="text" required>
+                                        </div>
+                                    </div>
+
+                                    <div style="clear: both;"></div>
+
+                                    <div class="paei_club__email_wrapper"
+                                        style="float: left;">
+                                        <div class="paei_club__email_label">Ваш
+                                            e-mail:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input
+                                                class="paei_club__email_field"
+                                                id="_email"
+                                                value=""
+                                                placeholder="mail@example.com"
+                                                type="email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__email_wrapper"
+                                        style="float: left; margin-left: 25px;">
+                                        <div class="paei_club__email_label">Новый
+                                            пароль:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input
+                                                class="paei_club__email_field"
+                                                id="_password" type="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__detail"
+                                        style="clear: both;">
+                                        <div class="paei_club__detail_item">
+                                            <input class="custom_elem type_1"
+                                                id="_partnership"
+                                                type="checkbox"
+                                                >
+                                            <label for="_partnership">открыт к
+                                                партнерству</label>
+                                        </div>
+                                        <div class="paei_club__detail_item">
+                                            <input class="custom_elem type_1"
+                                                value="job" id="_job"
+                                                type="radio" name="_person"
+                                                 />
+                                            <label for="_job">ищу работу</label>
+                                        </div>
+                                        <div class="paei_club__detail_item">
+                                            <input class="custom_elem type_1"
+                                                value="employee" id="_employee"
+                                                type="radio" name="_person"
+                                                 />
+                                            <label for="_employee">ищу
+                                                сотрудника</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- привязка соцсетей -->
+
+                                    <div class="paei_club__social_feature">
+                                        <p>Прикрепить профиль соцсетей
+
+
+                                        <div
+                                            class="paei_club__social_feature_detail">
+                                            (<a class="gray_link_dash" href="#">подробнее</a>)
+                                        </div>
+                                        </p>
+                                        <p
+                                            id="paei_club__social_feature_detail_text">Вы
+                                            можете прикрепить и в любой момент
+                                            открепить один из профилей в
+                                            социальных сетях. Если у вас не
+                                            привязан ни один профиль — связь с
+                                            вами будет невозможна и вы не будете
+                                            выводиться в общей таблице</p>
+
+                                        <div>
+                                            <a
+                                                href="http://www.linkedin.com/company/denero"
+                                                target="_blank"><i
+                                                class="fa fa-linkedin"></i>
+                                                <div
+                                                    class="paei_club__social_add"
+                                                    id="paei_club__social_add_in">привязать
+                                                    профиль</div>
+                                                <div
+                                                    class="paei_club__social_remove"
+                                                    id="paei_club__social_remove_in">
+                                                    открепить профиль<i
+                                                        class="fa fa-times"></i>
+                                                </div></a>
+                                        </div>
+
+                                        <div>
+                                            <a
+                                                href="https://www.facebook.com/denero.ru"
+                                                target="_blank"><i
+                                                class="fa fa-facebook"></i>
+                                                <div
+                                                    class="paei_club__social_add"
+                                                    id="paei_club__social_add_fb">привязать
+                                                    профиль</div>
+                                                <div
+                                                    class="paei_club__social_remove"
+                                                    id="paei_club__social_remove_fb">
+                                                    открепить профиль<i
+                                                        class="fa fa-times"></i>
+                                                </div></a>
+                                        </div>
+
+                                        <div>
+                                            <a href="https://vk.com/paeiclub"
+                                                target="_blank"><i
+                                                class="fa fa-vk"></i>
+                                                <div
+                                                    class="paei_club__social_add"
+                                                    id="paei_club__social_add_vk">привязать
+                                                    профиль</div>
+                                                <div
+                                                    class="paei_club__social_remove"
+                                                    id="paei_club__social_remove_vk">
+                                                    открепить профиль<i
+                                                        class="fa fa-times"></i>
+                                                </div></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__description"
+                                        style="margin-bottom: 25px;">Введите
+                                        короткое сообщение (до 250 символов),
+                                        которое будет отображаться на странице
+                                        списка участников:</div>
+
+                                    <div class="paei_club__about_wrapper">
+                                        <textarea
+                                            class="paei_club__description_textarea"
+                                            id="_description" maxlength="250"
+                                            cols="30" rows="10"
+                                            placeholder="Например: Всем привет! Я — безумный генератор идей! Мне нужен тот, кто сможет их разобрать по деталям, а потом реализовать. Ну или отговорить от реализации. В общем, я ищу администратора."></textarea>
+                                    </div>
+
+                                    <div class="paei_club__send_wrapper edit"
+                                        style="width: 100%">
+                                        <span class="paei_club__send"
+                                            style="display: inline-block;">Сохранить</span>
+                                        <a href="/?logout"
+                                            class="logout_button gray_link"
+                                            style="display: inline-block; float: right; margin: 5px">Выйти</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="paei_club__register_form">
+                                    <div class="paei_club__name_wrapper"
+                                        style="float: left;">
+                                        <div class="paei_club__email_label">Введите
+                                            имя:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input class="paei_club__name_field"
+                                                id="name" placeholder="Имя"
+                                                type="text"required">
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__name_wrapper"
+                                        style="float: left; margin-left: 25px;">
+                                        <div class="paei_club__email_label">Укажите
+                                            город:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input class="paei_club__name_field"
+                                                id="city" placeholder="Город"
+                                                type="text" required>
+                                        </div>
+                                    </div>
+
+                                    <div style="clear: both;"></div>
+
+                                    <div class="paei_club__email_wrapper"
+                                        style="float: left;">
+                                        <div class="paei_club__email_label">Введите
+                                            e-mail:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input
+                                                class="paei_club__email_field"
+                                                id="email"
+                                                placeholder="mail@example.com"
+                                                type="email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__email_wrapper"
+                                        style="float: left; margin-left: 25px;">
+                                        <div class="paei_club__email_label">Введите
+                                            пароль:</div>
+                                        <div
+                                            class="paei_club__email_field_wrapper">
+                                            <input
+                                                class="paei_club__email_field"
+                                                id="register_password"
+                                                type="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="paei_club__detail"
+                                        style="clear: both;">
+                                        <div class="paei_club__detail_item">
+                                            <input id="partnership"
+                                                class="custom_elem type_1"
+                                                type="checkbox"> <label
+                                                for="partnership">открыт к
+                                                партнерству</label>
+                                        </div>
+                                        <div class="paei_club__detail_item">
+                                            <input id="job"
+                                                class="custom_elem type_1"
+                                                value="job" type="radio"
+                                                name="person" checked="checked" />
+                                            <label for="job">ищу работу</label>
+                                        </div>
+                                        <div class="paei_club__detail_item">
+                                            <input id="employee"
+                                                class="custom_elem type_1"
+                                                value="employee" type="radio"
+                                                name="person" /> <label
+                                                for="employee">ищу сотрудника</label>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" id="photo" /> <input
+                                        type="hidden" id="social" /> <input
+                                        type="hidden" id="link" /> <input
+                                        type="hidden" id="social_id" />
+
+                                    <div class="paei_club__description"
+                                        style="margin-bottom: 25px;">Введите
+                                        короткое сообщение (до 250 символов),
+                                        которое будет отображаться на странице
+                                        списка участников:</div>
+                                    <div class="paei_club__about_wrapper">
+                                        <textarea
+                                            class="paei_club__description_textarea"
+                                            name="" id="description"
+                                            maxlength="250" cols="30" rows="10"
+                                            placeholder="Например: Всем привет! Я — безумный генератор идей! Мне нужен тот, кто сможет их разобрать по деталям, а потом реализовать. Ну или отговорить от реализации. В общем, я ищу администратора."></textarea>
+                                    </div>
+                                    <div
+                                        class="paei_club__send_wrapper register"
+                                        style="width: 100%">
+                                        <span class="paei_club__send"
+                                            style="display: inline-block">Отправить</span>
+                                        <div class="cancel_button"
+                                            style="display: inline-block; float: right; margin: 5px">Отмена</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.paei_club__registration -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- modal -->
+        </div>
+    </div>
+
+    <script src="//yastatic.net/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.nouislider.min.js"></script>
+    <script src="js/gk.menu.min.js"></script>
+
+    <!-- TODO: -->
+    <script src="js/gk.scripts.js"></script>
+
+    <script src="js/jquery.svg.min.js"></script>
+    <script src="js/jquery.nanoscroller.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/ZeroClipboard.min.js"></script>
+    <script src="js/modal.min.js"></script>
+
+    <script src="js/vendor/jquery.jcarousel.js"></script>
+
+    <script src="js/plugins.js"></script>
+
+    <!-- TODO: -->
+    <script src="js/countUp.min.js"></script>
+    <script src="js/test.js?25"></script>
+    <script src="js/jquery.jcarousel-swipe.js"></script>
+
+
+
+    <script>
+      if (jQuery(window).width() > 600) {
+        jQuery('.title-left .header').attr('data-scroll-reveal', 'enter left and move 50px over 0.45s').addClass('scroll-revealed');
+        jQuery('.title-right .header').attr('data-scroll-reveal', 'enter right and move 50px over 0.45s').addClass('scroll-revealed');
+        jQuery('.big-title .header').each(function(i, header) {
+          header = jQuery(header);
+          if (!header.hasClass('scroll-revealed') && !header.attr('data-scroll-reveal')) {
+            header.attr('data-scroll-reveal', 'enter from the top and move 50px over 0.45s').addClass('scroll-revealed');
+          }
+        });
+        jQuery(window).scrollReveal = new scrollReveal();
+      }
+    </script>
+
+    <script>
+      $GKMenu = {height: true, width: true, duration: 250};
+      $GK_TMPL_URL = "http://paei.alesta-up.ru/";
+      $GK_URL = "http://paei.alesta-up.ru/";
+      URL = "http://paei.alesta-up.ru/";
+            loaded_result = null;
+      addthisurl = null;
+
+            result_name = null;
+
+            authed = false;
+
+            short_version = false;
+
+            test_done = false;
+
+    </script>
+
+
+
+
+</form>
+
+<script>
+
+jQuery(document).ready(function() {
+    jQuery('#test_form').submit(function() {
+        var tsname = jQuery("#tsname").val();
+        var tsphone = jQuery("#tsphone").val();
+        var title = jQuery("#title").val();
+        var p = jQuery("#p").val();
+        var a = jQuery("#a").val();
+        var e = jQuery("#e").val();
+        var i = jQuery("#i").val();
+        var http = new XMLHttpRequest();
+        var url = "https://script.google.com/macros/s/AKfycbzSGwqqw0rDYWOAKNdwZnGdNsK9xJuZmR1fRwDseeyZ6MDo406x/exec";
+        var params = "p1="+tsname+"&p2="+tsphone+"&p3="+title+"&p4="+p+"&p5="+a+"&p6="+e+"&p7="+i;
+        http.open("GET", url+"?"+params, true);
+        http.onreadystatechange = function() {
+            if(http.readyState == 1 && http.status == 200) {
+                //alert(http.responseText);
+            }
+        }
+        http.send(null);
+    });
+});
+
+</script>
 </body>
-
 </html>
