@@ -2,7 +2,10 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+}
+body
+{
+	overflow-x: hidden;
 }
 .button-hover
 {
@@ -27,6 +30,8 @@ header, footer
 }
 .header__nav__mob {
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	padding: 19px 38px;
 	box-sizing: border-box;
@@ -41,10 +46,7 @@ header, footer
 	top: -49px;
 	right: -111px;
 }
-.header__logo
-{
-	
-}
+
 .header__nav
 {
 	height: 100%;
@@ -641,12 +643,18 @@ h1.block__6-head
 	}
 }
 @media screen and (max-width: 1000px) {
+	.header__logo
+	{
+		width: 140px;
+	}
 	.header__nav__mob {
 		display: flex;
 	}
 	.bg__1
 	{
 		opacity: 0.1;
+		width: 100%;
+		left: 0;
 	}
 	.block__2-main-child
 	{
