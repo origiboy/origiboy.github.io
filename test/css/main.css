@@ -596,10 +596,12 @@ h1.block__6-head
 	align-content: flex-start;
 	flex-wrap: wrap;
 	position: fixed;
+	padding-top: 100px;
+	box-sizing: border-box;
 	left: -100%;
-	top: 118px;
+	top: 0px;
 	width: 100%;
-	height: calc(100vh - 118px);
+	height: calc(100vh);
 	background: rgba(255, 255, 255, 1);
 	transition: 0.3s all linear;
 }
@@ -742,6 +744,7 @@ h1.block__6-head
 		justify-content: center;
 		font-size: 24px;
 		padding: 20px 0;
+		margin: 0;
 	}
 }
 
