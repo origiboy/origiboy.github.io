@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$(".block__7-line").click(function(){
 		if ($(this).children('.block__7-arr').css('transform') == 'matrix(-1, 1.22465e-16, -1.22465e-16, -1, 0, 0)') {
 			$(this).children('.block__7-arr').css('transform', 'rotate(0deg)');
-			$(this).children('.block__7-text').css("display", "inline");
+			$(this).children('.block__7-text').css("display", "flex");
 		}
 		else {
 			$(this).children('.block__7-arr').css('transform', 'rotate(180deg)');
