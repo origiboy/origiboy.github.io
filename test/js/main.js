@@ -13,13 +13,16 @@ $(document).ready(function(){
 	// Блок отзывов
 	
 	$(".block__7-line").click(function(){
-		if ($(this).children('.block__7-arr').css('transform') == 'matrix(-1, 1.22465e-16, -1.22465e-16, -1, 0, 0)') {
+		var data = $(this).attr("data-open");
+		if (data == "0") {
 			$(this).children('.block__7-arr').css('transform', 'rotate(0deg)');
 			$(this).children('.block__7-text').css("display", "flex");
+			$(this).attr("data-open", "1");
 		}
 		else {
 			$(this).children('.block__7-arr').css('transform', 'rotate(180deg)');
 			$(this).children('.block__7-text').css("display", "none");
+			$(this).attr("data-open", "0");
 		}
 	});
 	
