@@ -1,16 +1,29 @@
 var mob_menu = 0;
+
+// Функция плавной прокрутки
+
+function slowScroll(id) { 
+         $('html, body').animate({ 
+              scrollTop: $(id).offset().top - 20
+         }, 300);
+         return false; 
+} 
 $(document).ready(function(){
 	
-	$(".block__7-arr").click(function(){
-		if ($(this).css('transform') == 'matrix(-1, 1.22465e-16, -1.22465e-16, -1, 0, 0)') {
-			$(this).css('transform', 'rotate(0deg)');
-			$(this).parent().children('.block__7-text').css("display", "inline");
+	// Блок отзывов
+	
+	$(".block__7-line").click(function(){
+		if ($(this).children('.block__7-arr').css('transform') == 'matrix(-1, 1.22465e-16, -1.22465e-16, -1, 0, 0)') {
+			$(this).children('.block__7-arr').css('transform', 'rotate(0deg)');
+			$(this).children('.block__7-text').css("display", "inline");
 		}
 		else {
-			$(this).css('transform', 'rotate(180deg)');
-			$(this).parent().children('.block__7-text').css("display", "none");
+			$(this).children('.block__7-arr').css('transform', 'rotate(180deg)');
+			$(this).children('.block__7-text').css("display", "none");
 		}
 	});
+	
+	// Окно мобильной навигации
 	
 	$(".header__nav__mob").click(function(){
 		if (mob_menu == 0) {
@@ -20,6 +33,28 @@ $(document).ready(function(){
 		else {
 			$('.popup__mob').eq(0).css('left', '-100%');
 			mob_menu = 0;
+		}
+	});
+	
+	// Навигация
+	
+	$('.header__nav-button').click(function(){
+		e_index = $(this).index('.header__nav-button');
+		if (e_index == 0 || e_index == 5 || e_index == 10)
+		{
+			slowScroll('#block__2');
+		}
+		if (e_index == 1 || e_index == 6 || e_index == 11)
+		{
+			slowScroll('#block__3');
+		}
+		if (e_index == 2 || e_index == 7 || e_index == 12)
+		{
+			slowScroll('#block__5');
+		}
+		if (mob_menu == 1) {
+			$(".ham").eq(0).click();
+			
 		}
 	});
 });
